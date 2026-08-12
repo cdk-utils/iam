@@ -4,12 +4,12 @@
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### Hello <a name="Hello" id="@cdk-utils/iam.Hello"></a>
+### Hello <a name="Hello" id="@cdk_utils/iam.Hello"></a>
 
-#### Initializers <a name="Initializers" id="@cdk-utils/iam.Hello.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.Hello.Initializer"></a>
 
 ```typescript
-import { Hello } from '@cdk-utils/iam'
+import { Hello } from '@cdk_utils/iam'
 
 new Hello()
 ```
@@ -23,11 +23,11 @@ new Hello()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdk-utils/iam.Hello.sayHello">sayHello</a></code> | *No description.* |
+| <code><a href="#@cdk_utils/iam.Hello.sayHello">sayHello</a></code> | *No description.* |
 
 ---
 
-##### `sayHello` <a name="sayHello" id="@cdk-utils/iam.Hello.sayHello"></a>
+##### `sayHello` <a name="sayHello" id="@cdk_utils/iam.Hello.sayHello"></a>
 
 ```typescript
 public sayHello(): string

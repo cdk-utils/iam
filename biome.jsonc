@@ -2,7 +2,7 @@
 {
   "assist": {
     "actions": {
-      "preset": "recommended"
+      "recommended": true
     },
     "enabled": true
   },
@@ -24,9 +24,7 @@
       "!.projen/deps.json",
       "!.projen/files.json",
       "!.projen/tasks.json",
-      "!projenrc/tsconfig.json",
-      "!test/tsconfig.json",
-      "!tsconfig.json"
+      "!tsconfig.dev.json"
     ]
   },
   "formatter": {
@@ -41,7 +39,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "preset": "recommended"
+      "recommended": true
     }
   },
   "vcs": {
@@ -49,5 +47,5 @@
     "enabled": true,
     "useIgnoreFile": true
   },
-  "$schema": "https://biomejs.dev/schemas/latest/schema.json"
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json"
 }
