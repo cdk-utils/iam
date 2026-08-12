@@ -1,0 +1,1136 @@
+{
+  "Name": "voiceid",
+  "Actions": [
+    {
+      "Name": "AssociateFraudster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomain",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWatchlist",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFraudster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSpeaker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWatchlist",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeComplianceConsent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFraudster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFraudsterRegistrationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSpeaker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSpeakerEnrollmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWatchlist",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFraudster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EvaluateSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFraudsterRegistrationJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFraudsters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSpeakerEnrollmentJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSpeakers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWatchlists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "OptOutSpeaker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterComplianceConsent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartFraudsterRegistrationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSpeakerEnrollmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWatchlist",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateFraudster",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFraudster",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "associate_fraudster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "voiceid"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWatchlist",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWatchlist",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "create_watchlist",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFraudster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFraudster",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "delete_fraudster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSpeaker",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSpeaker",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "delete_speaker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWatchlist",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWatchlist",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "delete_watchlist",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDomain",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFraudster",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFraudster",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_fraudster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFraudsterRegistrationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFraudsterRegistrationJob",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_fraudster_registration_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSpeaker",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSpeaker",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_speaker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSpeakerEnrollmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSpeakerEnrollmentJob",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_speaker_enrollment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWatchlist",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWatchlist",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "describe_watchlist",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFraudster",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFraudster",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "disassociate_fraudster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvaluateSession",
+      "AuthorizedActions": [
+        {
+          "Name": "EvaluateSession",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "evaluate_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomains",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFraudsterRegistrationJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFraudsterRegistrationJobs",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_fraudster_registration_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFraudsters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFraudsters",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_fraudsters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpeakerEnrollmentJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSpeakerEnrollmentJobs",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_speaker_enrollment_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpeakers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSpeakers",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_speakers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWatchlists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWatchlists",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "list_watchlists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "OptOutSpeaker",
+      "AuthorizedActions": [
+        {
+          "Name": "OptOutSpeaker",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "opt_out_speaker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFraudsterRegistrationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "voiceid.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartFraudsterRegistrationJob",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "start_fraudster_registration_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSpeakerEnrollmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "voiceid.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSpeakerEnrollmentJob",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "start_speaker_enrollment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomain",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "update_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWatchlist",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWatchlist",
+          "Service": "voiceid"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "voice-id",
+          "Method": "update_watchlist",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "domain",
+      "ARNFormats": [
+        "arn:${Partition}:voiceid:${Region}:${Account}:domain/${DomainId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

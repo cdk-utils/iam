@@ -1,0 +1,1057 @@
+{
+  "Name": "refactor-spaces",
+  "Actions": [
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRoute",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateService",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRoute",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteService",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEnvironment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRoute",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetService",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEnvironmentVpcs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRoutes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRoute",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "refactor-spaces:ApplicationCreatedByAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "refactor-spaces:CreatedByAccountIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "refactor-spaces:RouteCreatedByAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "refactor-spaces:ServiceCreatedByAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "refactor-spaces:SourcePath",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "refactor-spaces"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "refactor-spaces"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "create_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRoute",
+          "Service": "refactor-spaces"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "create_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateService",
+          "Service": "refactor-spaces"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "create_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "delete_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRoute",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "delete_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteService",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "delete_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "get_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRoute",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "get_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetService",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "get_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentVpcs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentVpcs",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_environment_vpcs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoutes",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServices",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRoute",
+          "Service": "refactor-spaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "migration-hub-refactor-spaces",
+          "Method": "update_route",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds"
+      ]
+    },
+    {
+      "Name": "environment",
+      "ARNFormats": [
+        "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "route",
+      "ARNFormats": [
+        "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}/route/${RouteId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:RouteCreatedByAccount",
+        "refactor-spaces:ServiceCreatedByAccount",
+        "refactor-spaces:SourcePath"
+      ]
+    },
+    {
+      "Name": "service",
+      "ARNFormats": [
+        "arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}/service/${ServiceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "refactor-spaces:ApplicationCreatedByAccount",
+        "refactor-spaces:CreatedByAccountIds",
+        "refactor-spaces:ServiceCreatedByAccount"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

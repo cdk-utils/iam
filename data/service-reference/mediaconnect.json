@@ -1,0 +1,3335 @@
+{
+  "Name": "mediaconnect",
+  "Actions": [
+    {
+      "Name": "AddBridgeOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddBridgeSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddFlowMediaStreams",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "MediaStream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddFlowOutputs",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Output"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddFlowSources",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddFlowVpcInterfaces",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "VpcInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateRouterNetworkInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBridge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFlow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRouterInput",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRouterNetworkInterface",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterNetworkInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRouterOutput",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBridge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRouterNetworkInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterNetworkInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterGatewayInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "GatewayInstance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBridge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlowSourceMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlowSourceThumbnail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGatewayInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "GatewayInstance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOffering",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Offering"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReservation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DiscoverGatewayPollEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRouterInputSourceMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRouterInputThumbnail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRouterNetworkInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterNetworkInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GrantFlowEntitlements",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Entitlement"
+        },
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBridges",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEntitlements",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGatewayInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOfferings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReservations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRouterInputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRouterNetworkInterfaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRouterOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PollGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PurchaseOffering",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveBridgeOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveBridgeSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveFlowMediaStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "MediaStream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveFlowOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Output"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveFlowSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveFlowVpcInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "VpcInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestartRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestartRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RevokeFlowEntitlement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Entitlement"
+        },
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitGatewayStateChange",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Entitlement"
+        },
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "MediaStream"
+        },
+        {
+          "Name": "Output"
+        },
+        {
+          "Name": "RouterInput"
+        },
+        {
+          "Name": "RouterNetworkInterface"
+        },
+        {
+          "Name": "RouterOutput"
+        },
+        {
+          "Name": "Source"
+        },
+        {
+          "Name": "VpcInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TakeRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Entitlement"
+        },
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "MediaStream"
+        },
+        {
+          "Name": "Output"
+        },
+        {
+          "Name": "RouterInput"
+        },
+        {
+          "Name": "RouterNetworkInterface"
+        },
+        {
+          "Name": "RouterOutput"
+        },
+        {
+          "Name": "Source"
+        },
+        {
+          "Name": "VpcInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBridge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBridgeOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBridgeSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBridgeState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Bridge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFlowEntitlement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFlowMediaStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "MediaStream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFlowOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Output"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFlowSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Flow"
+        },
+        {
+          "Name": "Source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewayInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "GatewayInstance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRouterInput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterInput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRouterNetworkInterface",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterNetworkInterface"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRouterOutput",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RouterOutput"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddBridgeOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "AddBridgeOutputs",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_bridge_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddBridgeSources",
+      "AuthorizedActions": [
+        {
+          "Name": "AddBridgeSources",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_bridge_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddFlowMediaStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFlowMediaStreams",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_flow_media_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddFlowOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFlowOutputs",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_flow_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddFlowSources",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFlowSources",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_flow_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddFlowVpcInterfaces",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFlowVpcInterfaces",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "add_flow_vpc_interfaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "batch_get_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetRouterNetworkInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterNetworkInterface",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "batch_get_router_network_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "batch_get_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBridge",
+      "AuthorizedActions": [
+        {
+          "Name": "AddBridgeOutputs",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "AddBridgeSources",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "CreateBridge",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_bridge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "AddFlowMediaStreams",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "AddFlowOutputs",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "AddFlowSources",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "AddFlowVpcInterfaces",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "CreateFlow",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "GrantFlowEntitlements",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGateway",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "CreateRouterInput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateFlowOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRouterNetworkInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_router_network_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "CreateRouterOutput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateFlowSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "create_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBridge",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBridge",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveBridgeOutput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveBridgeSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_bridge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFlow",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveFlowMediaStream",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveFlowOutput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveFlowSource",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RemoveFlowVpcInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "RevokeFlowEntitlement",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGateway",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRouterInput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateFlowOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouterNetworkInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRouterNetworkInterface",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_router_network_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRouterOutput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateFlowSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "delete_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterGatewayInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterGatewayInstance",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "deregister_gateway_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBridge",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBridge",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_bridge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlow",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlowSourceMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlowSourceMetadata",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_flow_source_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlowSourceThumbnail",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlowSourceThumbnail",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_flow_source_thumbnail",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGateway",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayInstance",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_gateway_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOffering",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReservation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReservation",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "describe_reservation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouterInputSourceMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterInputSourceMetadata",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_router_input_source_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouterInputThumbnail",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterInputThumbnail",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_router_input_thumbnail",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouterNetworkInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterNetworkInterface",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_router_network_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "get_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GrantFlowEntitlements",
+      "AuthorizedActions": [
+        {
+          "Name": "GrantFlowEntitlements",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "grant_flow_entitlements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBridges",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBridges",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_bridges",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntitlements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntitlements",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_entitlements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlows",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_flows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGatewayInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGatewayInstances",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_gateway_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGateways",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOfferings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOfferings",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_offerings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReservations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReservations",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_reservations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRouterInputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRouterInputs",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_router_inputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRouterNetworkInterfaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRouterNetworkInterfaces",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_router_network_interfaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRouterOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRouterOutputs",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_router_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForGlobalResource",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_tags_for_global_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurchaseOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "PurchaseOffering",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "purchase_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveBridgeOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveBridgeOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_bridge_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveBridgeSource",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveBridgeSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_bridge_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveFlowMediaStream",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveFlowMediaStream",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_flow_media_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveFlowOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveFlowOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_flow_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveFlowSource",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveFlowSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_flow_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveFlowVpcInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveFlowVpcInterface",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "remove_flow_vpc_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestartRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "RestartRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "restart_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestartRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "RestartRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "restart_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeFlowEntitlement",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeFlowEntitlement",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "revoke_flow_entitlement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFlow",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "start_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "start_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "start_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "StopFlow",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "stop_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "stop_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "stop_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagGlobalResource",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "tag_global_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TakeRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "TakeRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "take_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagGlobalResource",
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "untag_global_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBridge",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBridge",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_bridge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBridgeOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBridgeOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_bridge_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBridgeSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBridgeSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_bridge_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBridgeState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBridgeState",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_bridge_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFlow",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlowEntitlement",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlowEntitlement",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_flow_entitlement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlowMediaStream",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFlowMediaStream",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_flow_media_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlowOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlowOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_flow_output",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlowSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlowSource",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_flow_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewayInstance",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_gateway_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRouterInput",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlowOutput",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateRouterInput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_router_input",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRouterNetworkInterface",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_router_network_interface",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRouterOutput",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateRouterNetworkInterface",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "mediaconnect.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlowSource",
+          "Service": "mediaconnect"
+        },
+        {
+          "Name": "UpdateRouterOutput",
+          "Service": "mediaconnect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mediaconnect",
+          "Method": "update_router_output",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Bridge",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:bridge:${BridgeId}:${BridgeName}"
+      ]
+    },
+    {
+      "Name": "Entitlement",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:entitlement:${FlowId}:${EntitlementName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Flow",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Gateway",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${GatewayName}"
+      ]
+    },
+    {
+      "Name": "GatewayInstance",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${GatewayName}:instance:${InstanceId}"
+      ]
+    },
+    {
+      "Name": "MediaStream",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/mediaStream/${MediaStreamName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Offering",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:offering:${OfferingId}"
+      ]
+    },
+    {
+      "Name": "Output",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:output:${OutputId}:${OutputName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Reservation",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:reservation:${ReservationId}:${ReservationName}"
+      ]
+    },
+    {
+      "Name": "RouterInput",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:routerInput:${RouterInputId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouterNetworkInterface",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:routerNetworkInterface:${RouterNetworkInterfaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouterOutput",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:routerOutput:${RouterOutputId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Source",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:source:${SourceId}:${SourceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VpcInterface",
+      "ARNFormats": [
+        "arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/vpcInterface/${VpcInterfaceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

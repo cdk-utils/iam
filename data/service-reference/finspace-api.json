@@ -1,0 +1,352 @@
+{
+  "Name": "finspace-api",
+  "Actions": [
+    {
+      "Name": "GetProgrammaticAccessCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "credential"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateUserToPermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "associate_user_to_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChangeset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "create_changeset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataView",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "create_data_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "create_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "delete_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "disable_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateUserFromPermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "disassociate_user_from_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "enable_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChangeset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_changeset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataView",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_data_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExternalDataViewAccessDetails",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_external_data_view_access_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProgrammaticAccessCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProgrammaticAccessCredentials",
+          "Service": "finspace-api"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_programmatic_access_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkingLocation",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "get_working_location",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChangesets",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_changesets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataViews",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_data_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionGroups",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_permission_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionGroupsByUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_permission_groups_by_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsers",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsersByPermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "list_users_by_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetUserPassword",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "reset_user_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChangeset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "update_changeset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataset",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "update_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePermissionGroup",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "update_permission_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUser",
+      "SDK": [
+        {
+          "Name": "finspace-data",
+          "Method": "update_user",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "credential",
+      "ARNFormats": [
+        "arn:${Partition}:finspace-api:${Region}:${Account}:/credentials/programmatic"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

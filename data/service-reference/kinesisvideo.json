@@ -1,0 +1,1680 @@
+{
+  "Name": "kinesisvideo",
+  "Actions": [
+    {
+      "Name": "ConnectAsMaster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ConnectAsViewer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSignalingChannel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStream",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEdgeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSignalingChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEdgeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeImageGenerationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMappedResourceConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMediaStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSignalingChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStreamStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetClip",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDASHStreamingSessionURL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHLSStreamingSessionURL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIceServerConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMedia",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMediaForFragmentList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSignalingChannelEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "JoinStorageSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "JoinStorageSessionAsViewer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEdgeAgentConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFragments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSignalingChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMedia",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendAlexaOfferToMaster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEdgeConfigurationUpdate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagStream",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        },
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagStream",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataRetention",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateImageGenerationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMediaStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSignalingChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStreamStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateSignalingChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSignalingChannel",
+          "Service": "kinesisvideo"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "create_signaling_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStream",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStream",
+          "Service": "kinesisvideo"
+        },
+        {
+          "Name": "TagStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "create_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEdgeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEdgeConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "delete_edge_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSignalingChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSignalingChannel",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "delete_signaling_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStream",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "delete_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEdgeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEdgeConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_edge_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeImageGenerationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeImageGenerationConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_image_generation_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMappedResourceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMappedResourceConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_mapped_resource_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMediaStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMediaStorageConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_media_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeNotificationConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSignalingChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSignalingChannel",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_signaling_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStream",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStreamStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStreamStorageConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "describe_stream_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClip",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClip",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "get_clip",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDASHStreamingSessionURL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDASHStreamingSessionURL",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "get_dash_streaming_session_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataEndpoint",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "get_data_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHLSStreamingSessionURL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHLSStreamingSessionURL",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "get_hls_streaming_session_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIceServerConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIceServerConfig",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-signaling",
+          "Method": "get_ice_server_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetImages",
+      "AuthorizedActions": [
+        {
+          "Name": "GetImages",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "get_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMedia",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMedia",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-media",
+          "Method": "get_media",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMediaForFragmentList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMediaForFragmentList",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "get_media_for_fragment_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSignalingChannelEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSignalingChannelEndpoint",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "get_signaling_channel_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "JoinStorageSession",
+      "AuthorizedActions": [
+        {
+          "Name": "JoinStorageSession",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-webrtc-storage",
+          "Method": "join_storage_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "JoinStorageSessionAsViewer",
+      "AuthorizedActions": [
+        {
+          "Name": "JoinStorageSessionAsViewer",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-webrtc-storage",
+          "Method": "join_storage_session_as_viewer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEdgeAgentConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEdgeAgentConfigurations",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "list_edge_agent_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFragments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFragments",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-archived-media",
+          "Method": "list_fragments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSignalingChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSignalingChannels",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "list_signaling_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreams",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "list_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForStream",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "list_tags_for_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendAlexaOfferToMaster",
+      "AuthorizedActions": [
+        {
+          "Name": "SendAlexaOfferToMaster",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis-video-signaling",
+          "Method": "send_alexa_offer_to_master",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEdgeConfigurationUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "StartEdgeConfigurationUpdate",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "start_edge_configuration_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagStream",
+      "AuthorizedActions": [
+        {
+          "Name": "TagStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "tag_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagStream",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "untag_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataRetention",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataRetention",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_data_retention",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateImageGenerationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateImageGenerationConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_image_generation_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMediaStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMediaStorageConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_media_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotificationConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSignalingChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSignalingChannel",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_signaling_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStream",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStream",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStreamStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStreamStorageConfiguration",
+          "Service": "kinesisvideo"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesisvideo",
+          "Method": "update_stream_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "channel",
+      "ARNFormats": [
+        "arn:${Partition}:kinesisvideo:${Region}:${Account}:channel/${ChannelName}/${CreationTime}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "stream",
+      "ARNFormats": [
+        "arn:${Partition}:kinesisvideo:${Region}:${Account}:stream/${StreamName}/${CreationTime}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

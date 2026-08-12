@@ -1,0 +1,3633 @@
+{
+  "Name": "comprehend",
+  "Actions": [
+    {
+      "Name": "BatchDetectDominantLanguage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDetectEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDetectKeyPhrases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDetectSentiment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDetectSyntax",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDetectTargetedSentiment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ClassifyDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ContainsPiiEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDocumentClassifier",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "document-classifier-endpoint",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "entity-recognizer-endpoint",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEntityRecognizer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFlywheel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "flywheel",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys",
+            "comprehend:DataLakeKmsKey",
+            "comprehend:ModelKmsKey",
+            "comprehend:VolumeKmsKey",
+            "comprehend:VpcSecurityGroupIds",
+            "comprehend:VpcSubnets"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDocumentClassifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEntityRecognizer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFlywheel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel-dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDocumentClassificationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classification-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDocumentClassifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDominantLanguageDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dominant-language-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEntitiesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entities-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEntityRecognizer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventsDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "events-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFlywheel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFlywheelIteration",
+      "ActionConditionKeys": [
+        "comprehend:FlywheelIterationId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeKeyPhrasesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-phrases-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePiiEntitiesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pii-entities-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSentimentDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTargetedSentimentDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "targeted-sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTopicsDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topics-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectDominantLanguage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-recognizer-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectKeyPhrases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectPiiEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectSentiment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectSyntax",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectTargetedSentiment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetectToxicContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportModel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:ModelKmsKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDocumentClassificationJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDocumentClassifierSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDocumentClassifiers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDominantLanguageDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEntitiesDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEntityRecognizerSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEntityRecognizers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEventsDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFlywheelIterationHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFlywheels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListKeyPhrasesDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPiiEntitiesDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSentimentDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classification-job"
+        },
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "dominant-language-detection-job"
+        },
+        {
+          "Name": "entities-detection-job"
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        },
+        {
+          "Name": "events-detection-job"
+        },
+        {
+          "Name": "flywheel"
+        },
+        {
+          "Name": "flywheel-dataset"
+        },
+        {
+          "Name": "key-phrases-detection-job"
+        },
+        {
+          "Name": "pii-entities-detection-job"
+        },
+        {
+          "Name": "sentiment-detection-job"
+        },
+        {
+          "Name": "targeted-sentiment-detection-job"
+        },
+        {
+          "Name": "topics-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTargetedSentimentDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTopicsDetectionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDocumentClassificationJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classification-job",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys",
+            "comprehend:OutputKmsKey",
+            "comprehend:VolumeKmsKey",
+            "comprehend:VpcSecurityGroupIds",
+            "comprehend:VpcSubnets"
+          ]
+        },
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDominantLanguageDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dominant-language-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEntitiesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entities-detection-job",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys",
+            "comprehend:OutputKmsKey",
+            "comprehend:VolumeKmsKey",
+            "comprehend:VpcSecurityGroupIds",
+            "comprehend:VpcSubnets"
+          ]
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEventsDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "events-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartFlywheelIteration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartKeyPhrasesDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-phrases-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartPiiEntitiesDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pii-entities-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSentimentDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartTargetedSentimentDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "targeted-sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartTopicsDetectionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "comprehend:OutputKmsKey",
+        "comprehend:VolumeKmsKey",
+        "comprehend:VpcSecurityGroupIds",
+        "comprehend:VpcSubnets"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topics-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopDominantLanguageDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dominant-language-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopEntitiesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entities-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopEventsDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "events-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopKeyPhrasesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-phrases-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopPiiEntitiesDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pii-entities-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopSentimentDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopTargetedSentimentDetectionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "targeted-sentiment-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopTrainingDocumentClassifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopTrainingEntityRecognizer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entity-recognizer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classification-job"
+        },
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "dominant-language-detection-job"
+        },
+        {
+          "Name": "entities-detection-job"
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        },
+        {
+          "Name": "events-detection-job"
+        },
+        {
+          "Name": "flywheel"
+        },
+        {
+          "Name": "flywheel-dataset"
+        },
+        {
+          "Name": "key-phrases-detection-job"
+        },
+        {
+          "Name": "pii-entities-detection-job"
+        },
+        {
+          "Name": "sentiment-detection-job"
+        },
+        {
+          "Name": "targeted-sentiment-detection-job"
+        },
+        {
+          "Name": "topics-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classification-job"
+        },
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "dominant-language-detection-job"
+        },
+        {
+          "Name": "entities-detection-job"
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        },
+        {
+          "Name": "events-detection-job"
+        },
+        {
+          "Name": "flywheel"
+        },
+        {
+          "Name": "flywheel-dataset"
+        },
+        {
+          "Name": "key-phrases-detection-job"
+        },
+        {
+          "Name": "pii-entities-detection-job"
+        },
+        {
+          "Name": "sentiment-detection-job"
+        },
+        {
+          "Name": "targeted-sentiment-detection-job"
+        },
+        {
+          "Name": "topics-detection-job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier-endpoint"
+        },
+        {
+          "Name": "entity-recognizer-endpoint"
+        },
+        {
+          "Name": "flywheel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFlywheel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "document-classifier"
+        },
+        {
+          "Name": "entity-recognizer"
+        },
+        {
+          "Name": "flywheel",
+          "ConditionKeys": [
+            "comprehend:ModelKmsKey",
+            "comprehend:VolumeKmsKey",
+            "comprehend:VpcSecurityGroupIds",
+            "comprehend:VpcSubnets"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "comprehend:DataLakeKmsKey",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "comprehend:FlywheelIterationId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "comprehend:ModelKmsKey",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "comprehend:OutputKmsKey",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "comprehend:VolumeKmsKey",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "comprehend:VpcSecurityGroupIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "comprehend:VpcSubnets",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchDetectDominantLanguage",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectDominantLanguage",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_dominant_language",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDetectEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectEntities",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDetectKeyPhrases",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectKeyPhrases",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_key_phrases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDetectSentiment",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectSentiment",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_sentiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDetectSyntax",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectSyntax",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_syntax",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDetectTargetedSentiment",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDetectTargetedSentiment",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "batch_detect_targeted_sentiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ClassifyDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "ClassifyDocument",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "classify_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ContainsPiiEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "ContainsPiiEntities",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "contains_pii_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDocumentClassifier",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDocumentClassifier",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "create_document_classifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEndpoint",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "create_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEntityRecognizer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEntityRecognizer",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "create_entity_recognizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFlywheel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFlywheel",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "create_flywheel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDocumentClassifier",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDocumentClassifier",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "delete_document_classifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEndpoint",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "delete_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEntityRecognizer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEntityRecognizer",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "delete_entity_recognizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFlywheel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFlywheel",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "delete_flywheel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDocumentClassificationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDocumentClassificationJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_document_classification_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDocumentClassifier",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDocumentClassifier",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_document_classifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDominantLanguageDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDominantLanguageDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_dominant_language_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEndpoint",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEntitiesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEntityRecognizer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEntityRecognizer",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_entity_recognizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventsDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventsDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_events_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlywheel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlywheel",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_flywheel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlywheelIteration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlywheelIteration",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_flywheel_iteration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeKeyPhrasesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeKeyPhrasesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_key_phrases_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePiiEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePiiEntitiesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_pii_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourcePolicy",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSentimentDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTargetedSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTargetedSentimentDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_targeted_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTopicsDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTopicsDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "describe_topics_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectDominantLanguage",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectDominantLanguage",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_dominant_language",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectEntities",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectKeyPhrases",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectKeyPhrases",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_key_phrases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectPiiEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectPiiEntities",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_pii_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectSentiment",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectSentiment",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_sentiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectSyntax",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectSyntax",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_syntax",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectTargetedSentiment",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectTargetedSentiment",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_targeted_sentiment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectToxicContent",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectToxicContent",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "detect_toxic_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportModel",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportModel",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "import_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocumentClassificationJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocumentClassificationJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_document_classification_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocumentClassifierSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocumentClassifierSummaries",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_document_classifier_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDocumentClassifiers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDocumentClassifiers",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_document_classifiers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDominantLanguageDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDominantLanguageDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_dominant_language_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEndpoints",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntitiesDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntitiesDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_entities_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntityRecognizerSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityRecognizerSummaries",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_entity_recognizer_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntityRecognizers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityRecognizers",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_entity_recognizers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventsDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventsDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_events_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlywheelIterationHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlywheelIterationHistory",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_flywheel_iteration_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlywheels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlywheels",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_flywheels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeyPhrasesDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeyPhrasesDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_key_phrases_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPiiEntitiesDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPiiEntitiesDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_pii_entities_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSentimentDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSentimentDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_sentiment_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetedSentimentDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetedSentimentDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_targeted_sentiment_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTopicsDetectionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTopicsDetectionJobs",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "list_topics_detection_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDocumentClassificationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartDocumentClassificationJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_document_classification_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDominantLanguageDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartDominantLanguageDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_dominant_language_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartEntitiesDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEventsDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartEventsDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_events_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFlywheelIteration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFlywheelIteration",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_flywheel_iteration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartKeyPhrasesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartKeyPhrasesDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_key_phrases_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPiiEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartPiiEntitiesDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_pii_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSentimentDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTargetedSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTargetedSentimentDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_targeted_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTopicsDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTopicsDetectionJob",
+          "Service": "comprehend"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "start_topics_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDominantLanguageDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDominantLanguageDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_dominant_language_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopEntitiesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopEventsDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopEventsDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_events_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopKeyPhrasesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopKeyPhrasesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_key_phrases_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopPiiEntitiesDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopPiiEntitiesDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_pii_entities_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopSentimentDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTargetedSentimentDetectionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTargetedSentimentDetectionJob",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_targeted_sentiment_detection_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTrainingDocumentClassifier",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTrainingDocumentClassifier",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_training_document_classifier",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopTrainingEntityRecognizer",
+      "AuthorizedActions": [
+        {
+          "Name": "StopTrainingEntityRecognizer",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "stop_training_entity_recognizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEndpoint",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "update_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlywheel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "comprehend.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlywheel",
+          "Service": "comprehend"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "comprehend",
+          "Method": "update_flywheel",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "document-classification-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:document-classification-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "document-classifier",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier/${DocumentClassifierName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "document-classifier-endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:document-classifier-endpoint/${DocumentClassifierEndpointName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dominant-language-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:dominant-language-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "entities-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:entities-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "entity-recognizer",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer/${EntityRecognizerName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "entity-recognizer-endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer-endpoint/${EntityRecognizerEndpointName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "events-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:events-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "flywheel",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "flywheel-dataset",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}/dataset/${DatasetName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "key-phrases-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:key-phrases-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "pii-entities-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:pii-entities-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "sentiment-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:sentiment-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "targeted-sentiment-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:targeted-sentiment-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "topics-detection-job",
+      "ARNFormats": [
+        "arn:${Partition}:comprehend:${Region}:${Account}:topics-detection-job/${JobId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

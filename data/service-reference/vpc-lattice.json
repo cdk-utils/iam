@@ -1,0 +1,3261 @@
+{
+  "Name": "vpc-lattice",
+  "Actions": [
+    {
+      "Name": "AssociateViaAWSService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateViaAWSService-EventsAndStates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessLogSubscription",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        },
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateListener",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:Protocol",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Listener"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainVerification"
+        },
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "ResourceGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateService",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType",
+        "vpc-lattice:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceNetwork",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType",
+        "vpc-lattice:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceNetworkResourceAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:ResourceConfigurationArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "ServiceNetwork"
+        },
+        {
+          "Name": "ServiceNetworkResourceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceNetworkServiceAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        },
+        {
+          "Name": "ServiceNetworkServiceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceNetworkVpcAssociation",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:PrivateDnsPreference",
+        "vpc-lattice:PrivateDnsSpecifiedDomains",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetwork"
+        },
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceNetworkVpcEndpointAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTargetGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccessLogSubscription",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAuthPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomainVerification",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainVerification"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteListener",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Listener"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceEndpointAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceEndpointAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceGateway",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRule",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteService",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceNetwork",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceNetworkResourceAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkResourceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceNetworkServiceAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkServiceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceNetworkVpcAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTargetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccessLogSubscription",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAuthPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomainVerification",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainVerification"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetListener",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Listener"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceGateway",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRule",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetService",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceNetwork",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceNetworkResourceAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkResourceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceNetworkServiceAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkServiceAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceNetworkVpcAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTargetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccessLogSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainVerifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListListeners",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceEndpointAssociations",
+      "ActionConditionKeys": [
+        "vpc-lattice:ResourceConfigurationArn",
+        "vpc-lattice:VpcEndpointId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceNetworkResourceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceNetworkServiceAssociations",
+      "ActionConditionKeys": [
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceNetworkVpcAssociations",
+      "ActionConditionKeys": [
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceNetworkVpcEndpointAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceNetworks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTargetGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAuthPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartDomainVerification",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:DomainName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainVerification"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        },
+        {
+          "Name": "DomainVerification"
+        },
+        {
+          "Name": "Listener"
+        },
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "ResourceEndpointAssociation"
+        },
+        {
+          "Name": "ResourceGateway"
+        },
+        {
+          "Name": "Rule"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        },
+        {
+          "Name": "ServiceNetworkResourceAssociation"
+        },
+        {
+          "Name": "ServiceNetworkServiceAssociation"
+        },
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        },
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        },
+        {
+          "Name": "DomainVerification"
+        },
+        {
+          "Name": "Listener"
+        },
+        {
+          "Name": "ResourceConfiguration"
+        },
+        {
+          "Name": "ResourceEndpointAssociation"
+        },
+        {
+          "Name": "ResourceGateway"
+        },
+        {
+          "Name": "Rule"
+        },
+        {
+          "Name": "Service"
+        },
+        {
+          "Name": "ServiceNetwork"
+        },
+        {
+          "Name": "ServiceNetworkResourceAssociation"
+        },
+        {
+          "Name": "ServiceNetworkServiceAssociation"
+        },
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        },
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessLogSubscription",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSubscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateListener",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Listener"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceConfiguration",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceGateway",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:SecurityGroupIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ResourceGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRule",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:TargetGroupArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateService",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:AuthType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceNetwork",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "vpc-lattice:AuthType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetwork"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceNetworkVpcAssociation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceNetworkVpcAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTargetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:AuthType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:CreateAction",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:DomainName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:PrivateDnsPreference",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:PrivateDnsSpecifiedDomains",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:Protocol",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:ResourceConfigurationArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:SecurityGroupIds",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:ServiceArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:ServiceNetworkArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:TargetGroupArns",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:VpcEndpointId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "vpc-lattice:VpcId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchUpdateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRule",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "batch_update_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessLogSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessLogSubscription",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_access_log_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateListener",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateListener",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_listener",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceConfiguration",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_resource_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceGateway",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_resource_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRule",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateService",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceNetwork",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_service_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceNetworkResourceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateViaAWSService",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "AssociateViaAWSService-EventsAndStates",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "CreateServiceNetworkResourceAssociation",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_service_network_resource_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceNetworkServiceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceNetworkServiceAssociation",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_service_network_service_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceNetworkVpcAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceNetworkVpcAssociation",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_service_network_vpc_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTargetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTargetGroup",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "create_target_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessLogSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessLogSubscription",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_access_log_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAuthPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAuthPolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_auth_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainVerification",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_domain_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteListener",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteListener",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_listener",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceConfiguration",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_resource_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceEndpointAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceEndpointAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_resource_endpoint_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceGateway",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_resource_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRule",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteService",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceNetwork",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_service_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceNetworkResourceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceNetworkResourceAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_service_network_resource_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceNetworkServiceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceNetworkServiceAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_service_network_service_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceNetworkVpcAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceNetworkVpcAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_service_network_vpc_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTargetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTargetGroup",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "delete_target_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterTargets",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "deregister_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessLogSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessLogSubscription",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_access_log_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAuthPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAuthPolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_auth_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainVerification",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_domain_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetListener",
+      "AuthorizedActions": [
+        {
+          "Name": "GetListener",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_listener",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceConfiguration",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_resource_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceGateway",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_resource_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRule",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetService",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceNetwork",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_service_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceNetworkResourceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceNetworkResourceAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_service_network_resource_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceNetworkServiceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceNetworkServiceAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_service_network_service_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceNetworkVpcAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceNetworkVpcAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_service_network_vpc_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTargetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTargetGroup",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "get_target_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessLogSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessLogSubscriptions",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_access_log_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainVerifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainVerifications",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_domain_verifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListListeners",
+      "AuthorizedActions": [
+        {
+          "Name": "ListListeners",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_listeners",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceConfigurations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_resource_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceEndpointAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceEndpointAssociations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_resource_endpoint_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceGateways",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_resource_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRules",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceNetworkResourceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceNetworkResourceAssociations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_service_network_resource_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceNetworkServiceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceNetworkServiceAssociations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_service_network_service_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceNetworkVpcAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceNetworkVpcAssociations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_service_network_vpc_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceNetworkVpcEndpointAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceNetworkVpcEndpointAssociations",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_service_network_vpc_endpoint_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceNetworks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceNetworks",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_service_networks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServices",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetGroups",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_target_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargets",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "list_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAuthPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAuthPolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "put_auth_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterTargets",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "register_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDomainVerification",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDomainVerification",
+          "Service": "vpc-lattice"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "start_domain_verification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessLogSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessLogSubscription",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_access_log_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateListener",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateListener",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_listener",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceConfiguration",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_resource_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceGateway",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_resource_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRule",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateService",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateService",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceNetwork",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_service_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceNetworkVpcAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceNetworkVpcAssociation",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_service_network_vpc_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTargetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTargetGroup",
+          "Service": "vpc-lattice"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "vpc-lattice",
+          "Method": "update_target_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AccessLogSubscription",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:accesslogsubscription/${AccessLogSubscriptionId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction"
+      ]
+    },
+    {
+      "Name": "DomainVerification",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:domainverification/${DomainVerificationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:DomainName"
+      ]
+    },
+    {
+      "Name": "Listener",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:Protocol",
+        "vpc-lattice:TargetGroupArns"
+      ]
+    },
+    {
+      "Name": "ResourceConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceconfiguration/${ResourceConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction"
+      ]
+    },
+    {
+      "Name": "ResourceEndpointAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceendpointassociation/${ResourceEndpointAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:ResourceConfigurationArn",
+        "vpc-lattice:VpcEndpointId"
+      ]
+    },
+    {
+      "Name": "ResourceGateway",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:resourcegateway/${ResourceGatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:VpcId"
+      ]
+    },
+    {
+      "Name": "Rule",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}/rule/${RuleId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:TargetGroupArns"
+      ]
+    },
+    {
+      "Name": "Service",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType",
+        "vpc-lattice:CreateAction"
+      ]
+    },
+    {
+      "Name": "ServiceNetwork",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetwork/${ServiceNetworkId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:AuthType",
+        "vpc-lattice:CreateAction"
+      ]
+    },
+    {
+      "Name": "ServiceNetworkResourceAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkresourceassociation/${ServiceNetworkResourceAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:ResourceConfigurationArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ]
+    },
+    {
+      "Name": "ServiceNetworkServiceAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkserviceassociation/${ServiceNetworkServiceAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:ServiceArn",
+        "vpc-lattice:ServiceNetworkArn"
+      ]
+    },
+    {
+      "Name": "ServiceNetworkVpcAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkvpcassociation/${ServiceNetworkVpcAssociationId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:PrivateDnsPreference",
+        "vpc-lattice:PrivateDnsSpecifiedDomains",
+        "vpc-lattice:SecurityGroupIds",
+        "vpc-lattice:ServiceNetworkArn",
+        "vpc-lattice:VpcId"
+      ]
+    },
+    {
+      "Name": "TargetGroup",
+      "ARNFormats": [
+        "arn:${Partition}:vpc-lattice:${Region}:${Account}:targetgroup/${TargetGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "vpc-lattice:CreateAction",
+        "vpc-lattice:VpcId"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

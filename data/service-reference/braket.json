@@ -1,0 +1,768 @@
+{
+  "Name": "braket",
+  "Actions": [
+    {
+      "Name": "AcceptUserAgreement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelQuantumTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "quantum-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateQuantumTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "quantum-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSpendingLimit",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        },
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSpendingLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetQuantumTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "quantum-task"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceLinkedRoleStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUserAgreementStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "quantum-task"
+        },
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchQuantumTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchSpendingLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "quantum-task"
+        },
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "job"
+        },
+        {
+          "Name": "quantum-task"
+        },
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSpendingLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "spending-limit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "cancel_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelQuantumTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelQuantumTask",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "cancel_quantum_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateJob",
+          "Service": "braket"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "braket.amazonaws.com",
+              "sagemaker.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "create_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuantumTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQuantumTask",
+          "Service": "braket"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "create_quantum_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSpendingLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSpendingLimit",
+          "Service": "braket"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "create_spending_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSpendingLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSpendingLimit",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "delete_spending_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDevice",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "get_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJob",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "get_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQuantumTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQuantumTask",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "get_quantum_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchDevices",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "search_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchJobs",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "search_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchQuantumTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchQuantumTasks",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "search_quantum_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchSpendingLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchSpendingLimits",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "search_spending_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSpendingLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSpendingLimit",
+          "Service": "braket"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "braket",
+          "Method": "update_spending_limit",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "device",
+      "ARNFormats": [
+        "arn:${Partition}:braket:*:*:device/${DeviceType}/${Provider}/${DeviceId}"
+      ]
+    },
+    {
+      "Name": "job",
+      "ARNFormats": [
+        "arn:${Partition}:braket:${Region}:${Account}:job/${RandomId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "quantum-task",
+      "ARNFormats": [
+        "arn:${Partition}:braket:${Region}:${Account}:quantum-task/${RandomId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "spending-limit",
+      "ARNFormats": [
+        "arn:${Partition}:braket:${Region}:${Account}:spending-limit/${RandomId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

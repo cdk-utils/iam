@@ -1,0 +1,2818 @@
+{
+  "Name": "rekognition",
+  "Actions": [
+    {
+      "Name": "AssociateFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CompareFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopyProjectVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCollection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFaceLivenessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProject",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProjectVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateStreamProcessor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProjectPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProjectVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteStreamProcessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProjectVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeStreamProcessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectCustomLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectModerationLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectProtectiveEquipment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DetectText",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DistributeDatasetEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCelebrityInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCelebrityRecognition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContentModeration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFaceDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFaceLivenessSessionResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFaceSearch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLabelDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMediaAnalysisJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPersonTracking",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSegmentDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTextDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "IndexFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCollections",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatasetEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatasetLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMediaAnalysisJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProjectPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListStreamProcessors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "projectversion"
+        },
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutProjectPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RecognizeCelebrities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchFaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchFacesByImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchUsersByImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCelebrityRecognition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartContentModeration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFaceDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFaceLivenessSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFaceSearch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartLabelDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartMediaAnalysisJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartPersonTracking",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartProjectVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSegmentDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartStreamProcessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartTextDetection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopProjectVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "projectversion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopStreamProcessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "projectversion"
+        },
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "collection"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "project"
+        },
+        {
+          "Name": "projectversion"
+        },
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDatasetEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateStreamProcessor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streamprocessor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "associate_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CompareFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "CompareFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "compare_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyProjectVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyProjectVersion",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "CreateProjectVersion",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "copy_project_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCollection",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "ListDatasetEntries",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFaceLivenessSession",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFaceLivenessSession",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_face_liveness_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProject",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProjectVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProjectVersion",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_project_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStreamProcessor",
+          "Service": "rekognition"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCollection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProject",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProjectPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProjectPolicy",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_project_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProjectVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProjectVersion",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_project_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStreamProcessor",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCollection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "describe_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProjectVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProjectVersions",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "describe_project_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProjects",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "describe_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStreamProcessor",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "describe_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectCustomLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectCustomLabels",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_custom_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectLabels",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectModerationLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectModerationLabels",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_moderation_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectProtectiveEquipment",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectProtectiveEquipment",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_protective_equipment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetectText",
+      "AuthorizedActions": [
+        {
+          "Name": "DetectText",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "detect_text",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "disassociate_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DistributeDatasetEntries",
+      "AuthorizedActions": [
+        {
+          "Name": "DistributeDatasetEntries",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "distribute_dataset_entries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCelebrityInfo",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCelebrityInfo",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_celebrity_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCelebrityRecognition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCelebrityRecognition",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_celebrity_recognition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContentModeration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContentModeration",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_content_moderation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFaceDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFaceDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_face_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFaceLivenessSessionResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFaceLivenessSessionResults",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_face_liveness_session_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFaceSearch",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFaceSearch",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_face_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLabelDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLabelDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_label_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMediaAnalysisJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMediaAnalysisJob",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_media_analysis_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPersonTracking",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPersonTracking",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_person_tracking",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSegmentDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSegmentDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_segment_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTextDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTextDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "get_text_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IndexFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "IndexFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "index_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCollections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollections",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_collections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetEntries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetEntries",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_dataset_entries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetLabels",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_dataset_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMediaAnalysisJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMediaAnalysisJobs",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_media_analysis_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjectPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjectPolicies",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_project_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamProcessors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamProcessors",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_stream_processors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsers",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "list_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProjectPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProjectPolicy",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "put_project_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RecognizeCelebrities",
+      "AuthorizedActions": [
+        {
+          "Name": "RecognizeCelebrities",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "recognize_celebrities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchFaces",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchFaces",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "search_faces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchFacesByImage",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchFacesByImage",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "search_faces_by_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchUsers",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "search_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchUsersByImage",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchUsersByImage",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "search_users_by_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCelebrityRecognition",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartCelebrityRecognition",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_celebrity_recognition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartContentModeration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartContentModeration",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_content_moderation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFaceDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartFaceDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_face_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFaceSearch",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartFaceSearch",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_face_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartLabelDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartLabelDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_label_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMediaAnalysisJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMediaAnalysisJob",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_media_analysis_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPersonTracking",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartPersonTracking",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_person_tracking",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartProjectVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "StartProjectVersion",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_project_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSegmentDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSegmentDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_segment_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "StartStreamProcessor",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTextDetection",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rekognition.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartTextDetection",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "start_text_detection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopProjectVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "StopProjectVersion",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "stop_project_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "StopStreamProcessor",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "stop_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDatasetEntries",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDatasetEntries",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "update_dataset_entries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStreamProcessor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStreamProcessor",
+          "Service": "rekognition"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rekognition",
+          "Method": "update_stream_processor",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "collection",
+      "ARNFormats": [
+        "arn:${Partition}:rekognition:${Region}:${Account}:collection/${CollectionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/dataset/${DatasetType}/${CreationTimestamp}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "project",
+      "ARNFormats": [
+        "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/${CreationTimestamp}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "projectversion",
+      "ARNFormats": [
+        "arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/version/${VersionName}/${CreationTimestamp}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "streamprocessor",
+      "ARNFormats": [
+        "arn:${Partition}:rekognition:${Region}:${Account}:streamprocessor/${StreamprocessorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

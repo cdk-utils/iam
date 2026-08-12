@@ -1,0 +1,2302 @@
+{
+  "Name": "license-manager",
+  "Actions": [
+    {
+      "Name": "AcceptGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckInLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckoutBorrowLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckoutLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGrant",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGrantVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicense",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseAssetGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseAssetRuleset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseConversionTaskForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseManagerReportGenerator",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateLicenseVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLicenseAssetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLicenseAssetRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLicenseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLicenseManagerReportGenerator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExtendLicenseConsumption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicense",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseAssetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseAssetRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseConversionTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseManagerReportGenerator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssetsForLicenseAssetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssociationsForLicenseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDistributedGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFailuresForLicenseConfigurationOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseAssetGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseAssetRulesets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseConfigurationsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseConversionTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseManagerReportGenerators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseSpecificationsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenseVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLicenses",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReceivedGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReceivedGrantsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReceivedLicenses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReceivedLicensesForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourceInventory",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        },
+        {
+          "Name": "license"
+        },
+        {
+          "Name": "license-asset-group"
+        },
+        {
+          "Name": "license-asset-ruleset"
+        },
+        {
+          "Name": "license-configuration"
+        },
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTokens",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUsageForLicenseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        },
+        {
+          "Name": "license"
+        },
+        {
+          "Name": "license-asset-group"
+        },
+        {
+          "Name": "license-asset-ruleset"
+        },
+        {
+          "Name": "license-configuration"
+        },
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "grant"
+        },
+        {
+          "Name": "license"
+        },
+        {
+          "Name": "license-asset-group"
+        },
+        {
+          "Name": "license-asset-ruleset"
+        },
+        {
+          "Name": "license-configuration"
+        },
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLicenseAssetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-group"
+        },
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLicenseAssetRuleset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-asset-ruleset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLicenseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLicenseManagerReportGenerator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "report-generator"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLicenseSpecificationsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "license-configuration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "license-manager:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptGrant",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "accept_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckInLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckInLicense",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "check_in_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckoutBorrowLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckoutBorrowLicense",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "checkout_borrow_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckoutLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckoutLicense",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "checkout_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGrant",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGrantVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGrantVersion",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_grant_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicense",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseAssetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseAssetGroup",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_asset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseAssetRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseAssetRuleset",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_asset_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseConfiguration",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseConversionTaskForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseConversionTaskForResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_conversion_task_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseManagerReportGenerator",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseManagerReportGenerator",
+          "Service": "license-manager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_manager_report_generator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLicenseVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLicenseVersion",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_license_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateToken",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "create_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGrant",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLicense",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLicenseAssetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLicenseAssetGroup",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_license_asset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLicenseAssetRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLicenseAssetRuleset",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_license_asset_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLicenseConfiguration",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLicenseManagerReportGenerator",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLicenseManagerReportGenerator",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_license_manager_report_generator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteToken",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteToken",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "delete_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExtendLicenseConsumption",
+      "AuthorizedActions": [
+        {
+          "Name": "ExtendLicenseConsumption",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "extend_license_consumption",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessToken",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGrant",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicense",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicense",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseAssetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseAssetGroup",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_asset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseAssetRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseAssetRuleset",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_asset_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseConfiguration",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseConversionTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseConversionTask",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_conversion_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseManagerReportGenerator",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseManagerReportGenerator",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_manager_report_generator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLicenseUsage",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_license_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceSettings",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "get_service_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetsForLicenseAssetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetsForLicenseAssetGroup",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_assets_for_license_asset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociationsForLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociationsForLicenseConfiguration",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_associations_for_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributedGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributedGrants",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_distributed_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFailuresForLicenseConfigurationOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFailuresForLicenseConfigurationOperations",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_failures_for_license_configuration_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseAssetGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseAssetGroups",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_asset_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseAssetRulesets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseAssetRulesets",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_asset_rulesets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseConfigurations",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseConfigurationsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseConfigurationsForOrganization",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_configurations_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseConversionTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseConversionTasks",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_conversion_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseManagerReportGenerators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseManagerReportGenerators",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_manager_report_generators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseSpecificationsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseSpecificationsForResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_specifications_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenseVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenseVersions",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_license_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLicenses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLicenses",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_licenses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReceivedGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReceivedGrants",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_received_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReceivedGrantsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReceivedGrantsForOrganization",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_received_grants_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReceivedLicenses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReceivedLicenses",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_received_licenses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReceivedLicensesForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReceivedLicensesForOrganization",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_received_licenses_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceInventory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceInventory",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_resource_inventory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTokens",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTokens",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_tokens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsageForLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsageForLicenseConfiguration",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "list_usage_for_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectGrant",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "reject_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLicenseAssetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLicenseAssetGroup",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_license_asset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLicenseAssetRuleset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLicenseAssetRuleset",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_license_asset_ruleset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLicenseConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLicenseConfiguration",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_license_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLicenseManagerReportGenerator",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLicenseManagerReportGenerator",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_license_manager_report_generator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLicenseSpecificationsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLicenseSpecificationsForResource",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_license_specifications_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceSettings",
+          "Service": "license-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager",
+          "Method": "update_service_settings",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "grant",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager::${Account}:grant:${GrantId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "license",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager::${Account}:license:${LicenseId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "license-asset-group",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager:${Region}:${Account}:license-asset-group:${LicenseAssetGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "license-asset-ruleset",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager:${Region}:${Account}:license-asset-ruleset:${LicenseAssetRulesetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "license-configuration",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "license-manager:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "report-generator",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager:${Region}:${Account}:report-generator:${ReportGeneratorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "license-manager:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1182 @@
+{
+  "Name": "rolesanywhere",
+  "Actions": [
+    {
+      "Name": "CreateProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTrustAnchor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAttributeMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTrustAnchor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableCrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisableTrustAnchor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableCrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableTrustAnchor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSubject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subject"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTrustAnchor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportCrl",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCrls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTrustAnchors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAttributeMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutNotificationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetNotificationSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "subject"
+        },
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        },
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "subject"
+        },
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "crl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTrustAnchor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-anchor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfile",
+          "Service": "rolesanywhere"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rolesanywhere.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "create_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTrustAnchor",
+          "Service": "rolesanywhere"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "create_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAttributeMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAttributeMapping",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "delete_attribute_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCrl",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "delete_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfile",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "delete_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTrustAnchor",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "delete_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableCrl",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "disable_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableProfile",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "disable_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableTrustAnchor",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "disable_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableCrl",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "enable_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableProfile",
+          "Service": "rolesanywhere"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rolesanywhere.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "enable_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableTrustAnchor",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "enable_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCrl",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "get_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfile",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubject",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubject",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "get_subject",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTrustAnchor",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "get_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportCrl",
+          "Service": "rolesanywhere"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "import_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCrls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCrls",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "list_crls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfiles",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "list_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubjects",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "list_subjects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTrustAnchors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrustAnchors",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "list_trust_anchors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAttributeMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAttributeMapping",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "put_attribute_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutNotificationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "PutNotificationSettings",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "put_notification_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetNotificationSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetNotificationSettings",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "reset_notification_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCrl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCrl",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "update_crl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rolesanywhere.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateProfile",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "update_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTrustAnchor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTrustAnchor",
+          "Service": "rolesanywhere"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rolesanywhere",
+          "Method": "update_trust_anchor",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "crl",
+      "ARNFormats": [
+        "arn:${Partition}:rolesanywhere:${Region}:${Account}:crl/${CrlId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "profile",
+      "ARNFormats": [
+        "arn:${Partition}:rolesanywhere:${Region}:${Account}:profile/${ProfileId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "subject",
+      "ARNFormats": [
+        "arn:${Partition}:rolesanywhere:${Region}:${Account}:subject/${SubjectId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "trust-anchor",
+      "ARNFormats": [
+        "arn:${Partition}:rolesanywhere:${Region}:${Account}:trust-anchor/${TrustAnchorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

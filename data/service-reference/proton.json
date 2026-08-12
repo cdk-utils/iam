@@ -1,0 +1,3979 @@
+{
+  "Name": "proton",
+  "Actions": [
+    {
+      "Name": "AcceptEnvironmentAccountConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-account-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelComponentDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelEnvironmentDeployment",
+      "ActionConditionKeys": [
+        "proton:EnvironmentTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelServiceInstanceDeployment",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelServicePipelineDeployment",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateComponent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "proton:EnvironmentTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentAccountConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentTemplateMajorVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentTemplateMinorVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentTemplateVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRepository",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateService",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceTemplateMajorVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceTemplateMinorVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceTemplateVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTemplateSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccountRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "ActionConditionKeys": [
+        "proton:EnvironmentTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentAccountConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-account-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteService",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTemplateSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentAccountConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-account-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRepositorySyncStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceTemplateVersionStatusCounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcesSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceInstanceSyncStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceSyncBlockerSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTemplateSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTemplateSyncStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListComponentOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListComponentProvisionedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentAccountConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentProvisionedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentTemplateMajorVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentTemplateMinorVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentTemplateVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRepositorySyncDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceInstanceOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceInstanceProvisionedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServicePipelineOutputs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServicePipelineProvisionedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceTemplateMajorVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceTemplateMinorVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceTemplateVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "environment-account-connection"
+        },
+        {
+          "Name": "environment-template"
+        },
+        {
+          "Name": "environment-template-major-version"
+        },
+        {
+          "Name": "environment-template-minor-version"
+        },
+        {
+          "Name": "environment-template-version"
+        },
+        {
+          "Name": "repository"
+        },
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        },
+        {
+          "Name": "service-template"
+        },
+        {
+          "Name": "service-template-major-version"
+        },
+        {
+          "Name": "service-template-minor-version"
+        },
+        {
+          "Name": "service-template-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyResourceDeploymentStatusChange",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectEnvironmentAccountConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-account-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "environment-account-connection"
+        },
+        {
+          "Name": "environment-template"
+        },
+        {
+          "Name": "environment-template-major-version"
+        },
+        {
+          "Name": "environment-template-minor-version"
+        },
+        {
+          "Name": "environment-template-version"
+        },
+        {
+          "Name": "repository"
+        },
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        },
+        {
+          "Name": "service-template"
+        },
+        {
+          "Name": "service-template-major-version"
+        },
+        {
+          "Name": "service-template-minor-version"
+        },
+        {
+          "Name": "service-template-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "environment"
+        },
+        {
+          "Name": "environment-account-connection"
+        },
+        {
+          "Name": "environment-template"
+        },
+        {
+          "Name": "environment-template-major-version"
+        },
+        {
+          "Name": "environment-template-minor-version"
+        },
+        {
+          "Name": "environment-template-version"
+        },
+        {
+          "Name": "repository"
+        },
+        {
+          "Name": "service"
+        },
+        {
+          "Name": "service-instance"
+        },
+        {
+          "Name": "service-template"
+        },
+        {
+          "Name": "service-template-major-version"
+        },
+        {
+          "Name": "service-template-minor-version"
+        },
+        {
+          "Name": "service-template-version"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "ActionConditionKeys": [
+        "proton:EnvironmentTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentAccountConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-account-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateService",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceInstance",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServicePipeline",
+      "ActionConditionKeys": [
+        "proton:ServiceTemplate"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceSyncBlocker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceTemplateMajorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceTemplateMinorVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceTemplateVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service-template"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTemplateSyncConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "proton:EnvironmentTemplate",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "proton:ServiceTemplate",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptEnvironmentAccountConnection",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "accept_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelComponentDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelComponentDeployment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "cancel_component_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelEnvironmentDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelEnvironmentDeployment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "cancel_environment_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelServiceInstanceDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelServiceInstanceDeployment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "cancel_service_instance_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelServicePipelineDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelServicePipelineDeployment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "cancel_service_pipeline_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComponent",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "proton"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "proton.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentAccountConnection",
+          "Service": "proton"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "proton.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentTemplate",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_environment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentTemplateVersion",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_environment_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRepository",
+          "Service": "proton"
+        },
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateService",
+          "Service": "proton"
+        },
+        {
+          "Name": "PassConnection",
+          "Service": "codestar-connections"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceInstance",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_service_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_service_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceTemplate",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_service_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceTemplateVersion",
+          "Service": "proton"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_service_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTemplateSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTemplateSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "create_template_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComponent",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeployment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentAccountConnection",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_environment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_environment_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRepository",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteService",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_service_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_service_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_service_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTemplateSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTemplateSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "delete_template_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountSettings",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "proton"
+        },
+        {
+          "Name": "GetDeployment",
+          "Service": "proton"
+        },
+        {
+          "Name": "GetEnvironment",
+          "Service": "proton"
+        },
+        {
+          "Name": "GetService",
+          "Service": "proton"
+        },
+        {
+          "Name": "GetServiceInstance",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentAccountConnection",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_environment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_environment_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRepository",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRepositorySyncStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRepositorySyncStatus",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_repository_sync_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcesSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcesSummary",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_resources_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetService",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceInstance",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceInstanceSyncStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceInstanceSyncStatus",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_instance_sync_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceSyncBlockerSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceSyncBlockerSummary",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_sync_blocker_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_service_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemplateSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTemplateSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_template_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTemplateSyncStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTemplateSyncStatus",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "get_template_sync_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponentOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponentOutputs",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_component_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponentProvisionedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponentProvisionedResources",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_component_provisioned_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeployments",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentAccountConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentAccountConnections",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environment_account_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentOutputs",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environment_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentProvisionedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentProvisionedResources",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environment_provisioned_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentTemplateVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentTemplateVersions",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environment_template_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentTemplates",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environment_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRepositories",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRepositories",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRepositorySyncDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRepositorySyncDefinitions",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_repository_sync_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceInstanceOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceInstanceOutputs",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_instance_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceInstanceProvisionedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceInstanceProvisionedResources",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_instance_provisioned_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceInstances",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServicePipelineOutputs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServicePipelineOutputs",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_pipeline_outputs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServicePipelineProvisionedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServicePipelineProvisionedResources",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_pipeline_provisioned_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceTemplateVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceTemplateVersions",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_template_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceTemplates",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_service_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServices",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyResourceDeploymentStatusChange",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyResourceDeploymentStatusChange",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "notify_resource_deployment_status_change",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectEnvironmentAccountConnection",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "reject_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "proton.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAccountSettings",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateComponent",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "proton.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEnvironment",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentAccountConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "proton.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateEnvironmentAccountConnection",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_environment_account_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_environment_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_environment_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateService",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateService",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceInstance",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServicePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServicePipeline",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceSyncBlocker",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceSyncBlocker",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_sync_blocker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceSyncConfig",
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceTemplate",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceTemplateVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceTemplateVersion",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_service_template_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTemplateSyncConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTemplateSyncConfig",
+          "Service": "proton"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "proton",
+          "Method": "update_template_sync_config",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "component",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:component/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deployment",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:deployment/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment-account-connection",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment-account-connection/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment-template",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment-template/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment-template-major-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment-template-minor-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "environment-template-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersion}.${MinorVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "repository",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:repository/${Provider}:${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-instance",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service/${ServiceName}/service-instance/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-template",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service-template/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-template-major-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-template-minor-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service-template-version",
+      "ARNFormats": [
+        "arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersion}.${MinorVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

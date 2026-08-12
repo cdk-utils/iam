@@ -1,0 +1,600 @@
+{
+  "Name": "iotdeviceadvisor",
+  "Actions": [
+    {
+      "Name": "CreateSuiteDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSuiteDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSuiteDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSuiteRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSuiteRunReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSuiteDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSuiteRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        },
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSuiteRun",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopSuiteRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        },
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        },
+        {
+          "Name": "Suiterun"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSuiteDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Suitedefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateSuiteDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSuiteDefinition",
+          "Service": "iotdeviceadvisor"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotdeviceadvisor.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "create_suite_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSuiteDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSuiteDefinition",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "delete_suite_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEndpoint",
+          "Service": "iotdeviceadvisor"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotdeviceadvisor.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "get_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSuiteDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSuiteDefinition",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "get_suite_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSuiteRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSuiteRun",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "get_suite_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSuiteRunReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSuiteRunReport",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "get_suite_run_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSuiteDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSuiteDefinitions",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "list_suite_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSuiteRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSuiteRuns",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "list_suite_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSuiteRun",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotdeviceadvisor.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSuiteRun",
+          "Service": "iotdeviceadvisor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "start_suite_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopSuiteRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopSuiteRun",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "stop_suite_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSuiteDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotdeviceadvisor.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSuiteDefinition",
+          "Service": "iotdeviceadvisor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotdeviceadvisor",
+          "Method": "update_suite_definition",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Suitedefinition",
+      "ARNFormats": [
+        "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suitedefinition/${SuiteDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Suiterun",
+      "ARNFormats": [
+        "arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suiterun/${SuiteDefinitionId}/${SuiteRunId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

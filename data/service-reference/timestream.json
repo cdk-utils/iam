@@ -1,0 +1,1311 @@
+{
+  "Name": "timestream",
+  "Actions": [
+    {
+      "Name": "CancelQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBatchLoadTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatabase",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateScheduledQuery",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTable",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteScheduledQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduled-query"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBatchLoadTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeScheduledQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduled-query"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteScheduledQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduled-query"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAwsBackupStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAwsRestoreStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBatchLoadTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatabases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMeasures",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListScheduledQueries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTables",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        },
+        {
+          "Name": "scheduled-query"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PrepareQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResumeBatchLoadTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Select",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SelectValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAwsBackupJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAwsRestoreJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        },
+        {
+          "Name": "scheduled-query"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Unload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        },
+        {
+          "Name": "scheduled-query"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateScheduledQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scheduled-query"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "WriteRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelQuery",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "cancel_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBatchLoadTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchLoadTask",
+          "Service": "timestream"
+        },
+        {
+          "Name": "WriteRecords",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "create_batch_load_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatabase",
+          "Service": "timestream"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "create_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateScheduledQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateScheduledQuery",
+          "Service": "timestream"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "create_scheduled_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTable",
+          "Service": "timestream"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "create_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatabase",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "delete_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScheduledQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScheduledQuery",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "delete_scheduled_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTable",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "delete_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountSettings",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "describe_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBatchLoadTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBatchLoadTask",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "describe_batch_load_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatabase",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "describe_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEndpoints",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "describe_endpoints",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "timestream-write",
+          "Method": "describe_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeScheduledQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScheduledQuery",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "describe_scheduled_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTable",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTable",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "describe_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteScheduledQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteScheduledQuery",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "execute_scheduled_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchLoadTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchLoadTasks",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "list_batch_load_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatabases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatabases",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "list_databases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScheduledQueries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScheduledQueries",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "list_scheduled_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTables",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTables",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "list_tables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "timestream-write",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PrepareQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "prepare_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Query",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTable",
+          "Service": "timestream"
+        },
+        {
+          "Name": "ListDatabases",
+          "Service": "timestream"
+        },
+        {
+          "Name": "ListMeasures",
+          "Service": "timestream"
+        },
+        {
+          "Name": "ListTables",
+          "Service": "timestream"
+        },
+        {
+          "Name": "Select",
+          "Service": "timestream"
+        },
+        {
+          "Name": "SelectValues",
+          "Service": "timestream"
+        },
+        {
+          "Name": "Unload",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeBatchLoadTask",
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "resume_batch_load_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "timestream-write",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "timestream-write",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAccountSettings",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "update_account_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDatabase",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "update_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScheduledQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScheduledQuery",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-query",
+          "Method": "update_scheduled_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTable",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "update_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "WriteRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "WriteRecords",
+          "Service": "timestream"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "timestream-write",
+          "Method": "write_records",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "database",
+      "ARNFormats": [
+        "arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "scheduled-query",
+      "ARNFormats": [
+        "arn:${Partition}:timestream:${Region}:${Account}:scheduled-query/${ScheduledQueryName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "table",
+      "ARNFormats": [
+        "arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}/table/${TableName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

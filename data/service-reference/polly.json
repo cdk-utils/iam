@@ -1,0 +1,356 @@
+{
+  "Name": "polly",
+  "Actions": [
+    {
+      "Name": "DeleteLexicon",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVoices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLexicon",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSpeechSynthesisTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLexicons",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSpeechSynthesisTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutLexicon",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSpeechSynthesisStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSpeechSynthesisTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SynthesizeSpeech",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "lexicon"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteLexicon",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLexicon",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "delete_lexicon",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVoices",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVoices",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "describe_voices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLexicon",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLexicon",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "get_lexicon",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSpeechSynthesisTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSpeechSynthesisTask",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "get_speech_synthesis_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLexicons",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLexicons",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "list_lexicons",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSpeechSynthesisTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSpeechSynthesisTasks",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "list_speech_synthesis_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLexicon",
+      "AuthorizedActions": [
+        {
+          "Name": "PutLexicon",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "put_lexicon",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSpeechSynthesisStream",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSpeechSynthesisStream",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "start_speech_synthesis_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSpeechSynthesisTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSpeechSynthesisTask",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "start_speech_synthesis_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SynthesizeSpeech",
+      "AuthorizedActions": [
+        {
+          "Name": "SynthesizeSpeech",
+          "Service": "polly"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "polly",
+          "Method": "synthesize_speech",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "lexicon",
+      "ARNFormats": [
+        "arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

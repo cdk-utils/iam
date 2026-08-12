@@ -1,0 +1,1037 @@
+{
+  "Name": "route53-recovery-control-config",
+  "Actions": [
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateControlPanel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRoutingControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSafetyRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteControlPanel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "controlpanel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRoutingControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "routingcontrol"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSafetyRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeControlPanel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "controlpanel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRoutingControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "routingcontrol"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSafetyRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssociatedRoute53HealthChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "routingcontrol"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControlPanels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRoutingControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "controlpanel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSafetyRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "controlpanel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "controlpanel"
+        },
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "controlpanel"
+        },
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "controlpanel"
+        },
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateControlPanel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "controlpanel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRoutingControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "routingcontrol"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSafetyRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "safetyrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "route53-recovery-control-config"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateControlPanel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateControlPanel",
+          "Service": "route53-recovery-control-config"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "create_control_panel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoutingControl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRoutingControl",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "create_routing_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSafetyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSafetyRule",
+          "Service": "route53-recovery-control-config"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "create_safety_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCluster",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteControlPanel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteControlPanel",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "delete_control_panel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoutingControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRoutingControl",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "delete_routing_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSafetyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSafetyRule",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "delete_safety_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCluster",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "describe_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeControlPanel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeControlPanel",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "describe_control_panel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRoutingControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRoutingControl",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "describe_routing_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSafetyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSafetyRule",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "describe_safety_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedRoute53HealthChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedRoute53HealthChecks",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_associated_route53_health_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControlPanels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControlPanels",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_control_panels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoutingControls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoutingControls",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_routing_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSafetyRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSafetyRules",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_safety_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCluster",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateControlPanel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateControlPanel",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "update_control_panel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRoutingControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRoutingControl",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "update_routing_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSafetyRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSafetyRule",
+          "Service": "route53-recovery-control-config"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53-recovery-control-config",
+          "Method": "update_safety_rule",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-control::${Account}:cluster/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "controlpanel",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "routingcontrol",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}"
+      ]
+    },
+    {
+      "Name": "safetyrule",
+      "ARNFormats": [
+        "arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/safetyrule/${SafetyRuleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

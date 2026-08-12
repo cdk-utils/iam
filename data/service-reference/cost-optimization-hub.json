@@ -1,0 +1,256 @@
+{
+  "Name": "cost-optimization-hub",
+  "Actions": [
+    {
+      "Name": "GetPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEfficiencyMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnrollmentStatuses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommendationSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnrollmentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "GetPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPreferences",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "get_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendation",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "get_recommendation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEfficiencyMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEfficiencyMetrics",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "list_efficiency_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnrollmentStatuses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnrollmentStatuses",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "list_enrollment_statuses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendationSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommendationSummaries",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "list_recommendation_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommendations",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "list_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnrollmentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnrollmentStatus",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "update_enrollment_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePreferences",
+          "Service": "cost-optimization-hub"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cost-optimization-hub",
+          "Method": "update_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

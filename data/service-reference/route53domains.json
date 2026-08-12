@@ -1,0 +1,1066 @@
+{
+  "Name": "route53domains",
+  "Actions": [
+    {
+      "Name": "AcceptDomainTransferFromAnotherAwsAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateDelegationSignerToDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelDomainTransferToAnotherAwsAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckDomainAvailability",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CheckDomainTransferability",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTagsForDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableDomainAutoRenew",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableDomainTransferLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateDelegationSignerFromDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableDomainAutoRenew",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableDomainTransferLock",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetContactReachabilityStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainDetail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainSuggestions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOperationDetail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPrices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PushDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectDomainTransferFromAnotherAwsAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RenewDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResendContactReachabilityEmail",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResendOperationAuthorization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RetrieveDomainAuthCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TransferDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TransferDomainToAnotherAwsAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainContactPrivacy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainNameservers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTagsForDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ViewBilling",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptDomainTransferFromAnotherAwsAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptDomainTransferFromAnotherAwsAccount",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "accept_domain_transfer_from_another_aws_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateDelegationSignerToDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDelegationSignerToDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "associate_delegation_signer_to_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelDomainTransferToAnotherAwsAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelDomainTransferToAnotherAwsAccount",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "cancel_domain_transfer_to_another_aws_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckDomainAvailability",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckDomainAvailability",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "check_domain_availability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CheckDomainTransferability",
+      "AuthorizedActions": [
+        {
+          "Name": "CheckDomainTransferability",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "check_domain_transferability",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTagsForDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTagsForDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "delete_tags_for_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDomainAutoRenew",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDomainAutoRenew",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "disable_domain_auto_renew",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDomainTransferLock",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDomainTransferLock",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "disable_domain_transfer_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDelegationSignerFromDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDelegationSignerFromDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "disassociate_delegation_signer_from_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDomainAutoRenew",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDomainAutoRenew",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "enable_domain_auto_renew",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDomainTransferLock",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDomainTransferLock",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "enable_domain_transfer_lock",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContactReachabilityStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContactReachabilityStatus",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "get_contact_reachability_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainDetail",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainDetail",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "get_domain_detail",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainSuggestions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainSuggestions",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "get_domain_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperationDetail",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperationDetail",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "get_operation_detail",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomains",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "list_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOperations",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "list_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrices",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "list_prices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "list_tags_for_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PushDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "PushDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "push_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHostedZone",
+          "Service": "route53"
+        },
+        {
+          "Name": "RegisterDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "register_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectDomainTransferFromAnotherAwsAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectDomainTransferFromAnotherAwsAccount",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "reject_domain_transfer_from_another_aws_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RenewDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "RenewDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "renew_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResendContactReachabilityEmail",
+      "AuthorizedActions": [
+        {
+          "Name": "ResendContactReachabilityEmail",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "resend_contact_reachability_email",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResendOperationAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "ResendOperationAuthorization",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "resend_operation_authorization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetrieveDomainAuthCode",
+      "AuthorizedActions": [
+        {
+          "Name": "RetrieveDomainAuthCode",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "retrieve_domain_auth_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TransferDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "TransferDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "transfer_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TransferDomainToAnotherAwsAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "TransferDomainToAnotherAwsAccount",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "transfer_domain_to_another_aws_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainContact",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainContact",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "update_domain_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainContactPrivacy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainContactPrivacy",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "update_domain_contact_privacy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainNameservers",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainNameservers",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "update_domain_nameservers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTagsForDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTagsForDomain",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "update_tags_for_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ViewBilling",
+      "AuthorizedActions": [
+        {
+          "Name": "ViewBilling",
+          "Service": "route53domains"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53domains",
+          "Method": "view_billing",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,381 @@
+{
+  "Name": "supportapp",
+  "Actions": [
+    {
+      "Name": "CreateSlackChannelConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccountAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlackChannelConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSlackWorkspaceConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSlackChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSlackOauthParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSlackChannelConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSlackWorkspaceConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAccountAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RedeemSlackOauthCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterSlackWorkspaceForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSlackChannelConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSlackChannelConfiguration",
+          "Service": "supportapp"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "supportapp.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "create_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountAlias",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "delete_account_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlackChannelConfiguration",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "delete_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSlackWorkspaceConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSlackWorkspaceConfiguration",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "delete_slack_workspace_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountAlias",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "get_account_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSlackChannelConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSlackChannelConfigurations",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "list_slack_channel_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSlackWorkspaceConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSlackWorkspaceConfigurations",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "list_slack_workspace_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAccountAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAccountAlias",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "put_account_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterSlackWorkspaceForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterSlackWorkspaceForOrganization",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "register_slack_workspace_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSlackChannelConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "supportapp.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSlackChannelConfiguration",
+          "Service": "supportapp"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "support-app",
+          "Method": "update_slack_channel_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

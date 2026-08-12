@@ -1,0 +1,1215 @@
+{
+  "Name": "detective",
+  "Actions": [
+    {
+      "Name": "AcceptInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetGraphMemberDatasources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetMembershipDatasources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGraph",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGraph",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFreeTrialEligibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGraphIngestState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvestigation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPricingInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUsageInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeAssistant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasourcePackages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGraphs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHighDegreeEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIndicators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvestigations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMembers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchGraph",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartInvestigation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMonitoringMember",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDatasourcePackages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInvestigationState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Graph"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptInvitation",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "accept_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetGraphMemberDatasources",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetGraphMemberDatasources",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "batch_get_graph_member_datasources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetMembershipDatasources",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetMembershipDatasources",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "batch_get_membership_datasources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGraph",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGraph",
+          "Service": "detective"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "create_graph",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMembers",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "create_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGraph",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGraph",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "delete_graph",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMembers",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "delete_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationConfiguration",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "describe_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableOrganizationAdminAccount",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "disable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMembership",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "disassociate_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceLinkedRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "EnableAWSServiceAccess",
+          "Service": "organizations"
+        },
+        {
+          "Name": "EnableOrganizationAdminAccount",
+          "Service": "detective"
+        },
+        {
+          "Name": "RegisterDelegatedAdministrator",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "enable_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvestigation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvestigation",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "get_investigation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMembers",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "get_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasourcePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasourcePackages",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_datasource_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGraphs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGraphs",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_graphs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndicators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndicators",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_indicators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvestigations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvestigations",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_investigations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvitations",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMembers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMembers",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_members",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationAdminAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationAdminAccount",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_organization_admin_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectInvitation",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "reject_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartInvestigation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartInvestigation",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "start_investigation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMonitoringMember",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMonitoringMember",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "start_monitoring_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDatasourcePackages",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDatasourcePackages",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "update_datasource_packages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInvestigationState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInvestigationState",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "update_investigation_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOrganizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOrganizationConfiguration",
+          "Service": "detective"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "detective",
+          "Method": "update_organization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Graph",
+      "ARNFormats": [
+        "arn:${Partition}:detective:${Region}:${Account}:graph:${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

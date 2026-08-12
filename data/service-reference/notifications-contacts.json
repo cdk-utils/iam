@@ -1,0 +1,364 @@
+{
+  "Name": "notifications-contacts",
+  "Actions": [
+    {
+      "Name": "ActivateEmailContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEmailContact",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEmailContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEmailContact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEmailContacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendActivationCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EmailContactResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ActivateEmailContact",
+      "AuthorizedActions": [
+        {
+          "Name": "ActivateEmailContact",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "activate_email_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEmailContact",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEmailContact",
+          "Service": "notifications-contacts"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "create_email_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEmailContact",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEmailContact",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "delete_email_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEmailContact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEmailContact",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "get_email_contact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEmailContacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEmailContacts",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "list_email_contacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendActivationCode",
+      "AuthorizedActions": [
+        {
+          "Name": "SendActivationCode",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "send_activation_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "notifications-contacts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "notificationscontacts",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "EmailContactResource",
+      "ARNFormats": [
+        "arn:${Partition}:notifications-contacts::${Account}:emailcontact/${EmailContactId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

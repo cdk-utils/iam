@@ -1,0 +1,1796 @@
+{
+  "Name": "route53globalresolver",
+  "Actions": [
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-resolver",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateHostedZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchCreateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessToken",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDNSView",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFirewallDomainList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        },
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGlobalResolver",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDNSView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFirewallDomainList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGlobalResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableDNSView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateHostedZone",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableDNSView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDNSView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFirewallDomainList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGlobalResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHostedZoneAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedFirewallDomainList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccessSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccessTokens",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDNSViews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFirewallDomainLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFirewallRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGlobalResolvers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHostedZoneAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedFirewallDomainLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        },
+        {
+          "Name": "access-token"
+        },
+        {
+          "Name": "dns-view"
+        },
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        },
+        {
+          "Name": "access-token"
+        },
+        {
+          "Name": "dns-view"
+        },
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        },
+        {
+          "Name": "access-token"
+        },
+        {
+          "Name": "dns-view"
+        },
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-source"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-token"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDNSView",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dns-view"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGlobalResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateHostedZoneAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateHostedZone",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateHostedZone",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "associate_hosted_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "batch_create_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "batch_delete_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "batch_update_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessSource",
+          "Service": "route53globalresolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_access_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessToken",
+          "Service": "route53globalresolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDNSView",
+          "Service": "route53globalresolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallDomainList",
+          "Service": "route53globalresolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGlobalResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGlobalResolver",
+          "Service": "route53globalresolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "create_global_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessSource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_access_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessToken",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDNSView",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallDomainList",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGlobalResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGlobalResolver",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "delete_global_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableDNSView",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "disable_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateHostedZone",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateHostedZone",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "disassociate_hosted_zone",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableDNSView",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "enable_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessSource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_access_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessToken",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDNSView",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallDomainList",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGlobalResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGlobalResolver",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_global_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHostedZoneAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHostedZoneAssociation",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_hosted_zone_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedFirewallDomainList",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "get_managed_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportFirewallDomains",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "import_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessSources",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_access_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessTokens",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessTokens",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_access_tokens",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDNSViews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDNSViews",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_dns_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallDomainLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallDomainLists",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_firewall_domain_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallDomains",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRules",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_firewall_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGlobalResolvers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGlobalResolvers",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_global_resolvers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHostedZoneAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHostedZoneAssociations",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_hosted_zone_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedFirewallDomainLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedFirewallDomainLists",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_managed_firewall_domain_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSharedDNSViews",
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_shared_dns_views",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessSource",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_access_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessToken",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessToken",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_access_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDNSView",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDNSView",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_dns_view",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallDomains",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallRule",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGlobalResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGlobalResolver",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_global_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHostedZoneAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHostedZoneAssociation",
+          "Service": "route53globalresolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53globalresolver",
+          "Method": "update_hosted_zone_association",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "access-source",
+      "ARNFormats": [
+        "arn:${Partition}:route53globalresolver::${Account}:access-source/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "access-token",
+      "ARNFormats": [
+        "arn:${Partition}:route53globalresolver::${Account}:access-token/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dns-view",
+      "ARNFormats": [
+        "arn:${Partition}:route53globalresolver::${Account}:dns-view/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "firewall-domain-list",
+      "ARNFormats": [
+        "arn:${Partition}:route53globalresolver::${Account}:firewall-domain-list/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "global-resolver",
+      "ARNFormats": [
+        "arn:${Partition}:route53globalresolver::${Account}:global-resolver/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

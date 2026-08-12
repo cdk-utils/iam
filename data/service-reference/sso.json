@@ -1,0 +1,4365 @@
+{
+  "Name": "sso",
+  "Actions": [
+    {
+      "Name": "AddRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachCustomerManagedPolicyReferenceToPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachManagedPolicyToPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccountAssignment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "ApplicationProvider"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplicationAssignment",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplicationInstanceCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInstanceAccessControlAttributeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateManagedApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePermissionSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTrust",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTrustedTokenIssuer",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "TrustedTokenIssuer",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccountAssignment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationAccessScope",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationAssignment",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationAuthenticationMethod",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationGrant",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplicationInstanceCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInlinePolicyFromPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInstanceAccessControlAttributeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteManagedApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePermissionsBoundaryFromPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTrustedTokenIssuer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TrustedTokenIssuer",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAccountAssignmentCreationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAccountAssignmentDeletionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplication",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplicationAssignment",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplicationProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationProvider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeInstanceAccessControlAttributeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePermissionSetProvisioningStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRegisteredRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTrustedTokenIssuer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TrustedTokenIssuer",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachCustomerManagedPolicyReferenceFromPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachManagedPolicyFromPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationAccessScope",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationAssignmentConfiguration",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationAuthenticationMethod",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationGrant",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationSessionConfiguration",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplicationTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInlinePolicyForPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedApplicationInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMfaDeviceManagementForDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPermissionsBoundaryForPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSSOStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSharedSsoConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSsoConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTrust",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportApplicationInstanceServiceProviderMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountAssignmentCreationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountAssignmentDeletionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountAssignments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountAssignmentsForPrincipal",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountsForProvisionedPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationAccessScopes",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationAssignments",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationAssignmentsForPrincipal",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationAuthenticationMethods",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationGrants",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationInstanceCertificates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationProviders",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationProvider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplicationTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomerManagedPolicyReferencesInPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDirectoryAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedPoliciesInPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPermissionSetProvisioningStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPermissionSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPermissionSetsProvisionedToAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfileAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "PermissionSet"
+        },
+        {
+          "Name": "TrustedTokenIssuer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTrustedTokenIssuers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ProvisionPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutApplicationAccessScope",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutApplicationAssignmentConfiguration",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutApplicationAuthenticationMethod",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutApplicationGrant",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutApplicationSessionConfiguration",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutInlinePolicyToPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMfaDeviceManagementForDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPermissionsBoundaryToPermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPermissionsPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSSO",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "PermissionSet"
+        },
+        {
+          "Name": "TrustedTokenIssuer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Instance"
+        },
+        {
+          "Name": "PermissionSet"
+        },
+        {
+          "Name": "TrustedTokenIssuer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "ActionConditionKeys": [
+        "sso:ApplicationAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceActiveCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceDisplayData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceResponseConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceResponseSchemaConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceSecurityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceServiceProviderConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplicationInstanceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInstanceAccessControlAttributeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateManagedApplicationInstanceStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePermissionSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Instance",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        },
+        {
+          "Name": "PermissionSet",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSSOConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTrust",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTrustedTokenIssuer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TrustedTokenIssuer",
+          "ConditionKeys": [
+            "sso:PrimaryRegion"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "identitycenter:ApplicationArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "identitycenter:InstanceArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "sso:ApplicationAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "sso:PrimaryRegion",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "AddRegion",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "add_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachCustomerManagedPolicyReferenceToPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachCustomerManagedPolicyReferenceToPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "attach_customer_managed_policy_reference_to_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachManagedPolicyToPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachManagedPolicyToPermissionSet",
+          "Service": "sso"
+        },
+        {
+          "Name": "PutPermissionsPolicy",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "attach_managed_policy_to_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccountAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateAccountAssignment",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateTrust",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetTrust",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateTrust",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_account_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateManagedApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "PutApplicationAssignmentConfiguration",
+          "Service": "sso"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplicationAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "CreateApplicationAssignment",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_application_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstanceAccessControlAttributeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstanceAccessControlAttributeConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_instance_access_control_attribute_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePermissionSet",
+          "Service": "sso"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTrustedTokenIssuer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTrustedTokenIssuer",
+          "Service": "sso"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "create_trusted_token_issuer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountAssignment",
+          "Service": "sso"
+        },
+        {
+          "Name": "DeleteProfile",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_account_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "sso"
+        },
+        {
+          "Name": "DeleteApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "DeleteManagedApplicationInstance",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplicationAccessScope",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationAccessScope",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_application_access_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplicationAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationAssignment",
+          "Service": "sso"
+        },
+        {
+          "Name": "DisassociateProfile",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_application_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplicationAuthenticationMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationAuthenticationMethod",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_application_authentication_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplicationGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationGrant",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_application_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInlinePolicyFromPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInlinePolicyFromPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_inline_policy_from_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "StartSSO",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstanceAccessControlAttributeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstanceAccessControlAttributeConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_instance_access_control_attribute_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermissionsBoundaryFromPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermissionsBoundaryFromPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_permissions_boundary_from_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTrustedTokenIssuer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTrustedTokenIssuer",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "delete_trusted_token_issuer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountAssignmentCreationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountAssignmentCreationStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_account_assignment_creation_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountAssignmentDeletionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountAssignmentDeletionStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_account_assignment_deletion_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplication",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetManagedApplicationInstance",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplicationAssignment",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationAssignment",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_application_assignment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplicationProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationProvider",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetApplicationTemplate",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_application_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetSharedSsoConfiguration",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListDirectoryAssociations",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInstanceAccessControlAttributeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstanceAccessControlAttributeConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_instance_access_control_attribute_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePermissionSet",
+          "Service": "sso"
+        },
+        {
+          "Name": "GetPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePermissionSetProvisioningStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePermissionSetProvisioningStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_permission_set_provisioning_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRegion",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTrustedTokenIssuer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTrustedTokenIssuer",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "describe_trusted_token_issuer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachCustomerManagedPolicyReferenceFromPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachCustomerManagedPolicyReferenceFromPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "detach_customer_managed_policy_reference_from_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachManagedPolicyFromPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachManagedPolicyFromPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "detach_managed_policy_from_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationAccessScope",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationAccessScope",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_application_access_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationAssignmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationAssignmentConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_application_assignment_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationAuthenticationMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationAuthenticationMethod",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_application_authentication_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationGrant",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_application_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationSessionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationSessionConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_application_session_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInlinePolicyForPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInlinePolicyForPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_inline_policy_for_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPermissionsBoundaryForPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPermissionsBoundaryForPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "get_permissions_boundary_for_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoleCredentials",
+      "SDK": [
+        {
+          "Name": "sso",
+          "Method": "get_role_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountAssignmentCreationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountAssignmentCreationStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_account_assignment_creation_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountAssignmentDeletionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountAssignmentDeletionStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_account_assignment_deletion_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountAssignments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountAssignments",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListProfileAssociations",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_account_assignments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountAssignmentsForPrincipal",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountAssignmentsForPrincipal",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_account_assignments_for_principal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountRoles",
+      "SDK": [
+        {
+          "Name": "sso",
+          "Method": "list_account_roles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccounts",
+      "SDK": [
+        {
+          "Name": "sso",
+          "Method": "list_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountsForProvisionedPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListAccountsForProvisionedPermissionSet",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplicationInstances",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_accounts_for_provisioned_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationAccessScopes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationAccessScopes",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_access_scopes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationAssignments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationAssignments",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListProfileAssociations",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_assignments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationAssignmentsForPrincipal",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationAssignmentsForPrincipal",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_assignments_for_principal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationAuthenticationMethods",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationAuthenticationMethods",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_authentication_methods",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationGrants",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationProviders",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationTemplate",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplicationProviders",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplicationTemplates",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_application_providers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplicationInstances",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplicationProviders",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListApplications",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomerManagedPolicyReferencesInPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomerManagedPolicyReferencesInPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_customer_managed_policy_references_in_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstances",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedPoliciesInPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedPoliciesInPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_managed_policies_in_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionSetProvisioningStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissionSetProvisioningStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_permission_set_provisioning_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissionSets",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_permission_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionSetsProvisionedToAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfile",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListPermissionSetsProvisionedToAccount",
+          "Service": "sso"
+        },
+        {
+          "Name": "ListProfiles",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_permission_sets_provisioned_to_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegions",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTrustedTokenIssuers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrustedTokenIssuers",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "list_trusted_token_issuers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Logout",
+      "SDK": [
+        {
+          "Name": "sso",
+          "Method": "logout",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ProvisionPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "ProvisionPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "provision_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApplicationAccessScope",
+      "AuthorizedActions": [
+        {
+          "Name": "PutApplicationAccessScope",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_application_access_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApplicationAssignmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutApplicationAssignmentConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_application_assignment_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApplicationAuthenticationMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateManagedApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "PutApplicationAuthenticationMethod",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_application_authentication_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApplicationGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateManagedApplicationInstance",
+          "Service": "sso"
+        },
+        {
+          "Name": "PutApplicationGrant",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_application_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutApplicationSessionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutApplicationSessionConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_application_session_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutInlinePolicyToPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "PutInlinePolicyToPermissionSet",
+          "Service": "sso"
+        },
+        {
+          "Name": "PutPermissionsPolicy",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_inline_policy_to_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPermissionsBoundaryToPermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPermissionsBoundaryToPermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "put_permissions_boundary_to_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveRegion",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "remove_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "PutApplicationAssignmentConfiguration",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateApplication",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateApplicationInstanceDisplayData",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateApplicationInstanceStatus",
+          "Service": "sso"
+        },
+        {
+          "Name": "UpdateManagedApplicationInstanceStatus",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstance",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "update_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstanceAccessControlAttributeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstanceAccessControlAttributeConfiguration",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "update_instance_access_control_attribute_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePermissionSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePermissionSet",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "update_permission_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTrustedTokenIssuer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTrustedTokenIssuer",
+          "Service": "sso"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sso-admin",
+          "Method": "update_trusted_token_issuer",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Account",
+      "ARNFormats": [
+        "arn:${Partition}:sso:::account/${AccountId}"
+      ]
+    },
+    {
+      "Name": "Application",
+      "ARNFormats": [
+        "arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sso:ApplicationAccount",
+        "sso:PrimaryRegion"
+      ]
+    },
+    {
+      "Name": "ApplicationProvider",
+      "ARNFormats": [
+        "arn:${Partition}:sso::aws:applicationProvider/${ApplicationProviderId}"
+      ]
+    },
+    {
+      "Name": "Instance",
+      "ARNFormats": [
+        "arn:${Partition}:sso:::instance/${InstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sso:PrimaryRegion"
+      ]
+    },
+    {
+      "Name": "PermissionSet",
+      "ARNFormats": [
+        "arn:${Partition}:sso:::permissionSet/${InstanceId}/${PermissionSetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sso:PrimaryRegion"
+      ]
+    },
+    {
+      "Name": "TrustedTokenIssuer",
+      "ARNFormats": [
+        "arn:${Partition}:sso::${AccountId}:trustedTokenIssuer/${InstanceId}/${TrustedTokenIssuerId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sso:PrimaryRegion"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,6948 @@
+{
+  "Name": "datazone",
+  "Actions": [
+    {
+      "Name": "AcceptPredictions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AcceptSubscriptionRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddEntityOwner",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddPolicyGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateEnvironmentRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateGovernedTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteLinkedTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetAttributesMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCellRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchPutAttributesMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchPutLinkedTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelMetadataGenerationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccountPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAssetFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAssetRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAssetType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCellRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataProductRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDesignation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDomain",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDomainUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentBlueprint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFormType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGlossary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGlossaryTerm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGroupProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateListingChangeSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateNotebook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProjectMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProjectProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscriptionGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscriptionRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSubscriptionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUserProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccountPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAssetFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAssetType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCellRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataExportConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDesignation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDomainSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDomainUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentBlueprint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentBlueprintConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFormType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGlossary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGlossaryTerm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLineageEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteListing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteNotebook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProjectMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProjectProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSubscriptionGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSubscriptionRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSubscriptionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTimeSeriesDataPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateEnvironmentRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateGovernedTerms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccountPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssetFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssetType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCellRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCellRunResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConversation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCurrentEffectivePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataExportConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSourceRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDesignation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainExecutionRoleCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDomainUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentActionLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentBlueprint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentBlueprintConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironmentProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFormType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGlossary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGlossaryTerm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGroupProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIamPortalLoginUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetJobRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLineageEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLineageNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetListing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMetadataGenerationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotebook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotebookCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotebookExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNotebookRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProjectProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscriptionEligibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscriptionGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscriptionRequestDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSubscriptionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTimeSeriesDataPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUpdateEligibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUserProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountPools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountsInAccountPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssetFilters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssetRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCellRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConversations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataProductRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSourceRunActivities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSourceRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDesignations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDomainUnitsForParent",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEntityOwners",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentBlueprintConfigurationSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentBlueprintConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentBlueprints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGroupsForUser",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListJobRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLineageEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLineageNodeHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLinkedTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMetadataGenerationRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotebookRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotebooks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPolicyGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProjectMemberships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProjectProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptionGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptionRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptionTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTimeSeriesDataPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWarehouseMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostLineageEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostTimeSeriesDataPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ProvisionDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutCellRunResult",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDataExportConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDomainSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutEnvironmentBlueprintConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "QueryGraph",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RefreshToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectPredictions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectSubscriptionRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveEntityOwner",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemovePolicyGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Search",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchGroupProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchListings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchUserProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SsoLogin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SsoLogout",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAccountBootstrapAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartConversation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDataSourceRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartMetadataGenerationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookSync",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopMetadataGenerationRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopNotebookCompute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopNotebookRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAssetFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCell",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCellRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataSourceRunActivities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDesignation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentBlueprint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentDeploymentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGlossary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGlossaryTerm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGroupProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNotebook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProjectProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubscriptionGrantStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubscriptionRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSubscriptionTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateUserProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ValidatePassRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ValidatePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "datazone:domainId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "datazone:projectId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "datazone:userId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptPredictions",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptPredictions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "accept_predictions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcceptSubscriptionRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptSubscriptionRequest",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "accept_subscription_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddEntityOwner",
+      "AuthorizedActions": [
+        {
+          "Name": "AddEntityOwner",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "add_entity_owner",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddPolicyGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "AddPolicyGrant",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "add_policy_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateEnvironmentRole",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateEnvironmentRole",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "associate_environment_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateGovernedTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateGovernedTerms",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "associate_governed_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAttributesMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAttributesMetadata",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "batch_get_attributes_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutAttributesMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutAttributesMetadata",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "batch_put_attributes_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMetadataGenerationRun",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelMetadataGenerationRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "cancel_metadata_generation_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSubscription",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "cancel_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccountPool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccountPool",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_account_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAsset",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssetFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssetFilter",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_asset_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssetRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssetRevision",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_asset_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssetType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssetType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_asset_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnection",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataProduct",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_data_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataProductRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataProductRevision",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_data_product_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSource",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomain",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainUnit",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_domain_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentAction",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_environment_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentBlueprint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentBlueprint",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_environment_blueprint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_environment_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFormType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFormType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_form_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGlossary",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGlossary",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_glossary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGlossaryTerm",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGlossaryTerm",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_glossary_term",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroupProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroupProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_group_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateListingChangeSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateListingChangeSet",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_listing_change_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNotebook",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNotebook",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_notebook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProject",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProjectMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProjectMembership",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_project_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProjectProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProjectProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_project_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRule",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriptionGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriptionGrant",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_subscription_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriptionRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriptionRequest",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_subscription_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriptionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriptionTarget",
+          "Service": "datazone"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_subscription_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUserProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUserProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "create_user_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountPool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountPool",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_account_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAsset",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssetFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssetFilter",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_asset_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssetType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssetType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_asset_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnection",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataExportConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataExportConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_data_export_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataProduct",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_data_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomain",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainUnit",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_domain_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentAction",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_environment_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentBlueprint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentBlueprint",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_environment_blueprint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentBlueprintConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentBlueprintConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_environment_blueprint_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_environment_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFormType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFormType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_form_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGlossary",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGlossary",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_glossary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGlossaryTerm",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGlossaryTerm",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_glossary_term",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLineageEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLineageEvent",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_lineage_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteListing",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteListing",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_listing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNotebook",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNotebook",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_notebook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProject",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProjectMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProjectMembership",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_project_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProjectProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProjectProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_project_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRule",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriptionGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriptionGrant",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_subscription_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriptionRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriptionRequest",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_subscription_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriptionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriptionTarget",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_subscription_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTimeSeriesDataPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTimeSeriesDataPoints",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "delete_time_series_data_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateEnvironmentRole",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateEnvironmentRole",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "disassociate_environment_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateGovernedTerms",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateGovernedTerms",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "disassociate_governed_terms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountPool",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountPool",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_account_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAsset",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetFilter",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_asset_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_asset_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnection",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataExportConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataExportConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_data_export_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataProduct",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_data_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSourceRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSourceRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_data_source_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomain",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainUnit",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_domain_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentAction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentAction",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentBlueprint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentBlueprint",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment_blueprint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentBlueprintConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentBlueprintConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment_blueprint_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentCredentials",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironmentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironmentProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_environment_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFormType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFormType",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_form_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGlossary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGlossary",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_glossary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGlossaryTerm",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGlossaryTerm",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_glossary_term",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_group_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIamPortalLoginUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIamPortalLoginUrl",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_iam_portal_login_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_job_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLineageEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLineageEvent",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_lineage_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLineageNode",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLineageNode",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_lineage_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetListing",
+      "AuthorizedActions": [
+        {
+          "Name": "GetListing",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_listing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMetadataGenerationRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetadataGenerationRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_metadata_generation_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotebook",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotebook",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_notebook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotebookExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotebookExport",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_notebook_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotebookRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotebookRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_notebook_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProject",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProject",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProjectProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProjectProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_project_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRule",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscription",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionGrant",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_subscription_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionRequestDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionRequestDetails",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_subscription_request_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionTarget",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_subscription_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTimeSeriesDataPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTimeSeriesDataPoint",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_time_series_data_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUserProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "get_user_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountPools",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountPools",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_account_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountsInAccountPool",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountsInAccountPool",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_accounts_in_account_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetFilters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetFilters",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_asset_filters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetRevisions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_asset_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnections",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataProductRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataProductRevisions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_data_product_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSourceRunActivities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSourceRunActivities",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_data_source_run_activities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSourceRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSourceRuns",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_data_source_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSources",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainUnitsForParent",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainUnitsForParent",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_domain_units_for_parent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomains",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntityOwners",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityOwners",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_entity_owners",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentActions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_environment_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentBlueprintConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentBlueprintConfigurations",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_environment_blueprint_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentBlueprints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentBlueprints",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_environment_blueprints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentProfiles",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_environment_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobRuns",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_job_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLineageEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLineageEvents",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_lineage_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLineageNodeHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLineageNodeHistory",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_lineage_node_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMetadataGenerationRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMetadataGenerationRuns",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_metadata_generation_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotebookRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotebookRuns",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_notebook_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotebooks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotebooks",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_notebooks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotifications",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPolicyGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPolicyGrants",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_policy_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjectMemberships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjectMemberships",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_project_memberships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjectProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjectProfiles",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_project_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjects",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRules",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptionGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptionGrants",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_subscription_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptionRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptionRequests",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_subscription_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptionTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptionTargets",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_subscription_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTimeSeriesDataPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTimeSeriesDataPoints",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "list_time_series_data_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostLineageEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "PostLineageEvent",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "post_lineage_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostTimeSeriesDataPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "PostTimeSeriesDataPoints",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "post_time_series_data_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDataExportConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDataExportConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "put_data_export_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEnvironmentBlueprintConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutEnvironmentBlueprintConfiguration",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "put_environment_blueprint_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "QueryGraph",
+      "AuthorizedActions": [
+        {
+          "Name": "QueryGraph",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "query_graph",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectPredictions",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectPredictions",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "reject_predictions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectSubscriptionRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectSubscriptionRequest",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "reject_subscription_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveEntityOwner",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveEntityOwner",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "remove_entity_owner",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemovePolicyGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "RemovePolicyGrant",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "remove_policy_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeSubscription",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "revoke_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Search",
+      "AuthorizedActions": [
+        {
+          "Name": "Search",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchGroupProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchGroupProfiles",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "search_group_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchListings",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchListings",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "search_listings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchTypes",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "search_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchUserProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchUserProfiles",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "search_user_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataSourceRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDataSourceRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_data_source_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMetadataGenerationRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMetadataGenerationRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_metadata_generation_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNotebookExport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNotebookExport",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_notebook_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNotebookImport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNotebookImport",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_notebook_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNotebookRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNotebookRun",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_notebook_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNotebookSync",
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "start_notebook_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopNotebookRun",
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "stop_notebook_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccountPool",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAccountPool",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_account_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssetFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssetFilter",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_asset_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnection",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataSource",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDomain",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainUnit",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_domain_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironment",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentAction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentAction",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_environment_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentBlueprint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentBlueprint",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_environment_blueprint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_environment_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGlossary",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGlossary",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_glossary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGlossaryTerm",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGlossaryTerm",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_glossary_term",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroupProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroupProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_group_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNotebook",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNotebook",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_notebook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProject",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProjectProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProjectProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_project_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRootDomainUnitOwner",
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_root_domain_unit_owner",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRule",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriptionGrantStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscriptionGrantStatus",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_subscription_grant_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriptionRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscriptionRequest",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_subscription_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriptionTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datazone.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateSubscriptionTarget",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_subscription_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUserProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUserProfile",
+          "Service": "datazone"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datazone",
+          "Method": "update_user_profile",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "domain",
+      "ARNFormats": [
+        "arn:${Partition}:datazone:${Region}:${Account}:domain/${DomainId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

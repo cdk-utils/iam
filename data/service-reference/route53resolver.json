@@ -1,0 +1,2742 @@
+{
+  "Name": "route53resolver",
+  "Actions": [
+    {
+      "Name": "AssociateFirewallRuleGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResolverEndpointIpAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResolverQueryLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResolverRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFirewallDomainList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFirewallRuleGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOutpostResolver",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateResolverEndpoint",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResolverQueryLogConfig",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResolverRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFirewallDomainList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFirewallRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOutpostResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResolverEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResolverQueryLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResolverRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateFirewallRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResolverEndpointIpAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResolverQueryLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResolverRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFirewallConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFirewallDomainList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFirewallRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFirewallRuleGroupAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFirewallRuleGroupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOutpostResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverDnssecConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-dnssec-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverQueryLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverQueryLogConfigAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverQueryLogConfigPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autodefined-rule"
+        },
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverRuleAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autodefined-rule"
+        },
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolverRulePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallDomainLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallRuleGroupAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallRuleGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallRuleTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFirewallRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOutpostResolvers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverDnssecConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-dnssec-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverEndpointIpAddresses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverQueryLogConfigAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverQueryLogConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverRuleAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolverRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        },
+        {
+          "Name": "firewall-rule-group-association"
+        },
+        {
+          "Name": "outpost-resolver"
+        },
+        {
+          "Name": "resolver-endpoint"
+        },
+        {
+          "Name": "resolver-query-log-config"
+        },
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFirewallRuleGroupPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResolverQueryLogConfigPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-query-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResolverRulePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-config"
+        },
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        },
+        {
+          "Name": "firewall-rule-group-association"
+        },
+        {
+          "Name": "outpost-resolver"
+        },
+        {
+          "Name": "resolver-dnssec-config"
+        },
+        {
+          "Name": "resolver-endpoint"
+        },
+        {
+          "Name": "resolver-query-log-config"
+        },
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-config"
+        },
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        },
+        {
+          "Name": "firewall-rule-group-association"
+        },
+        {
+          "Name": "outpost-resolver"
+        },
+        {
+          "Name": "resolver-dnssec-config"
+        },
+        {
+          "Name": "resolver-endpoint"
+        },
+        {
+          "Name": "resolver-query-log-config"
+        },
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFirewallConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFirewallDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFirewallRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-domain-list"
+        },
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFirewallRuleGroupAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOutpostResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "outpost-resolver"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResolverConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResolverDnssecConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-dnssec-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResolverEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-endpoint"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResolverRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resolver-rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateFirewallRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFirewallRuleGroup",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "associate_firewall_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResolverEndpointIpAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResolverEndpointIpAddress",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "associate_resolver_endpoint_ip_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResolverQueryLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResolverQueryLogConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "associate_resolver_query_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResolverRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "associate_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "batch_create_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "batch_delete_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "batch_update_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallDomainList",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFirewallRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFirewallRuleGroup",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_firewall_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOutpostResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOutpostResolver",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_outpost_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResolverEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResolverEndpoint",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_resolver_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResolverQueryLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResolverQueryLogConfig",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_resolver_query_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResolverRule",
+          "Service": "route53resolver"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "create_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallDomainList",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFirewallRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFirewallRuleGroup",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_firewall_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOutpostResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOutpostResolver",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_outpost_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResolverEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResolverEndpoint",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_resolver_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResolverQueryLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResolverQueryLogConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_resolver_query_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResolverRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "delete_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFirewallRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFirewallRuleGroup",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "disassociate_firewall_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResolverEndpointIpAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResolverEndpointIpAddress",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "disassociate_resolver_endpoint_ip_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResolverQueryLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResolverQueryLogConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "disassociate_resolver_query_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResolverRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "disassociate_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_firewall_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallDomainList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallDomainList",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_firewall_domain_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallRuleGroup",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_firewall_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallRuleGroupAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallRuleGroupAssociation",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_firewall_rule_group_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFirewallRuleGroupPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFirewallRuleGroupPolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_firewall_rule_group_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOutpostResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOutpostResolver",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_outpost_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverDnssecConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverDnssecConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_dnssec_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverEndpoint",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverQueryLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverQueryLogConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_query_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverQueryLogConfigAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverQueryLogConfigAssociation",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_query_log_config_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverQueryLogConfigPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverQueryLogConfigPolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_query_log_config_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverRuleAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverRuleAssociation",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_rule_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolverRulePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolverRulePolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "get_resolver_rule_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportFirewallDomains",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "import_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallConfigs",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallDomainLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallDomainLists",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_domain_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallDomains",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRuleGroupAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRuleGroupAssociations",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_rule_group_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRuleGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRuleGroups",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRuleTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRuleTypes",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_rule_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRules",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOutpostResolvers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOutpostResolvers",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_outpost_resolvers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverConfigs",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverDnssecConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverDnssecConfigs",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_dnssec_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverEndpointIpAddresses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverEndpointIpAddresses",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_endpoint_ip_addresses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverEndpoints",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverQueryLogConfigAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverQueryLogConfigAssociations",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_query_log_config_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverQueryLogConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverQueryLogConfigs",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_query_log_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverRuleAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverRuleAssociations",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_rule_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolverRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolverRules",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_resolver_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFirewallRuleGroupPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFirewallRuleGroupPolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "put_firewall_rule_group_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResolverQueryLogConfigPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResolverQueryLogConfigPolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "put_resolver_query_log_config_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResolverRulePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResolverRulePolicy",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "put_resolver_rule_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_firewall_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallDomains",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_firewall_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFirewallRuleGroupAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFirewallRuleGroupAssociation",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_firewall_rule_group_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOutpostResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOutpostResolver",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_outpost_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolverConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolverConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_resolver_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolverDnssecConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolverDnssecConfig",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_resolver_dnssec_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolverEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolverEndpoint",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_resolver_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolverRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolverRule",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "update_resolver_rule",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "autodefined-rule",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:autodefined-rule/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "firewall-config",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:firewall-config/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "firewall-domain-list",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:firewall-domain-list/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "firewall-rule-group",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:firewall-rule-group/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "firewall-rule-group-association",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:firewall-rule-group-association/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "outpost-resolver",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:outpost-resolver/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resolver-config",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:resolver-config/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "resolver-dnssec-config",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:resolver-dnssec-config/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resolver-endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:resolver-endpoint/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resolver-query-log-config",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:resolver-query-log-config/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resolver-rule",
+      "ARNFormats": [
+        "arn:${Partition}:route53resolver:${Region}:${Account}:resolver-rule/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,4434 @@
+{
+  "Name": "greengrass",
+  "Actions": [
+    {
+      "Name": "AssociateRoleToGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateServiceRoleToAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchAssociateClientDeviceWithCoreDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDisassociateClientDeviceFromCoreDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateComponentVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectorDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectorDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCoreDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCoreDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeployment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeviceDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeviceDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFunctionDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFunctionDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroupCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroupVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoggerDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLoggerDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSoftwareUpdateJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubscriptionDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubscriptionDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "componentVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectorDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCoreDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCoreDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDeviceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFunctionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLoggerDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSubscriptionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "componentVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateRoleFromGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateServiceRoleFromAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Discover",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssociatedRole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBulkDeploymentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "componentVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComponentVersionArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "componentVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectivityInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectivityInfo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectorDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectorDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        },
+        {
+          "Name": "connectorDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCoreDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCoreDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        },
+        {
+          "Name": "coreDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCoreDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeploymentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeviceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeviceDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        },
+        {
+          "Name": "deviceDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFunctionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFunctionDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        },
+        {
+          "Name": "functionDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificateAuthority"
+        },
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupCertificateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        },
+        {
+          "Name": "groupVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoggerDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLoggerDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        },
+        {
+          "Name": "loggerDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        },
+        {
+          "Name": "resourceDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceRoleForAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSubscriptionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSubscriptionDefinitionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        },
+        {
+          "Name": "subscriptionDefinitionVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetThingRuntimeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thingRuntimeConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBulkDeploymentDetailedReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBulkDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClientDevicesAssociatedWithCoreDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponentVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "component"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectorDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectorDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCoreDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCoreDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCoreDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeviceDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeviceDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEffectiveDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFunctionDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFunctionDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupCertificateAuthorities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInstalledComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLoggerDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLoggerDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubscriptionDefinitionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSubscriptionDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        },
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "componentVersion"
+        },
+        {
+          "Name": "connectorDefinition"
+        },
+        {
+          "Name": "coreDefinition"
+        },
+        {
+          "Name": "coreDevice"
+        },
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "deviceDefinition"
+        },
+        {
+          "Name": "functionDefinition"
+        },
+        {
+          "Name": "group"
+        },
+        {
+          "Name": "loggerDefinition"
+        },
+        {
+          "Name": "resourceDefinition"
+        },
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResolveComponentCandidates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "componentVersion"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartBulkDeployment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopBulkDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        },
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "componentVersion"
+        },
+        {
+          "Name": "connectorDefinition"
+        },
+        {
+          "Name": "coreDefinition"
+        },
+        {
+          "Name": "coreDevice"
+        },
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "deviceDefinition"
+        },
+        {
+          "Name": "functionDefinition"
+        },
+        {
+          "Name": "group"
+        },
+        {
+          "Name": "loggerDefinition"
+        },
+        {
+          "Name": "resourceDefinition"
+        },
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bulkDeployment"
+        },
+        {
+          "Name": "component"
+        },
+        {
+          "Name": "componentVersion"
+        },
+        {
+          "Name": "connectorDefinition"
+        },
+        {
+          "Name": "coreDefinition"
+        },
+        {
+          "Name": "coreDevice"
+        },
+        {
+          "Name": "deployment"
+        },
+        {
+          "Name": "deviceDefinition"
+        },
+        {
+          "Name": "functionDefinition"
+        },
+        {
+          "Name": "group"
+        },
+        {
+          "Name": "loggerDefinition"
+        },
+        {
+          "Name": "resourceDefinition"
+        },
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnectivityInfo",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectivityInfo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectorDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCoreDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "coreDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDeviceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deviceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFunctionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "functionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGroupCertificateConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLoggerDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "loggerDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resourceDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSubscriptionDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscriptionDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateThingRuntimeConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thingRuntimeConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateRoleToGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateRoleToGroup",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "greengrass.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "associate_role_to_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateServiceRoleToAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateServiceRoleToAccount",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "greengrass.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "associate_service_role_to_account",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "associate_service_role_to_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateClientDeviceWithCoreDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateClientDeviceWithCoreDevice",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "batch_associate_client_device_with_core_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateClientDeviceFromCoreDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateClientDeviceFromCoreDevice",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "batch_disassociate_client_device_from_core_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelDeployment",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "cancel_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComponentVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComponentVersion",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "create_component_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectorDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectorDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_connector_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectorDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectorDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_connector_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCoreDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCoreDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_core_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCoreDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCoreDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_core_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeployment",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeviceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeviceDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_device_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeviceDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeviceDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_device_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFunctionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFunctionDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_function_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFunctionDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFunctionDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_function_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroupCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroupCertificateAuthority",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_group_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroupVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroupVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_group_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoggerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoggerDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_logger_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLoggerDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLoggerDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_logger_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_resource_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_resource_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSoftwareUpdateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSoftwareUpdateJob",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "greengrass.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_software_update_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriptionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriptionDefinition",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_subscription_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubscriptionDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubscriptionDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "create_subscription_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComponent",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "delete_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectorDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectorDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_connector_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCoreDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCoreDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_core_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCoreDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCoreDevice",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "delete_core_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeployment",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "delete_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeviceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeviceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_device_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFunctionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFunctionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_function_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoggerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoggerDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_logger_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_resource_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubscriptionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubscriptionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "delete_subscription_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComponent",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "describe_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateRoleFromGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateRoleFromGroup",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "disassociate_role_from_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateServiceRoleFromAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateServiceRoleFromAccount",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "disassociate_service_role_from_account",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "disassociate_service_role_from_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssociatedRole",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssociatedRole",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_associated_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBulkDeploymentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBulkDeploymentStatus",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_bulk_deployment_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "get_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponentVersionArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponentVersionArtifact",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "get_component_version_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectivityInfo",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectivityInfo",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_connectivity_info",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "get_connectivity_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectorDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectorDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_connector_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectorDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectorDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_connector_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCoreDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCoreDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_core_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCoreDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCoreDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_core_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCoreDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCoreDevice",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "get_core_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeployment",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeploymentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeploymentStatus",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_deployment_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeviceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeviceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_device_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeviceDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeviceDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_device_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFunctionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFunctionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_function_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFunctionDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFunctionDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_function_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroup",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupCertificateAuthority",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_group_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupCertificateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupCertificateConfiguration",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_group_certificate_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_group_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoggerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoggerDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_logger_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoggerDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoggerDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_logger_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_resource_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_resource_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceRoleForAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceRoleForAccount",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_service_role_for_account",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "get_service_role_for_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_subscription_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSubscriptionDefinitionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSubscriptionDefinitionVersion",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_subscription_definition_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetThingRuntimeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetThingRuntimeConfiguration",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "get_thing_runtime_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBulkDeploymentDetailedReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBulkDeploymentDetailedReports",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_bulk_deployment_detailed_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBulkDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBulkDeployments",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_bulk_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClientDevicesAssociatedWithCoreDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClientDevicesAssociatedWithCoreDevice",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_client_devices_associated_with_core_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponentVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponentVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_component_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_connector_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_connector_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoreDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCoreDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_core_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoreDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCoreDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_core_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCoreDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCoreDevices",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_core_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeployments",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_deployments",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "list_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_device_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_device_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEffectiveDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEffectiveDeployments",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_effective_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctionDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFunctionDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_function_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctionDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFunctionDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_function_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupCertificateAuthorities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupCertificateAuthorities",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_group_certificate_authorities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_group_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstalledComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstalledComponents",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "list_installed_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLoggerDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLoggerDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_logger_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLoggerDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLoggerDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_logger_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_resource_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_resource_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptionDefinitionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptionDefinitionVersions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_subscription_definition_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscriptionDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscriptionDefinitions",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_subscription_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetDeployments",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "reset_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResolveComponentCandidates",
+      "SDK": [
+        {
+          "Name": "greengrassv2",
+          "Method": "resolve_component_candidates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBulkDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "greengrass.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartBulkDeployment",
+          "Service": "greengrass"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "start_bulk_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopBulkDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "StopBulkDeployment",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "stop_bulk_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectivityInfo",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectivityInfo",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_connectivity_info",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "greengrassv2",
+          "Method": "update_connectivity_info",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectorDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_connector_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCoreDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCoreDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_core_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeviceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDeviceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_device_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFunctionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFunctionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_function_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroup",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroupCertificateConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroupCertificateConfiguration",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_group_certificate_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLoggerDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLoggerDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_logger_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_resource_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubscriptionDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubscriptionDefinition",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_subscription_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateThingRuntimeConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateThingRuntimeConfiguration",
+          "Service": "greengrass"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "greengrass",
+          "Method": "update_thing_runtime_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "bulkDeployment",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/bulk/deployments/${BulkDeploymentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "certificateAuthority",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/certificateauthorities/${CertificateAuthorityId}"
+      ]
+    },
+    {
+      "Name": "component",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:components:${ComponentName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "componentVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:components:${ComponentName}:versions:${ComponentVersion}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connectivityInfo",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/things/${ThingName}/connectivityInfo"
+      ]
+    },
+    {
+      "Name": "connectorDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/connectors/${ConnectorDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connectorDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/connectors/${ConnectorDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "coreDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/cores/${CoreDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "coreDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/cores/${CoreDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "coreDevice",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:coreDevices:${CoreDeviceThingName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deployment",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/deployments/${DeploymentId}",
+        "arn:${Partition}:greengrass:${Region}:${Account}:deployments:${DeploymentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deviceDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/devices/${DeviceDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deviceDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/devices/${DeviceDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "functionDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/functions/${FunctionDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "functionDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/functions/${FunctionDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "group",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "groupVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "loggerDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/loggers/${LoggerDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "loggerDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/loggers/${LoggerDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "resourceDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/resources/${ResourceDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "resourceDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/resources/${ResourceDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "subscriptionDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/subscriptions/${SubscriptionDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "subscriptionDefinitionVersion",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/subscriptions/${SubscriptionDefinitionId}/versions/${VersionId}"
+      ]
+    },
+    {
+      "Name": "thing",
+      "ARNFormats": [
+        "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}"
+      ]
+    },
+    {
+      "Name": "thingRuntimeConfig",
+      "ARNFormats": [
+        "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/things/${ThingName}/runtimeconfig"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

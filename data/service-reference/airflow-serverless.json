@@ -1,0 +1,607 @@
+{
+  "Name": "airflow-serverless",
+  "Actions": [
+    {
+      "Name": "CreateWorkflow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaskInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTaskInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflowRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflowVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkflow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Workflow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkflow",
+          "Service": "airflow-serverless"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "airflow-serverless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "create_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflow",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "delete_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTaskInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTaskInstance",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "get_task_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflow",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "get_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowRun",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "get_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTaskInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTaskInstances",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "list_task_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowRuns",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "list_workflow_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowVersions",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "list_workflow_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflows",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "list_workflows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartWorkflowRun",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "start_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StopWorkflowRun",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "stop_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkflow",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "airflow-serverless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateWorkflow",
+          "Service": "airflow-serverless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mwaa-serverless",
+          "Method": "update_workflow",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Workflow",
+      "ARNFormats": [
+        "arn:${Partition}:airflow-serverless:${Region}:${Account}:workflow/${WorkflowId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

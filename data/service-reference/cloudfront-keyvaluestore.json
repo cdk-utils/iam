@@ -1,0 +1,232 @@
+{
+  "Name": "cloudfront-keyvaluestore",
+  "Actions": [
+    {
+      "Name": "DeleteKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeKeyValueStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKey",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "delete_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeKeyValueStore",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeKeyValueStore",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "describe_key_value_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKey",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "get_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeys",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "list_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutKey",
+      "AuthorizedActions": [
+        {
+          "Name": "PutKey",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "put_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateKeys",
+          "Service": "cloudfront-keyvaluestore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront-keyvaluestore",
+          "Method": "update_keys",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "key-value-store",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:key-value-store/${ResourceId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

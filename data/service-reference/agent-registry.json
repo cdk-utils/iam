@@ -1,0 +1,756 @@
+{
+  "Name": "agent-registry",
+  "Actions": [
+    {
+      "Name": "CreateRegistry",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRegistryRecord",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRegistryRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDiscoverableRegistryRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRegistryRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeRegistryMcp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDiscoverableRegistryRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegistries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegistryRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchDiscoverableRegistryRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SubmitRegistryRecordForApproval",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        },
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRegistry",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRegistryRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRegistryRecordStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetDiscoverableRegistryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDiscoverableRegistryRecord",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry",
+          "Method": "batch_get_discoverable_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistry",
+          "Service": "agent-registry"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "create_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegistryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegistryRecord",
+          "Service": "agent-registry"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "agent-registry.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "create_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistry",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "delete_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegistryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegistryRecord",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "delete_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegistry",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "get_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegistryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegistryRecord",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "get_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDiscoverableRegistryRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDiscoverableRegistryRecords",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry",
+          "Method": "list_discoverable_registry_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegistries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegistries",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "list_registries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegistryRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegistryRecords",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "list_registry_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchDiscoverableRegistryRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchDiscoverableRegistryRecords",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry",
+          "Method": "search_discoverable_registry_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitRegistryRecordForApproval",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitRegistryRecordForApproval",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "submit_registry_record_for_approval",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegistry",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRegistry",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "update_registry",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegistryRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "agent-registry.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRegistryRecord",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "update_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegistryRecordStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRegistryRecordStatus",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "update_registry_record_status",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "registry",
+      "ARNFormats": [
+        "arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "registry-record",
+      "ARNFormats": [
+        "arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}/record/${RecordId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

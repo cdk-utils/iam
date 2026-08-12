@@ -1,0 +1,867 @@
+{
+  "Name": "codeguru-profiler",
+  "Actions": [
+    {
+      "Name": "AddNotificationChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetFrameMetricData",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ConfigureAgent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProfilingGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProfilingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProfilingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFindingsReportAccountSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFindingsReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfileTimes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProfilingGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostAgentProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveNotificationChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemovePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProfilingGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProfilingGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddNotificationChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "AddNotificationChannels",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "add_notification_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetFrameMetricData",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetFrameMetricData",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "batch_get_frame_metric_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfigureAgent",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureAgent",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "configure_agent",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfilingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfilingGroup",
+          "Service": "codeguru-profiler"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "create_profiling_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfilingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfilingGroup",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "delete_profiling_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProfilingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProfilingGroup",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "describe_profiling_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFindingsReportAccountSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFindingsReportAccountSummary",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "get_findings_report_account_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNotificationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNotificationConfiguration",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "get_notification_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPolicy",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfile",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendations",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "get_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindingsReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindingsReports",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "list_findings_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileTimes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileTimes",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "list_profile_times",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfilingGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfilingGroups",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "list_profiling_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostAgentProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PostAgentProfile",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "post_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPermission",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "put_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveNotificationChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveNotificationChannel",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "remove_notification_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemovePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "RemovePermission",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "remove_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitFeedback",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "submit_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfilingGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProfilingGroup",
+          "Service": "codeguru-profiler"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codeguruprofiler",
+          "Method": "update_profiling_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ProfilingGroup",
+      "ARNFormats": [
+        "arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${ProfilingGroupName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

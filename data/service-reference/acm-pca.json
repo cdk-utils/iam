@@ -1,0 +1,885 @@
+{
+  "Name": "acm-pca",
+  "Actions": [
+    {
+      "Name": "CreateCertificateAuthority",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCertificateAuthorityAuditReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCertificateAuthorityAuditReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCertificateAuthorityCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCertificateAuthorityCsr",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportCertificateAuthorityCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IssueCertificate",
+      "ActionConditionKeys": [
+        "acm-pca:TemplateArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCertificateAuthorities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagCertificateAuthority",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagCertificateAuthority",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCertificateAuthority",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificate-authority"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "acm-pca:TemplateArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCertificateAuthority",
+          "Service": "acm-pca"
+        },
+        {
+          "Name": "TagCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "create_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCertificateAuthorityAuditReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCertificateAuthorityAuditReport",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "create_certificate_authority_audit_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePermission",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "create_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "delete_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermission",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "delete_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePolicy",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "delete_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "describe_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCertificateAuthorityAuditReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCertificateAuthorityAuditReport",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "describe_certificate_authority_audit_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificate",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "get_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificateAuthorityCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificateAuthorityCertificate",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "get_certificate_authority_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCertificateAuthorityCsr",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCertificateAuthorityCsr",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "get_certificate_authority_csr",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPolicy",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "get_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportCertificateAuthorityCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportCertificateAuthorityCertificate",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "import_certificate_authority_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IssueCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "IssueCertificate",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "issue_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCertificateAuthorities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCertificateAuthorities",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "list_certificate_authorities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissions",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "list_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTags",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "list_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPolicy",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "put_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "restore_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeCertificate",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "revoke_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "TagCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "tag_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "untag_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCertificateAuthority",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCertificateAuthority",
+          "Service": "acm-pca"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "acm-pca",
+          "Method": "update_certificate_authority",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "certificate-authority",
+      "ARNFormats": [
+        "arn:${Partition}:acm-pca:${Region}:${Account}:certificate-authority/${CertificateAuthorityId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,3724 @@
+{
+  "Name": "storagegateway",
+  "Actions": [
+    {
+      "Name": "ActivateGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddTagsToResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-report"
+        },
+        {
+          "Name": "fs-association"
+        },
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "share"
+        },
+        {
+          "Name": "tape"
+        },
+        {
+          "Name": "tapepool"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddUploadBuffer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddWorkingStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssignTapePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tape"
+        },
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateFileSystem",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BypassGovernanceRetention",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelArchival",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tape"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelCacheReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-report"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelRetrieval",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tape"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCachediSCSIVolume",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateNFSFileShare",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSMBFileShare",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSnapshotFromVolumeRecoveryPoint",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStorediSCSIVolume",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTapePool",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTapeWithBarcode",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTapes",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutomaticTapeCreationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBandwidthRateLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCacheReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-report"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChapCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "target"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFileShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSnapshotSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTape",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tape"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTapeArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTapePool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAvailabilityMonitorTest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBandwidthRateLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBandwidthRateLimitSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCacheReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-report"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCachediSCSIVolumes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeChapCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "target"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFileSystemAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "fs-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeGatewayInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMaintenanceStartTime",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeNFSFileShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSMBFileShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSMBSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSnapshotSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStorediSCSIVolumes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTapeArchives",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTapeRecoveryPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTapes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeUploadBuffer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeVTLDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWorkingStorage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFileSystem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "fs-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EvictFilesFailingUpload",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "JoinDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomaticTapeCreationPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCacheReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFileShares",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFileSystemAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLocalDisks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "share"
+        },
+        {
+          "Name": "tape"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTapePools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTapes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVolumeInitiators",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVolumeRecoveryPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVolumes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyWhenUploaded",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RefreshCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveTagsFromResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-report"
+        },
+        {
+          "Name": "fs-association"
+        },
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "share"
+        },
+        {
+          "Name": "tape"
+        },
+        {
+          "Name": "tapepool"
+        },
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RetrieveTapeArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tape"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RetrieveTapeRecoveryPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tape"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetLocalConsolePassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetSMBGuestPassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ShutdownGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAvailabilityMonitorTest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCacheReport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutomaticTapeCreationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "tapepool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBandwidthRateLimit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBandwidthRateLimitSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateChapCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "target"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFileSystemAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "fs-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewayInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewaySoftwareNow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMaintenanceStartTime",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateNFSFileShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSMBFileShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSMBFileShareVisibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSMBLocalGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSMBSecurityStrategy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSnapshotSchedule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "volume"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateVTLDeviceType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ActivateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "ActivateGateway",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "activate_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddCache",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCache",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "add_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddTagsToResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "add_tags_to_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddUploadBuffer",
+      "AuthorizedActions": [
+        {
+          "Name": "AddUploadBuffer",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "add_upload_buffer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddWorkingStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "AddWorkingStorage",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "add_working_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssignTapePool",
+      "AuthorizedActions": [
+        {
+          "Name": "AssignTapePool",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "BypassGovernanceRetention",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "assign_tape_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "AssociateFileSystem",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "associate_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AttachVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "AttachVolume",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "attach_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelArchival",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelArchival",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "cancel_archival",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelCacheReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelCacheReport",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "cancel_cache_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelRetrieval",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelRetrieval",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "cancel_retrieval",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCachediSCSIVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateCachediSCSIVolume",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_cached_iscsi_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNFSFileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateNFSFileShare",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_nfs_file_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSMBFileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateSMBFileShare",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_smb_file_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshot",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSnapshotFromVolumeRecoveryPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshotFromVolumeRecoveryPoint",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_snapshot_from_volume_recovery_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStorediSCSIVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateStorediSCSIVolume",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_stored_iscsi_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTapePool",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateTapePool",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_tape_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTapeWithBarcode",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateTapeWithBarcode",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_tape_with_barcode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTapes",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "CreateTapes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "create_tapes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutomaticTapeCreationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutomaticTapeCreationPolicy",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_automatic_tape_creation_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBandwidthRateLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBandwidthRateLimit",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_bandwidth_rate_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCacheReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCacheReport",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_cache_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChapCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChapCredentials",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_chap_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFileShare",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_file_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGateway",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSnapshotSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapshotSchedule",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_snapshot_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTape",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTape",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_tape",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTapeArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "BypassGovernanceRetention",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "DeleteTapeArchive",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_tape_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTapePool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTapePool",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_tape_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVolume",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "delete_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAvailabilityMonitorTest",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAvailabilityMonitorTest",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_availability_monitor_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBandwidthRateLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBandwidthRateLimit",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_bandwidth_rate_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBandwidthRateLimitSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBandwidthRateLimitSchedule",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_bandwidth_rate_limit_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCache",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCacheReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCacheReport",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_cache_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCachediSCSIVolumes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCachediSCSIVolumes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_cached_iscsi_volumes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeChapCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeChapCredentials",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_chap_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFileSystemAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFileSystemAssociations",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_file_system_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayInformation",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_gateway_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMaintenanceStartTime",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMaintenanceStartTime",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_maintenance_start_time",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNFSFileShares",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeNFSFileShares",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_nfs_file_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSMBFileShares",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSMBFileShares",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_smb_file_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSMBSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSMBSettings",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_smb_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapshotSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapshotSchedule",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_snapshot_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStorediSCSIVolumes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStorediSCSIVolumes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_stored_iscsi_volumes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTapeArchives",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTapeArchives",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_tape_archives",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTapeRecoveryPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTapeRecoveryPoints",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_tape_recovery_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTapes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTapes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_tapes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUploadBuffer",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUploadBuffer",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_upload_buffer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVTLDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVTLDevices",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_vtl_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkingStorage",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkingStorage",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "describe_working_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DetachVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "DetachVolume",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "detach_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableGateway",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "disable_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFileSystem",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "disassociate_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvictFilesFailingUpload",
+      "AuthorizedActions": [
+        {
+          "Name": "EvictFilesFailingUpload",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "evict_files_failing_upload",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "JoinDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "JoinDomain",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "join_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomaticTapeCreationPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomaticTapeCreationPolicies",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_automatic_tape_creation_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCacheReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCacheReports",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_cache_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFileShares",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFileShares",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_file_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFileSystemAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFileSystemAssociations",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_file_system_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGateways",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLocalDisks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLocalDisks",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_local_disks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTapePools",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTapePools",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_tape_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTapes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTapes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_tapes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVolumeInitiators",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVolumeInitiators",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_volume_initiators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVolumeRecoveryPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVolumeRecoveryPoints",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_volume_recovery_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVolumes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVolumes",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "list_volumes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "NotifyWhenUploaded",
+      "AuthorizedActions": [
+        {
+          "Name": "NotifyWhenUploaded",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "notify_when_uploaded",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RefreshCache",
+      "AuthorizedActions": [
+        {
+          "Name": "RefreshCache",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "refresh_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTagsFromResource",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTagsFromResource",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "remove_tags_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetCache",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetCache",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "reset_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetrieveTapeArchive",
+      "AuthorizedActions": [
+        {
+          "Name": "RetrieveTapeArchive",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "retrieve_tape_archive",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetrieveTapeRecoveryPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "RetrieveTapeRecoveryPoint",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "retrieve_tape_recovery_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetLocalConsolePassword",
+      "AuthorizedActions": [
+        {
+          "Name": "SetLocalConsolePassword",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "set_local_console_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetSMBGuestPassword",
+      "AuthorizedActions": [
+        {
+          "Name": "SetSMBGuestPassword",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "set_smb_guest_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ShutdownGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "ShutdownGateway",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "shutdown_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAvailabilityMonitorTest",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAvailabilityMonitorTest",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "start_availability_monitor_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCacheReport",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToResource",
+          "Service": "storagegateway"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "StartCacheReport",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "start_cache_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "StartGateway",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "start_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutomaticTapeCreationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutomaticTapeCreationPolicy",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_automatic_tape_creation_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBandwidthRateLimit",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBandwidthRateLimit",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_bandwidth_rate_limit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBandwidthRateLimitSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateBandwidthRateLimitSchedule",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_bandwidth_rate_limit_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChapCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChapCredentials",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_chap_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFileSystemAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFileSystemAssociation",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_file_system_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewayInformation",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_gateway_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewaySoftwareNow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewaySoftwareNow",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_gateway_software_now",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMaintenanceStartTime",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMaintenanceStartTime",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_maintenance_start_time",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNFSFileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNFSFileShare",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_nfs_file_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSMBFileShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSMBFileShare",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_smb_file_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSMBFileShareVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSMBFileShareVisibility",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_smb_file_share_visibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSMBLocalGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSMBLocalGroups",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_smb_local_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSMBSecurityStrategy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSMBSecurityStrategy",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_smb_security_strategy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSnapshotSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSnapshotSchedule",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_snapshot_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVTLDeviceType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVTLDeviceType",
+          "Service": "storagegateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "storagegateway",
+          "Method": "update_vtl_device_type",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cache-report",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}/cache-report/${CacheReportId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "device",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/device/${Vtldevice}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "fs-association",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:fs-association/${FsaId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "gateway",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "share",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "tape",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:tape/${TapeBarcode}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "tapepool",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:tapepool/${PoolId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "target",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/target/${IscsiTarget}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "volume",
+      "ARNFormats": [
+        "arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/volume/${VolumeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

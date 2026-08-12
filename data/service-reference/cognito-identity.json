@@ -1,0 +1,962 @@
+{
+  "Name": "cognito-identity",
+  "Actions": [
+    {
+      "Name": "CreateIdentityPool",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIdentities",
+      "ActionConditionKeys": [
+        "cognito-identity:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIdentityPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIdentity",
+      "ActionConditionKeys": [
+        "cognito-identity:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIdentityPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCredentialsForIdentity",
+      "ActionConditionKeys": [
+        "cognito-identity-auth:AccountId",
+        "cognito-identity-auth:IdentityPoolArn",
+        "cognito-identity-unauth:AccountId",
+        "cognito-identity-unauth:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetId",
+      "ActionConditionKeys": [
+        "cognito-identity-auth:AccountId",
+        "cognito-identity-auth:IdentityPoolArn",
+        "cognito-identity-unauth:AccountId",
+        "cognito-identity-unauth:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentityPoolAnalytics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentityPoolDailyAnalytics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIdentityPoolRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIdentityProviderDailyAnalytics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOpenIdToken",
+      "ActionConditionKeys": [
+        "cognito-identity-auth:AccountId",
+        "cognito-identity-auth:IdentityPoolArn",
+        "cognito-identity-unauth:AccountId",
+        "cognito-identity-unauth:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOpenIdTokenForDeveloperIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPrincipalTagAttributeMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIdentityPools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "LookupDeveloperIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "MergeDeveloperIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetIdentityPoolRoles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetPrincipalTagAttributeMap",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UnlinkDeveloperIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnlinkIdentity",
+      "ActionConditionKeys": [
+        "cognito-identity-auth:AccountId",
+        "cognito-identity-auth:IdentityPoolArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIdentityPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "cognito-identity-auth:AccountId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "cognito-identity-auth:IdentityPoolArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "cognito-identity-unauth:AccountId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "cognito-identity-unauth:IdentityPoolArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "cognito-identity:IdentityPoolArn",
+      "Types": [
+        "ARN"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateIdentityPool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIdentityPool",
+          "Service": "cognito-identity"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "create_identity_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdentities",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "delete_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIdentityPool",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIdentityPool",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "delete_identity_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "describe_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIdentityPool",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentityPool",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "describe_identity_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCredentialsForIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCredentialsForIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_credentials_for_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetId",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdentityPoolRoles",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdentityPoolRoles",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_identity_pool_roles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpenIdToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpenIdToken",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_open_id_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpenIdTokenForDeveloperIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpenIdTokenForDeveloperIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_open_id_token_for_developer_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPrincipalTagAttributeMap",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPrincipalTagAttributeMap",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "get_principal_tag_attribute_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentities",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "list_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentityPools",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentityPools",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "list_identity_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "LookupDeveloperIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "LookupDeveloperIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "lookup_developer_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergeDeveloperIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "MergeDeveloperIdentities",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "merge_developer_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetIdentityPoolRoles",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "SetIdentityPoolRoles",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "set_identity_pool_roles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetPrincipalTagAttributeMap",
+      "AuthorizedActions": [
+        {
+          "Name": "SetPrincipalTagAttributeMap",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "set_principal_tag_attribute_map",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnlinkDeveloperIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "UnlinkDeveloperIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "unlink_developer_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnlinkIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "UnlinkIdentity",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "unlink_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIdentityPool",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cognito-identity"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "cognito-identity"
+        },
+        {
+          "Name": "UpdateIdentityPool",
+          "Service": "cognito-identity"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-identity",
+          "Method": "update_identity_pool",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "identitypool",
+      "ARNFormats": [
+        "arn:${Partition}:cognito-identity:${Region}:${Account}:identitypool/${IdentityPoolId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

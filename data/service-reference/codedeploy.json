@@ -1,0 +1,1784 @@
+{
+  "Name": "codedeploy",
+  "Actions": [
+    {
+      "Name": "AddTagsToOnPremisesInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetApplicationRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDeploymentGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDeploymentInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDeploymentTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetOnPremisesInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ContinueDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCloudFormationDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeploymentConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentconfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeploymentGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDeploymentConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentconfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDeploymentGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGitHubAccountToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcesByExternalId",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterOnPremisesInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeploymentConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentconfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeploymentGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeploymentInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeploymentTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOnPremisesInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplicationRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeploymentConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeploymentGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeploymentInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeploymentTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGitHubAccountTokenNames",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOnPremisesInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutLifecycleEventHookExecutionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterApplicationRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterOnPremisesInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTagsFromOnPremisesInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instance"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SkipWaitTimeForInstanceTermination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        },
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDeploymentGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "deploymentgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddTagsToOnPremisesInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTagsToOnPremisesInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "add_tags_to_on_premises_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetApplicationRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetApplicationRevisions",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_application_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetApplications",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDeploymentGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDeploymentGroups",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_deployment_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDeploymentInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDeploymentInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_deployment_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDeploymentTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDeploymentTargets",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_deployment_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDeployments",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetOnPremisesInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetOnPremisesInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "batch_get_on_premises_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ContinueDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "ContinueDeployment",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "CreateCloudFormationDeployment",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "continue_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeployment",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "GetApplicationRevision",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "GetDeploymentConfig",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "RegisterApplicationRevision",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "UpdateDeploymentGroup",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeploymentConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeploymentConfig",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "create_deployment_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeploymentGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeploymentGroup",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "codedeploy.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "create_deployment_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeploymentConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeploymentConfig",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "delete_deployment_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeploymentGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeploymentGroup",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "delete_deployment_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGitHubAccountToken",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGitHubAccountToken",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "delete_git_hub_account_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcesByExternalId",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcesByExternalId",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "delete_resources_by_external_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterOnPremisesInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterOnPremisesInstance",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "deregister_on_premises_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationRevision",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_application_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeployment",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeploymentConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeploymentConfig",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_deployment_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeploymentGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeploymentGroup",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_deployment_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeploymentInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeploymentInstance",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_deployment_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeploymentTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeploymentTarget",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_deployment_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOnPremisesInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOnPremisesInstance",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "get_on_premises_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationRevisions",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_application_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeploymentConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeploymentConfigs",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_deployment_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeploymentGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeploymentGroups",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_deployment_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeploymentInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeploymentInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_deployment_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeploymentTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeploymentTargets",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_deployment_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeployments",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGitHubAccountTokenNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGitHubAccountTokenNames",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_git_hub_account_token_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOnPremisesInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOnPremisesInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_on_premises_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLifecycleEventHookExecutionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudFormationDeployment",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "PutLifecycleEventHookExecutionStatus",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "put_lifecycle_event_hook_execution_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterApplicationRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterApplicationRevision",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "register_application_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterOnPremisesInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterOnPremisesInstance",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "register_on_premises_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTagsFromOnPremisesInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTagsFromOnPremisesInstances",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "remove_tags_from_on_premises_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SkipWaitTimeForInstanceTermination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudFormationDeployment",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "SkipWaitTimeForInstanceTermination",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "skip_wait_time_for_instance_termination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudFormationDeployment",
+          "Service": "codedeploy"
+        },
+        {
+          "Name": "StopDeployment",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "stop_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeploymentGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "codedeploy.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDeploymentGroup",
+          "Service": "codedeploy"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codedeploy",
+          "Method": "update_deployment_group",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:codedeploy:${Region}:${Account}:application:${ApplicationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "deploymentconfig",
+      "ARNFormats": [
+        "arn:${Partition}:codedeploy:${Region}:${Account}:deploymentconfig:${DeploymentConfigurationName}"
+      ]
+    },
+    {
+      "Name": "deploymentgroup",
+      "ARNFormats": [
+        "arn:${Partition}:codedeploy:${Region}:${Account}:deploymentgroup:${ApplicationName}/${DeploymentGroupName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "instance",
+      "ARNFormats": [
+        "arn:${Partition}:codedeploy:${Region}:${Account}:instance:${InstanceName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

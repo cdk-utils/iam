@@ -1,0 +1,857 @@
+{
+  "Name": "datapipeline",
+  "Actions": [
+    {
+      "Name": "ActivatePipeline",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}",
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AddTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePipeline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeactivatePipeline",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}",
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePipeline",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeObjects",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePipelines",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EvaluateExpression",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPipelineDefinition",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}",
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPipelines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PollForTask",
+      "ActionConditionKeys": [
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutAccountLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPipelineDefinition",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}",
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "QueryObjects",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReportTaskProgress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReportTaskRunnerHeartbeat",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetStatus",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetTaskStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ValidatePipelineDefinition",
+      "ActionConditionKeys": [
+        "datapipeline:PipelineCreator",
+        "datapipeline:Tag/${TagKey}",
+        "datapipeline:workerGroup"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "datapipeline:PipelineCreator",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "datapipeline:Tag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "datapipeline:workerGroup",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ActivatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "ActivatePipeline",
+          "Service": "datapipeline"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datapipeline.amazonaws.com",
+              "ec2.amazonaws.com",
+              "elasticmapreduce.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "activate_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddTags",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "add_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "datapipeline"
+        },
+        {
+          "Name": "CreatePipeline",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "create_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeactivatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeactivatePipeline",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "deactivate_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePipeline",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "delete_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeObjects",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeObjects",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "describe_objects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePipelines",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePipelines",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "describe_pipelines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvaluateExpression",
+      "AuthorizedActions": [
+        {
+          "Name": "EvaluateExpression",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "evaluate_expression",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPipelineDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPipelineDefinition",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "get_pipeline_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPipelines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPipelines",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "list_pipelines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PollForTask",
+      "AuthorizedActions": [
+        {
+          "Name": "PollForTask",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "poll_for_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPipelineDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datapipeline.amazonaws.com",
+              "ec2.amazonaws.com",
+              "elasticmapreduce.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutPipelineDefinition",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "put_pipeline_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "QueryObjects",
+      "AuthorizedActions": [
+        {
+          "Name": "QueryObjects",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "query_objects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTags",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTags",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "remove_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReportTaskProgress",
+      "AuthorizedActions": [
+        {
+          "Name": "ReportTaskProgress",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "report_task_progress",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReportTaskRunnerHeartbeat",
+      "AuthorizedActions": [
+        {
+          "Name": "ReportTaskRunnerHeartbeat",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "report_task_runner_heartbeat",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "SetStatus",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "set_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetTaskStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "SetTaskStatus",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "set_task_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ValidatePipelineDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "datapipeline.amazonaws.com",
+              "ec2.amazonaws.com",
+              "elasticmapreduce.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "ValidatePipelineDefinition",
+          "Service": "datapipeline"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "datapipeline",
+          "Method": "validate_pipeline_definition",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "pipeline",
+      "ARNFormats": [
+        "arn:${Partition}:datapipeline:${Region}:${Account}:pipeline/${PipelineId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

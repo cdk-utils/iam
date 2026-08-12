@@ -1,0 +1,420 @@
+{
+  "Name": "license-manager-linux-subscriptions",
+  "Actions": [
+    {
+      "Name": "DeregisterSubscriptionProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscription-provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRegisteredSubscriptionProvider",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscription-provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLinuxSubscriptionInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLinuxSubscriptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRegisteredSubscriptionProviders",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscription-provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterSubscriptionProvider",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscription-provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subscription-provider"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeregisterSubscriptionProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterSubscriptionProvider",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "deregister_subscription_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegisteredSubscriptionProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegisteredSubscriptionProvider",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "get_registered_subscription_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceSettings",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "get_service_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLinuxSubscriptionInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLinuxSubscriptionInstances",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "list_linux_subscription_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLinuxSubscriptions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLinuxSubscriptions",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "list_linux_subscriptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegisteredSubscriptionProviders",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegisteredSubscriptionProviders",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "list_registered_subscription_providers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterSubscriptionProvider",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterSubscriptionProvider",
+          "Service": "license-manager-linux-subscriptions"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "register_subscription_provider",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceSettings",
+          "Service": "license-manager-linux-subscriptions"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "license-manager-linux-subscriptions",
+          "Method": "update_service_settings",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "subscription-provider",
+      "ARNFormats": [
+        "arn:${Partition}:license-manager-linux-subscriptions:${Region}:${Account}:subscription-provider/${SubscriptionProviderId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

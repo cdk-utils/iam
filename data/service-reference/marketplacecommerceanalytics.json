@@ -1,0 +1,58 @@
+{
+  "Name": "marketplacecommerceanalytics",
+  "Actions": [
+    {
+      "Name": "GenerateDataSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSupportDataExport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "GenerateDataSet",
+      "SDK": [
+        {
+          "Name": "marketplacecommerceanalytics",
+          "Method": "generate_data_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSupportDataExport",
+      "SDK": [
+        {
+          "Name": "marketplacecommerceanalytics",
+          "Method": "start_support_data_export",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

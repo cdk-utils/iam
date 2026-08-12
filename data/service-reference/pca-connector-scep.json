@@ -1,0 +1,489 @@
+{
+  "Name": "pca-connector-scep",
+  "Actions": [
+    {
+      "Name": "CreateChallenge",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteChallenge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Challenge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChallengeMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Challenge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChallengePassword",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Challenge"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListChallengeMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Challenge"
+        },
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Challenge"
+        },
+        {
+          "Name": "Connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateChallenge",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChallenge",
+          "Service": "pca-connector-scep"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "create_challenge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnector",
+          "Service": "pca-connector-scep"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "create_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChallenge",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChallenge",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "delete_challenge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnector",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "delete_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChallengeMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChallengeMetadata",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "get_challenge_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChallengePassword",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChallengePassword",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "get_challenge_password",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnector",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "get_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChallengeMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChallengeMetadata",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "list_challenge_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "pca-connector-scep"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pca-connector-scep",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Challenge",
+      "ARNFormats": [
+        "arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}/challenge/${ChallengeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Connector",
+      "ARNFormats": [
+        "arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

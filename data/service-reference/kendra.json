@@ -1,0 +1,2775 @@
+{
+  "Name": "kendra",
+  "Actions": [
+    {
+      "Name": "AssociateEntitiesToExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociatePersonasToEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteFeaturedResultsSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetDocumentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchPutDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ClearQuerySuggestions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAccessControlConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFaq",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFeaturedResultsSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIndex",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateQuerySuggestionsBlockList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateThesaurus",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccessControlConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-control-configuration"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFaq",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "faq"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePrincipalMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQuerySuggestionsBlockList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteThesaurus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccessControlConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-control-configuration"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFaq",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "faq"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFeaturedResultsSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePrincipalMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQuerySuggestionsBlockList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQuerySuggestionsConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeThesaurus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateEntitiesFromExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociatePersonasFromEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetQuerySuggestions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAccessControlConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSourceSyncJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEntityPersonas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperienceEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "experience"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExperiences",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFaqs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFeaturedResultsSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupsOlderThanOrderingId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIndices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListQuerySuggestionsBlockLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "faq"
+        },
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThesauri",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutPrincipalMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Query",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Retrieve",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartDataSourceSyncJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopDataSourceSyncJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubmitFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "faq"
+        },
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "faq"
+        },
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessControlConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-control-configuration"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-source"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateExperience",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFeaturedResultsSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "featured-results-set"
+        },
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIndex",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateQuerySuggestionsBlockList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "query-suggestions-block-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateQuerySuggestionsConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateThesaurus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "index"
+        },
+        {
+          "Name": "thesaurus"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateEntitiesToExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateEntitiesToExperience",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "associate_entities_to_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociatePersonasToEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePersonasToEntities",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "associate_personas_to_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteDocument",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "batch_delete_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteFeaturedResultsSet",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteFeaturedResultsSet",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "batch_delete_featured_results_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetDocumentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetDocumentStatus",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "batch_get_document_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutDocument",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "batch_put_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ClearQuerySuggestions",
+      "AuthorizedActions": [
+        {
+          "Name": "ClearQuerySuggestions",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "clear_query_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessControlConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessControlConfiguration",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_access_control_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSource",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateExperience",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFaq",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFaq",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_faq",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFeaturedResultsSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFeaturedResultsSet",
+          "Service": "kendra"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_featured_results_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIndex",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQuerySuggestionsBlockList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQuerySuggestionsBlockList",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_query_suggestions_block_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateThesaurus",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateThesaurus",
+          "Service": "kendra"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "create_thesaurus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessControlConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessControlConfiguration",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_access_control_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteExperience",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFaq",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFaq",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_faq",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIndex",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePrincipalMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePrincipalMapping",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_principal_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQuerySuggestionsBlockList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQuerySuggestionsBlockList",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_query_suggestions_block_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteThesaurus",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteThesaurus",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "delete_thesaurus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccessControlConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccessControlConfiguration",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_access_control_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataSource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExperience",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFaq",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFaq",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_faq",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFeaturedResultsSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFeaturedResultsSet",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_featured_results_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIndex",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePrincipalMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePrincipalMapping",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_principal_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQuerySuggestionsBlockList",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQuerySuggestionsBlockList",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_query_suggestions_block_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQuerySuggestionsConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQuerySuggestionsConfig",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_query_suggestions_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeThesaurus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeThesaurus",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "describe_thesaurus",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateEntitiesFromExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateEntitiesFromExperience",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "disassociate_entities_from_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociatePersonasFromEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociatePersonasFromEntities",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "disassociate_personas_from_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQuerySuggestions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQuerySuggestions",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "get_query_suggestions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSnapshots",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "get_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessControlConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessControlConfigurations",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_access_control_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSourceSyncJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSourceSyncJobs",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_data_source_sync_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSources",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntityPersonas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityPersonas",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_entity_personas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperienceEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperienceEntities",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_experience_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExperiences",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExperiences",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_experiences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFaqs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFaqs",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_faqs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFeaturedResultsSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFeaturedResultsSets",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_featured_results_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupsOlderThanOrderingId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupsOlderThanOrderingId",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_groups_older_than_ordering_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIndices",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_indices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQuerySuggestionsBlockLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQuerySuggestionsBlockLists",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_query_suggestions_block_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThesauri",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThesauri",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "list_thesauri",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPrincipalMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutPrincipalMapping",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "put_principal_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Query",
+      "AuthorizedActions": [
+        {
+          "Name": "Query",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Retrieve",
+      "AuthorizedActions": [
+        {
+          "Name": "Retrieve",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "retrieve",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataSourceSyncJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDataSourceSyncJob",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "start_data_source_sync_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDataSourceSyncJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDataSourceSyncJob",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "stop_data_source_sync_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubmitFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "SubmitFeedback",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "submit_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessControlConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessControlConfiguration",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_access_control_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataSource",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateExperience",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateExperience",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_experience",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFeaturedResultsSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFeaturedResultsSet",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_featured_results_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIndex",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIndex",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQuerySuggestionsBlockList",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateQuerySuggestionsBlockList",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_query_suggestions_block_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQuerySuggestionsConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQuerySuggestionsConfig",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_query_suggestions_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateThesaurus",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "kendra.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateThesaurus",
+          "Service": "kendra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra",
+          "Method": "update_thesaurus",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "access-control-configuration",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/access-control-configuration/${AccessControlConfigurationId}"
+      ]
+    },
+    {
+      "Name": "data-source",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/data-source/${DataSourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "experience",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/experience/${ExperienceId}"
+      ]
+    },
+    {
+      "Name": "faq",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/faq/${FaqId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "featured-results-set",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/featured-results-set/${FeaturedResultsSetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "index",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "query-suggestions-block-list",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/query-suggestions-block-list/${QuerySuggestionsBlockListId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "thesaurus",
+      "ARNFormats": [
+        "arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/thesaurus/${ThesaurusId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,838 @@
+{
+  "Name": "sagemaker-geospatial",
+  "Actions": [
+    {
+      "Name": "DeleteEarthObservationJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVectorEnrichmentJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportEarthObservationJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportVectorEnrichmentJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEarthObservationJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRasterDataCollection",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RasterDataCollection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVectorEnrichmentJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEarthObservationJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRasterDataCollections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        },
+        {
+          "Name": "RasterDataCollection"
+        },
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVectorEnrichmentJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchRasterDataCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartEarthObservationJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartVectorEnrichmentJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopEarthObservationJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopVectorEnrichmentJob",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        },
+        {
+          "Name": "RasterDataCollection"
+        },
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "EarthObservationJob"
+        },
+        {
+          "Name": "RasterDataCollection"
+        },
+        {
+          "Name": "VectorEnrichmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteEarthObservationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEarthObservationJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "delete_earth_observation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVectorEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVectorEnrichmentJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "delete_vector_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportEarthObservationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportEarthObservationJob",
+          "Service": "sagemaker-geospatial"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker-geospatial.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "export_earth_observation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportVectorEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportVectorEnrichmentJob",
+          "Service": "sagemaker-geospatial"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker-geospatial.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "export_vector_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEarthObservationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEarthObservationJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "get_earth_observation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRasterDataCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRasterDataCollection",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "get_raster_data_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTile",
+          "Service": "sagemaker-geospatial"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker-geospatial.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "get_tile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVectorEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVectorEnrichmentJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "get_vector_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEarthObservationJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEarthObservationJobs",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "list_earth_observation_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRasterDataCollections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRasterDataCollections",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "list_raster_data_collections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVectorEnrichmentJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVectorEnrichmentJobs",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "list_vector_enrichment_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchRasterDataCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchRasterDataCollection",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "search_raster_data_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartEarthObservationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker-geospatial.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartEarthObservationJob",
+          "Service": "sagemaker-geospatial"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "start_earth_observation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartVectorEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker-geospatial.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartVectorEnrichmentJob",
+          "Service": "sagemaker-geospatial"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "start_vector_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopEarthObservationJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopEarthObservationJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "stop_earth_observation_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopVectorEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopVectorEnrichmentJob",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "stop_vector_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "sagemaker-geospatial"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker-geospatial",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "EarthObservationJob",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:earth-observation-job/${JobID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RasterDataCollection",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:raster-data-collection/${CollectionID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VectorEnrichmentJob",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:vector-enrichment-job/${JobID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,2910 @@
+{
+  "Name": "elasticmapreduce",
+  "Actions": [
+    {
+      "Name": "AccessAllEventLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddInstanceFleet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddInstanceGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddJobFlowSteps",
+      "ActionConditionKeys": [
+        "elasticmapreduce:ExecutionRoleArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AddTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "editor"
+        },
+        {
+          "Name": "notebook-execution"
+        },
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AttachEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEditor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePersistentAppUI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSecurityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStudio",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStudioPresignedUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStudioSessionMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSecurityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStudio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteStudioSessionMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeJobFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeNotebookExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "notebook-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePersistentAppUI",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeReleaseLabel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSecurityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStudio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DetachEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutoTerminationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBlockPublicAccessConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetClusterSessionCredentials",
+      "ActionConditionKeys": [
+        "elasticmapreduce:ExecutionRoleArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedScalingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOnClusterAppUIPresignedURL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPersistentAppUIPresignedURL",
+      "ActionConditionKeys": [
+        "elasticmapreduce:ExecutionRoleArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSessionEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStudioSessionMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "LinkRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBootstrapActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEditors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstanceFleets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstanceGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNotebookExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListReleaseLabels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSecurityConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStudioSessionMappings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStudios",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSupportedInstanceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkspaceAccessIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyInstanceFleet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyInstanceGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "OpenEditorInConsole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAutoScalingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAutoTerminationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBlockPublicAccessConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutManagedScalingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutWorkspaceAccess",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveAutoScalingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveAutoTerminationPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveManagedScalingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveTags",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "editor"
+        },
+        {
+          "Name": "notebook-execution"
+        },
+        {
+          "Name": "session"
+        },
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RunJobFlow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetKeepJobFlowAliveWhenNoSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetTerminationProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetUnhealthyNodeReplacement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetVisibleToAllUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNotebookExecution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSession",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "elasticmapreduce:ExecutionRoleArn",
+        "elasticmapreduce:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopNotebookExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "notebook-execution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateJobFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "session"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UnlinkRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEditor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "editor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStudio",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStudioSessionMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "studio"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ViewEventsFromAllClustersInConsole",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "elasticmapreduce:ExecutionRoleArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "elasticmapreduce:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "elasticmapreduce:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddInstanceFleet",
+      "AuthorizedActions": [
+        {
+          "Name": "AddInstanceFleet",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "add_instance_fleet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddInstanceGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "AddInstanceGroups",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "add_instance_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddJobFlowSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "AddJobFlowSteps",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "add_job_flow_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddTags",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "add_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelSteps",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "cancel_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePersistentAppUI",
+      "AuthorizedActions": [
+        {
+          "Name": "AccessAllEventLogs",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "CreatePersistentAppUI",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "create_persistent_app_ui",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSecurityConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSecurityConfiguration",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "create_security_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStudio",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "CreateStudio",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "create_studio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStudioSessionMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStudioSessionMapping",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "create_studio_session_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSecurityConfiguration",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "delete_security_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStudio",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStudio",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "delete_studio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStudioSessionMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStudioSessionMapping",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "delete_studio_session_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCluster",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobFlows",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobFlows",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_job_flows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeNotebookExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeNotebookExecution",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_notebook_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePersistentAppUI",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePersistentAppUI",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_persistent_app_ui",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReleaseLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReleaseLabel",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_release_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSecurityConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSecurityConfiguration",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_security_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStep",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStep",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStudio",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStudio",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "describe_studio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutoTerminationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutoTerminationPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_auto_termination_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBlockPublicAccessConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBlockPublicAccessConfiguration",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_block_public_access_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterSessionCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetClusterSessionCredentials",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_cluster_session_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedScalingPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_managed_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOnClusterAppUIPresignedURL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOnClusterAppUIPresignedURL",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_on_cluster_app_ui_presigned_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPersistentAppUIPresignedURL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPersistentAppUIPresignedURL",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_persistent_app_ui_presigned_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSession",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSessionEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSessionEndpoint",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_session_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStudioSessionMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStudioSessionMapping",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "get_studio_session_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBootstrapActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBootstrapActions",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_bootstrap_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstanceFleets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstanceFleets",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_instance_fleets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstanceGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstanceGroups",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_instance_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstances",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotebookExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotebookExecutions",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_notebook_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReleaseLabels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReleaseLabels",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_release_labels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityConfigurations",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_security_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessions",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSteps",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStudioSessionMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStudioSessionMappings",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_studio_session_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStudios",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStudios",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_studios",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSupportedInstanceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSupportedInstanceTypes",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "list_supported_instance_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyCluster",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "modify_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyInstanceFleet",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyInstanceFleet",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "modify_instance_fleet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyInstanceGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyInstanceGroups",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "modify_instance_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAutoScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAutoScalingPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "put_auto_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAutoTerminationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAutoTerminationPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "put_auto_termination_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutBlockPublicAccessConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutBlockPublicAccessConfiguration",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "put_block_public_access_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutManagedScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutManagedScalingPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "put_managed_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveAutoScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAutoScalingPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "remove_auto_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveAutoTerminationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveAutoTerminationPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "remove_auto_termination_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveManagedScalingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveManagedScalingPolicy",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "remove_managed_scaling_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTags",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTags",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "remove_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RunJobFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "application-autoscaling.amazonaws.com",
+              "ec2.amazonaws.com",
+              "elasticmapreduce.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "RunJobFlow",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "run_job_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetKeepJobFlowAliveWhenNoSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "SetKeepJobFlowAliveWhenNoSteps",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "set_keep_job_flow_alive_when_no_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetTerminationProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "SetTerminationProtection",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "set_termination_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetUnhealthyNodeReplacement",
+      "AuthorizedActions": [
+        {
+          "Name": "SetUnhealthyNodeReplacement",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "set_unhealthy_node_replacement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetVisibleToAllUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "SetVisibleToAllUsers",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "set_visible_to_all_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNotebookExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "StartNotebookExecution",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "start_notebook_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSession",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "elasticmapreduce"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "elasticmapreduce.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartSession",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "start_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopNotebookExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StopNotebookExecution",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "stop_notebook_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateJobFlows",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateJobFlows",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "terminate_job_flows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateSession",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateSession",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "terminate_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStudio",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateStudio",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "update_studio",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStudioSessionMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStudioSessionMapping",
+          "Service": "elasticmapreduce"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "emr",
+          "Method": "update_studio_session_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "editor",
+      "ARNFormats": [
+        "arn:${Partition}:elasticmapreduce:${Region}:${Account}:editor/${EditorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "notebook-execution",
+      "ARNFormats": [
+        "arn:${Partition}:elasticmapreduce:${Region}:${Account}:notebook-execution/${NotebookExecutionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "session",
+      "ARNFormats": [
+        "arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}/session/${SessionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "studio",
+      "ARNFormats": [
+        "arn:${Partition}:elasticmapreduce:${Region}:${Account}:studio/${StudioId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "elasticmapreduce:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

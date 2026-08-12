@@ -1,0 +1,650 @@
+{
+  "Name": "internetmonitor",
+  "Actions": [
+    {
+      "Name": "CreateMonitor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHealthEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInternetEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "InternetEvent"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Link",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHealthEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInternetEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMonitors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMonitor",
+          "Service": "internetmonitor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "create_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMonitor",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "delete_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHealthEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHealthEvent",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "get_health_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInternetEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInternetEvent",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "get_internet_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMonitor",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "get_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResults",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "get_query_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatus",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "get_query_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHealthEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHealthEvents",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "list_health_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInternetEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInternetEvents",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "list_internet_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMonitors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMonitors",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "list_monitors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQuery",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "start_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQuery",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "stop_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMonitor",
+          "Service": "internetmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "internetmonitor",
+          "Method": "update_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "HealthEvent",
+      "ARNFormats": [
+        "arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}/health-event/${EventId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "InternetEvent",
+      "ARNFormats": [
+        "arn:${Partition}:internetmonitor::${Account}:internet-event/${InternetEventId}"
+      ]
+    },
+    {
+      "Name": "Monitor",
+      "ARNFormats": [
+        "arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

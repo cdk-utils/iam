@@ -1,0 +1,1692 @@
+{
+  "Name": "appmesh",
+  "Actions": [
+    {
+      "Name": "CreateGatewayRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMesh",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVirtualGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVirtualNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVirtualRouter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualRouter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVirtualService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode"
+        },
+        {
+          "Name": "virtualRouter"
+        },
+        {
+          "Name": "virtualService",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGatewayRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMesh",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMeshPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVirtualGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVirtualNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVirtualRouter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualRouter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVirtualService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGatewayRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMesh",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVirtualGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVirtualNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVirtualRouter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualRouter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeVirtualService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMeshPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGatewayRoutes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMeshes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRoutes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualRouter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        },
+        {
+          "Name": "mesh"
+        },
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "virtualGateway"
+        },
+        {
+          "Name": "virtualNode"
+        },
+        {
+          "Name": "virtualRouter"
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVirtualGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListVirtualNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListVirtualRouters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListVirtualServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutMeshPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StreamAggregatedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        },
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        },
+        {
+          "Name": "mesh"
+        },
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "virtualGateway"
+        },
+        {
+          "Name": "virtualNode"
+        },
+        {
+          "Name": "virtualRouter"
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        },
+        {
+          "Name": "mesh"
+        },
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "virtualGateway"
+        },
+        {
+          "Name": "virtualNode"
+        },
+        {
+          "Name": "virtualRouter"
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewayRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gatewayRoute"
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMesh",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mesh"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRoute",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "route"
+        },
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVirtualGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVirtualNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVirtualRouter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualRouter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVirtualService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualNode"
+        },
+        {
+          "Name": "virtualRouter"
+        },
+        {
+          "Name": "virtualService"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateGatewayRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGatewayRoute",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_gateway_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMesh",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMesh",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_mesh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRoute",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVirtualGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVirtualGateway",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_virtual_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVirtualNode",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVirtualNode",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appmesh.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_virtual_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVirtualRouter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVirtualRouter",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_virtual_router",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVirtualService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVirtualService",
+          "Service": "appmesh"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "create_virtual_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGatewayRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGatewayRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_gateway_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMesh",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMesh",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_mesh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVirtualGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVirtualGateway",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_virtual_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVirtualNode",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVirtualNode",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_virtual_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVirtualRouter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVirtualRouter",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_virtual_router",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVirtualService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVirtualService",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "delete_virtual_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_gateway_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMesh",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMesh",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_mesh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualGateway",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_virtual_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualNode",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualNode",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_virtual_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualRouter",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualRouter",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_virtual_router",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVirtualService",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVirtualService",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "describe_virtual_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGatewayRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGatewayRoutes",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_gateway_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMeshes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMeshes",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_meshes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoutes",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualGateways",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_virtual_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualNodes",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_virtual_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualRouters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualRouters",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_virtual_routers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualServices",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "list_virtual_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewayRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_gateway_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMesh",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMesh",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_mesh",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRoute",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVirtualGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVirtualGateway",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_virtual_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVirtualNode",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVirtualNode",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_virtual_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVirtualRouter",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVirtualRouter",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_virtual_router",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVirtualService",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVirtualService",
+          "Service": "appmesh"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appmesh",
+          "Method": "update_virtual_service",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "gatewayRoute",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}/gatewayRoute/${GatewayRouteName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "mesh",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "route",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}/route/${RouteName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "virtualGateway",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "virtualNode",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualNode/${VirtualNodeName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "virtualRouter",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "virtualService",
+      "ARNFormats": [
+        "arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualService/${VirtualServiceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

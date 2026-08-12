@@ -1,0 +1,1127 @@
+{
+  "Name": "appflow",
+  "Actions": [
+    {
+      "Name": "CancelFlowExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectorProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFlow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectorProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFlow",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectorEntity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectorFields",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeConnectorProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlowExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFlowExecutionRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectorEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectorFields",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFlows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetConnectorMetadataCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RunFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UnRegisterConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        },
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateConnectorProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectorRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connector"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFlow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "flow"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UseConnectorProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectorprofile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelFlowExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelFlowExecutions",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "cancel_flow_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectorProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectorProfile",
+          "Service": "appflow"
+        },
+        {
+          "Name": "DescribeConnector",
+          "Service": "appflow"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appflow.amazonaws.com",
+              "redshift.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "create_connector_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFlow",
+          "Service": "appflow"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appflow.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appflow"
+        },
+        {
+          "Name": "UseConnectorProfile",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "create_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectorProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectorProfile",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "delete_connector_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFlow",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "delete_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnector",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectorEntity",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectorEntity",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_connector_entity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectorProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectorProfiles",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_connector_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectors",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlow",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFlowExecutionRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFlowExecutionRecords",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "describe_flow_execution_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectorEntities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectorEntities",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "list_connector_entities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFlows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFlows",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "list_flows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterConnector",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "register_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetConnectorMetadataCache",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetConnectorMetadataCache",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "reset_connector_metadata_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFlow",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "start_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "StopFlow",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "stop_flow",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnregisterConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UnRegisterConnector",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "unregister_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appflow.amazonaws.com",
+              "redshift.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateConnectorProfile",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "update_connector_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectorRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectorRegistration",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "update_connector_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFlow",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appflow.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFlow",
+          "Service": "appflow"
+        },
+        {
+          "Name": "UseConnectorProfile",
+          "Service": "appflow"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appflow",
+          "Method": "update_flow",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "connector",
+      "ARNFormats": [
+        "arn:${Partition}:appflow:${Region}:${Account}:connector/${ConnectorLabel}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connectorprofile",
+      "ARNFormats": [
+        "arn:${Partition}:appflow:${Region}:${Account}:connectorprofile/${ProfileName}"
+      ]
+    },
+    {
+      "Name": "flow",
+      "ARNFormats": [
+        "arn:${Partition}:appflow:${Region}:${Account}:flow/${FlowName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

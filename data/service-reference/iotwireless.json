@@ -1,0 +1,4401 @@
+{
+  "Name": "iotwireless",
+  "Actions": [
+    {
+      "Name": "AssociateAwsAccountWithPartnerAccount",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateMulticastGroupWithFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWirelessGatewayWithCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "cert"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWirelessGatewayWithThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelMulticastGroupSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDestination",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeviceProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFuotaTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMulticastGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNetworkAnalyzerConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateServiceProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWirelessDevice",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "DeviceProfile"
+        },
+        {
+          "Name": "ServiceProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWirelessGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWirelessGatewayTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWirelessGatewayTaskDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDeviceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DeviceProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNetworkAnalyzerConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteQueuedMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWirelessDeviceImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ImportTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWirelessGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWirelessGatewayTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWirelessGatewayTaskDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGatewayTaskDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateAwsAccountFromPartnerAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SidewalkAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateMulticastGroupFromFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWirelessGatewayFromCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "cert"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWirelessGatewayFromThing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeviceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DeviceProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEventConfigurationByResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetLogLevelsByResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMetricConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetMulticastGroupSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNetworkAnalyzerConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPartnerAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SidewalkAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPosition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPositionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPositionEstimate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceEventConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SidewalkAccount"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceLogLevel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePosition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ServiceProfile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessDeviceImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ImportTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessDeviceStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGatewayCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGatewayFirmwareInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGatewayStatistics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGatewayTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWirelessGatewayTaskDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGatewayTaskDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeviceProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDevicesForWirelessDeviceImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ImportTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFuotaTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMulticastGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMulticastGroupsByFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkAnalyzerConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPartnerAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPositionConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListQueuedMessages",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "DeviceProfile"
+        },
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "ImportTask"
+        },
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        },
+        {
+          "Name": "ServiceProfile"
+        },
+        {
+          "Name": "SidewalkAccount"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "WirelessGatewayTaskDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWirelessDeviceImportTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWirelessDevices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWirelessGatewayTaskDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWirelessGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutPositionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourceLogLevel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetAllResourceLogLevels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetResourceLogLevel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendDataToMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendDataToWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBulkAssociateWirelessDeviceWithMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBulkDisassociateWirelessDeviceFromMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartMulticastGroupSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartNetworkAnalyzerStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSingleWirelessDeviceImportTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartWirelessDeviceImportTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "ImportTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "DeviceProfile"
+        },
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "ImportTask"
+        },
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        },
+        {
+          "Name": "ServiceProfile"
+        },
+        {
+          "Name": "SidewalkAccount"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "WirelessGatewayTaskDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "DeviceProfile"
+        },
+        {
+          "Name": "FuotaTask"
+        },
+        {
+          "Name": "ImportTask"
+        },
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        },
+        {
+          "Name": "ServiceProfile"
+        },
+        {
+          "Name": "SidewalkAccount"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        },
+        {
+          "Name": "WirelessGatewayTaskDefinition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventConfigurationByResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFuotaTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FuotaTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLogLevelsByResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMetricConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMulticastGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNetworkAnalyzerConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MulticastGroup"
+        },
+        {
+          "Name": "NetworkAnalyzerConfiguration"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePartnerAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SidewalkAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePosition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceEventConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SidewalkAccount"
+        },
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourcePosition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessDevice"
+        },
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWirelessDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Destination"
+        },
+        {
+          "Name": "DeviceProfile"
+        },
+        {
+          "Name": "ServiceProfile"
+        },
+        {
+          "Name": "WirelessDevice"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWirelessDeviceImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ImportTask"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWirelessGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WirelessGateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "iotwireless:DestinationName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotwireless:DeviceProfileId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotwireless:ServiceProfileId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateAwsAccountWithPartnerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAwsAccountWithPartnerAccount",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_aws_account_with_partner_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateMulticastGroupWithFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMulticastGroupWithFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_multicast_group_with_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWirelessDeviceWithFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_wireless_device_with_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWirelessDeviceWithMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_wireless_device_with_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWirelessDeviceWithThing",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWirelessDeviceWithThing",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_wireless_device_with_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWirelessGatewayWithCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWirelessGatewayWithCertificate",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_wireless_gateway_with_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWirelessGatewayWithThing",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWirelessGatewayWithThing",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "associate_wireless_gateway_with_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMulticastGroupSession",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelMulticastGroupSession",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "cancel_multicast_group_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDestination",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeviceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeviceProfile",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_device_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFuotaTask",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMulticastGroup",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNetworkAnalyzerConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNetworkAnalyzerConfiguration",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_network_analyzer_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceProfile",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_service_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWirelessDevice",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWirelessGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWirelessGateway",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_wireless_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWirelessGatewayTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWirelessGatewayTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_wireless_gateway_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWirelessGatewayTaskDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWirelessGatewayTaskDefinition",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "create_wireless_gateway_task_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDestination",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeviceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDeviceProfile",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_device_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNetworkAnalyzerConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNetworkAnalyzerConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_network_analyzer_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueuedMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueuedMessages",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_queued_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceProfile",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_service_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWirelessGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWirelessGateway",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_wireless_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWirelessGatewayTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWirelessGatewayTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_wireless_gateway_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWirelessGatewayTaskDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWirelessGatewayTaskDefinition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "delete_wireless_gateway_task_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "deregister_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAwsAccountFromPartnerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAwsAccountFromPartnerAccount",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_aws_account_from_partner_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMulticastGroupFromFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMulticastGroupFromFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_multicast_group_from_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWirelessDeviceFromFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_wireless_device_from_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWirelessDeviceFromMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_wireless_device_from_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWirelessDeviceFromThing",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWirelessDeviceFromThing",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_wireless_device_from_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWirelessGatewayFromCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWirelessGatewayFromCertificate",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_wireless_gateway_from_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWirelessGatewayFromThing",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWirelessGatewayFromThing",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "disassociate_wireless_gateway_from_thing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDestination",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeviceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeviceProfile",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_device_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventConfigurationByResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventConfigurationByResourceTypes",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_event_configuration_by_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLogLevelsByResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLogLevelsByResourceTypes",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_log_levels_by_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMetricConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetricConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_metric_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetrics",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMulticastGroupSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMulticastGroupSession",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_multicast_group_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkAnalyzerConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNetworkAnalyzerConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_network_analyzer_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPartnerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPartnerAccount",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_partner_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPosition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPosition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPositionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPositionConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_position_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPositionEstimate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPositionEstimate",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_position_estimate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceEventConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceEventConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_resource_event_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceLogLevel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceLogLevel",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_resource_log_level",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePosition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_resource_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceEndpoint",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_service_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceProfile",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_service_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessDeviceStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessDeviceStatistics",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_device_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGateway",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGatewayCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGatewayCertificate",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGatewayFirmwareInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGatewayFirmwareInformation",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway_firmware_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGatewayStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGatewayStatistics",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGatewayTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGatewayTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWirelessGatewayTaskDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWirelessGatewayTaskDefinition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "get_wireless_gateway_task_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDestinations",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeviceProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeviceProfiles",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_device_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDevicesForWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDevicesForWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_devices_for_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventConfigurations",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_event_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFuotaTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFuotaTasks",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_fuota_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMulticastGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMulticastGroups",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_multicast_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMulticastGroupsByFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMulticastGroupsByFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_multicast_groups_by_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkAnalyzerConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkAnalyzerConfigurations",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_network_analyzer_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPartnerAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPartnerAccounts",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_partner_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPositionConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPositionConfigurations",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_position_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQueuedMessages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueuedMessages",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_queued_messages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceProfiles",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_service_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWirelessDeviceImportTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWirelessDeviceImportTasks",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_wireless_device_import_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWirelessDevices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWirelessDevices",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_wireless_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWirelessGatewayTaskDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWirelessGatewayTaskDefinitions",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_wireless_gateway_task_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWirelessGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWirelessGateways",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "list_wireless_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPositionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPositionConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "put_position_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourceLogLevel",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourceLogLevel",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "put_resource_log_level",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetAllResourceLogLevels",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetAllResourceLogLevels",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "reset_all_resource_log_levels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetResourceLogLevel",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetResourceLogLevel",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "reset_resource_log_level",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendDataToMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "SendDataToMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "send_data_to_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendDataToWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "SendDataToWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "send_data_to_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBulkAssociateWirelessDeviceWithMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBulkAssociateWirelessDeviceWithMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_bulk_associate_wireless_device_with_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBulkDisassociateWirelessDeviceFromMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBulkDisassociateWirelessDeviceFromMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_bulk_disassociate_wireless_device_from_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMulticastGroupSession",
+      "AuthorizedActions": [
+        {
+          "Name": "StartMulticastGroupSession",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_multicast_group_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSingleWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSingleWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_single_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "start_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "TestWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "test_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDestination",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventConfigurationByResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventConfigurationByResourceTypes",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_event_configuration_by_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFuotaTask",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotwireless.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFuotaTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_fuota_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLogLevelsByResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLogLevelsByResourceTypes",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_log_levels_by_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMetricConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMetricConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_metric_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMulticastGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMulticastGroup",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_multicast_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNetworkAnalyzerConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNetworkAnalyzerConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_network_analyzer_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePartnerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePartnerAccount",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_partner_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePosition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceEventConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceEventConfiguration",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_resource_event_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourcePosition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourcePosition",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_resource_position",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWirelessDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWirelessDevice",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_wireless_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWirelessDeviceImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWirelessDeviceImportTask",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_wireless_device_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWirelessGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWirelessGateway",
+          "Service": "iotwireless"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotwireless",
+          "Method": "update_wireless_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Destination",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:Destination/${DestinationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DeviceProfile",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:DeviceProfile/${DeviceProfileId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "FuotaTask",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:FuotaTask/${FuotaTaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ImportTask",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:ImportTask/${ImportTaskId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "MulticastGroup",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:MulticastGroup/${MulticastGroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "NetworkAnalyzerConfiguration",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:NetworkAnalyzerConfiguration/${NetworkAnalyzerConfigurationName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ServiceProfile",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:ServiceProfile/${ServiceProfileId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SidewalkAccount",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:SidewalkAccount/${SidewalkAccountId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "WirelessDevice",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:WirelessDevice/${WirelessDeviceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "WirelessGateway",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:WirelessGateway/${WirelessGatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "WirelessGatewayTaskDefinition",
+      "ARNFormats": [
+        "arn:${Partition}:iotwireless:${Region}:${Account}:WirelessGatewayTaskDefinition/${WirelessGatewayTaskDefinitionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cert",
+      "ARNFormats": [
+        "arn:${Partition}:iot:${Region}:${Account}:cert/${Certificate}"
+      ]
+    },
+    {
+      "Name": "thing",
+      "ARNFormats": [
+        "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,773 @@
+{
+  "Name": "rum",
+  "Actions": [
+    {
+      "Name": "BatchCreateRumMetricDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteRumMetricDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetRumMetricDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAppMonitor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAppMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRumMetricsDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAppMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAppMonitorData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAppMonitors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRumMetricsDestinations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutRumEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutRumMetricsDestination",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAppMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRumMetricDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AppMonitorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchCreateRumMetricDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateRumMetricDefinitions",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "batch_create_rum_metric_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteRumMetricDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteRumMetricDefinitions",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "batch_delete_rum_metric_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetRumMetricDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetRumMetricDefinitions",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "batch_get_rum_metric_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAppMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAppMonitor",
+          "Service": "rum"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "create_app_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAppMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAppMonitor",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "delete_app_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRumMetricsDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRumMetricsDestination",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "delete_rum_metrics_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAppMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAppMonitor",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "get_app_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAppMonitorData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAppMonitorData",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "get_app_monitor_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAppMonitors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAppMonitors",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "list_app_monitors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRumMetricsDestinations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRumMetricsDestinations",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "list_rum_metrics_destinations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRumEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRumEvents",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "put_rum_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRumMetricsDestination",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "rum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutRumMetricsDestination",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "put_rum_metrics_destination",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAppMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAppMonitor",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "update_app_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRumMetricDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRumMetricDefinition",
+          "Service": "rum"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rum",
+          "Method": "update_rum_metric_definition",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AppMonitorResource",
+      "ARNFormats": [
+        "arn:${Partition}:rum:${Region}:${Account}:appmonitor/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

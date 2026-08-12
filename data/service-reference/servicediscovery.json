@@ -1,0 +1,1266 @@
+{
+  "Name": "servicediscovery",
+  "Actions": [
+    {
+      "Name": "CreateHttpNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePrivateDnsNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePublicDnsNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateService",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "servicediscovery:NamespaceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteService",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteServiceAttributes",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterInstance",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn",
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DiscoverInstances",
+      "ActionConditionKeys": [
+        "servicediscovery:NamespaceName",
+        "servicediscovery:ServiceName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DiscoverInstancesRevision",
+      "ActionConditionKeys": [
+        "servicediscovery:NamespaceName",
+        "servicediscovery:ServiceName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstance",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInstancesHealthStatus",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOperation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        },
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServiceAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstances",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNamespaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterInstance",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn",
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateHttpNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateInstanceCustomHealthStatus",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceArn",
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePrivateDnsNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePublicDnsNamespace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "namespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateService",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceAttributes",
+      "ActionConditionKeys": [
+        "servicediscovery:ServiceCreatedByAccount"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "servicediscovery:NamespaceArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "servicediscovery:NamespaceName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicediscovery:ServiceArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "servicediscovery:ServiceCreatedByAccount",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "servicediscovery:ServiceName",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateHttpNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateHttpNamespace",
+          "Service": "servicediscovery"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "create_http_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePrivateDnsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePrivateDnsNamespace",
+          "Service": "servicediscovery"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "create_private_dns_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePublicDnsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePublicDnsNamespace",
+          "Service": "servicediscovery"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "create_public_dns_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateService",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateService",
+          "Service": "servicediscovery"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "create_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNamespace",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "delete_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteService",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteService",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "delete_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceAttributes",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "delete_service_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterInstance",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "deregister_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DiscoverInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "DiscoverInstances",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "discover_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DiscoverInstancesRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "DiscoverInstancesRevision",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "discover_instances_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstance",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstancesHealthStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstancesHealthStatus",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_instances_health_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNamespace",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOperation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOperation",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_operation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetService",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceAttributes",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "get_service_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstances",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "list_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNamespaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNamespaces",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "list_namespaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOperations",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "list_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServices",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "list_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterInstance",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "register_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHttpNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHttpNamespace",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_http_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInstanceCustomHealthStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInstanceCustomHealthStatus",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_instance_custom_health_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePrivateDnsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePrivateDnsNamespace",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_private_dns_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePublicDnsNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePublicDnsNamespace",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_public_dns_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateService",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateService",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceAttributes",
+          "Service": "servicediscovery"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "servicediscovery",
+          "Method": "update_service_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "namespace",
+      "ARNFormats": [
+        "arn:${Partition}:servicediscovery:${Region}:${Account}:namespace/${NamespaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "service",
+      "ARNFormats": [
+        "arn:${Partition}:servicediscovery:${Region}:${Account}:service/${ServiceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

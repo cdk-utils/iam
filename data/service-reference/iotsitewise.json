@@ -1,0 +1,6576 @@
+{
+  "Name": "iotsitewise",
+  "Actions": [
+    {
+      "Name": "AssociateAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateTimeSeriesToAssetProperty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchAssociateDataSegmentsToDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchAssociateProjectAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteDatasetDataSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateDataSegmentsFromDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateProjectAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchGetAssetPropertyAggregates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetAssetPropertyValue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetAssetPropertyValueHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchPutAssetPropertyValue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelEnrichmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelPipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessPolicy",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAsset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssetModel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssetModelCompositeModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBulkImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateComputationModel",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDashboard",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDatasetExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnrichmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePipeline",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "iotsitewise:taskArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePortal",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateProject",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTask",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkspace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssetModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssetModelCompositeModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssetModelInterfaceRelationship",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteComputationModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDashboard",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTimeSeries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "application",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssetCompositeModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssetModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssetModelCompositeModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssetModelInterfaceRelationship",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAssetProperty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBulkImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeComputationModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeComputationModelExecutionSummary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDashboard",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDatasetExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDefaultEncryptionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEnrichmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGatewayCapabilityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLoggingOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribePipeline",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSearch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTimeSeries",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateTimeSeriesFromAssetProperty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableSiteWiseIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExecuteQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssetPropertyAggregates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssetPropertyValue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAssetPropertyValueHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCaptureData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInterpolatedAssetPropertyValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSearchResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeAssistant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccessPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssetModelCompositeModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssetModelProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssetModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssetProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssetRelationships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssociatedAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBulkImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCompositionRelationships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComputationModelDataBindingUsages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComputationModelResolveToResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComputationModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDashboards",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatasetDataSegmentRelationships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetDataSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEnrichmentJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInterfaceRelationships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPipelineExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPipelines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPortals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProjectAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListProjects",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListQueries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSearches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "application",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTimeSeries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAssetModelInterfaceRelationship",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDefaultEncryptionConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutLoggingOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutStorageConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartPipelineExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQuery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartSearch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "application",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "application",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "time-series",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccessPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-policy",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssetModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssetModelCompositeModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssetModelPropertyRouting",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAssetProperty",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateComputationModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "asset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "asset-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "computation-model",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDashboard",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dashboard",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGatewayCapabilityConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePipeline",
+      "ActionConditionKeys": [
+        "iotsitewise:taskArns"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "pipeline",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "portal",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "project",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "task",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspace",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "iotsitewise:assetHierarchyPath",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:childAssetId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:group",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:iam",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:isAssociatedWithAssetProperty",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:portal",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:project",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:propertyAlias",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:propertyId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "iotsitewise:taskArns",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "iotsitewise:user",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "associate_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateTimeSeriesToAssetProperty",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateTimeSeriesToAssetProperty",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "associate_time_series_to_asset_property",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateDataSegmentsToDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateDataSegmentsToDataset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_associate_data_segments_to_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateProjectAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateProjectAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_associate_project_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteDatasetDataSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteDatasetDataSegments",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_delete_dataset_data_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateDataSegmentsFromDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateDataSegmentsFromDataset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_disassociate_data_segments_from_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateProjectAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateProjectAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_disassociate_project_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAssetPropertyAggregates",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAssetPropertyAggregates",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_get_asset_property_aggregates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAssetPropertyValue",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAssetPropertyValue",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_get_asset_property_value",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAssetPropertyValueHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAssetPropertyValueHistory",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_get_asset_property_value_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutAssetPropertyValue",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutAssetPropertyValue",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "batch_put_asset_property_value",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelEnrichmentJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "cancel_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelPipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelPipelineExecution",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "cancel_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelQuery",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "cancel_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessPolicy",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAsset",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssetModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssetModel",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_asset_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssetModelCompositeModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssetModelCompositeModel",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_asset_model_composite_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBulkImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBulkImportJob",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_bulk_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateComputationModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComputationModel",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_computation_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDashboard",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetExportJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_dataset_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnrichmentJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGateway",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePipeline",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePortal",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProject",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTask",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspace",
+          "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "create_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessPolicy",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAsset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssetModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssetModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_asset_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssetModelCompositeModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssetModelCompositeModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_asset_model_composite_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssetModelInterfaceRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssetModelInterfaceRelationship",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_asset_model_interface_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComputationModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComputationModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_computation_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDashboard",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGateway",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePipeline",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortal",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProject",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTask",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTimeSeries",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTimeSeries",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_time_series",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspace",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "delete_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccessPolicy",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAction",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplication",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAsset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssetCompositeModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssetCompositeModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset_composite_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssetModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssetModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssetModelCompositeModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssetModelCompositeModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset_model_composite_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssetModelInterfaceRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssetModelInterfaceRelationship",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset_model_interface_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAssetProperty",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAssetProperty",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_asset_property",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBulkImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBulkImportJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_bulk_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeComputationModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComputationModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_computation_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeComputationModelExecutionSummary",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeComputationModelExecutionSummary",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_computation_model_execution_summary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDashboard",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetExportJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_dataset_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDefaultEncryptionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDefaultEncryptionConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_default_encryption_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEnrichmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEnrichmentJob",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_enrichment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeExecution",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGateway",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGatewayCapabilityConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGatewayCapabilityConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_gateway_capability_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLoggingOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLoggingOptions",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_logging_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePipeline",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePipelineExecution",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePortal",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeProject",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeProject",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQuery",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSearch",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSearch",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStorageConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTask",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTimeSeries",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTimeSeries",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_time_series",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspace",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "describe_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "disassociate_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateTimeSeriesFromAssetProperty",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateTimeSeriesFromAssetProperty",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "disassociate_time_series_from_asset_property",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteAction",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteAction",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "execute_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteQuery",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "execute_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetPropertyAggregates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetPropertyAggregates",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_asset_property_aggregates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetPropertyValue",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetPropertyValue",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_asset_property_value",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssetPropertyValueHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssetPropertyValueHistory",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_asset_property_value_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCaptureData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCaptureData",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_capture_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInterpolatedAssetPropertyValues",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInterpolatedAssetPropertyValues",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_interpolated_asset_property_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResults",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_query_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSearchResults",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSearchResults",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "get_search_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InvokeAssistant",
+      "AuthorizedActions": [
+        {
+          "Name": "InvokeAssistant",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "invoke_assistant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessPolicies",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_access_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActions",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetModelCompositeModels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetModelCompositeModels",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_asset_model_composite_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetModelProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetModelProperties",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_asset_model_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetModels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetModels",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_asset_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetProperties",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_asset_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssetRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssetRelationships",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_asset_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_associated_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBulkImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBulkImportJobs",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_bulk_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCompositionRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCompositionRelationships",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_composition_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComputationModelDataBindingUsages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComputationModelDataBindingUsages",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_computation_model_data_binding_usages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComputationModelResolveToResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComputationModelResolveToResources",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_computation_model_resolve_to_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComputationModels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComputationModels",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_computation_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDashboards",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDashboards",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_dashboards",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetDataSegmentRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetDataSegmentRelationships",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_dataset_data_segment_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetDataSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetDataSegments",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_dataset_data_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetExportJobs",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_dataset_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnrichmentJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnrichmentJobs",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_enrichment_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExecutions",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGateways",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInterfaceRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInterfaceRelationships",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_interface_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPipelineExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPipelineExecutions",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_pipeline_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPipelines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPipelines",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_pipelines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortals",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_portals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjectAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjectAssets",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_project_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProjects",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProjects",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQueries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueries",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_queries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSearches",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSearches",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_searches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTasks",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTimeSeries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTimeSeries",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_time_series",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaces",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "list_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAssetModelInterfaceRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAssetModelInterfaceRelationship",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "put_asset_model_interface_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDefaultEncryptionConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDefaultEncryptionConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "put_default_encryption_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLoggingOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "PutLoggingOptions",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "put_logging_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutStorageConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutStorageConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "put_storage_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPipelineExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPipelineExecution",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "start_pipeline_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQuery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQuery",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "start_query",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSearch",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSearch",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "start_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccessPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAccessPolicy",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_access_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAsset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssetModel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssetModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_asset_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssetModelCompositeModel",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAssetModelCompositeModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_asset_model_composite_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssetProperty",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssetProperty",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_asset_property",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComputationModel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateComputationModel",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_computation_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDashboard",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDashboard",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_dashboard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataset",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGateway",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayCapabilityConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewayCapabilityConfiguration",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_gateway_capability_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePipeline",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePipeline",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_pipeline",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePortal",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProject",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTask",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "iotsitewise.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateTask",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspace",
+          "Service": "iotsitewise"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iotsitewise",
+          "Method": "update_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "access-policy",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "application",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/application/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "asset",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "asset-model",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "computation-model",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:computation-model/${ComputationModelId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dashboard",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:dataset/${DatasetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "gateway",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "pipeline",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/pipeline/${PipelineName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "portal",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "project",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "task",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/task/${TaskName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "time-series",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspace",
+      "ARNFormats": [
+        "arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

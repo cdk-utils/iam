@@ -1,0 +1,833 @@
+{
+  "Name": "evs",
+  "Actions": [
+    {
+      "Name": "AssociateEipToVlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEntitlement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEnvironmentHost",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEntitlement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEnvironmentHost",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateEipFromVlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDepotUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentHosts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironmentVlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVmEntitlements",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnvironmentConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateEipToVlan",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateEipToVlan",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "associate_eip_to_vlan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEntitlement",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEntitlement",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "create_entitlement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "evs"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "create_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentConnector",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "create_environment_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironmentHost",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironmentHost",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "create_environment_host",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEntitlement",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEntitlement",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "delete_entitlement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "delete_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentConnector",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "delete_environment_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironmentHost",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironmentHost",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "delete_environment_host",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateEipFromVlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateEipFromVlan",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "disassociate_eip_from_vlan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDepotUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDepotUrl",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "get_depot_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "get_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVersions",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "get_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentConnectors",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_environment_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentHosts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentHosts",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_environment_hosts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironmentVlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironmentVlans",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_environment_vlans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVmEntitlements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVmEntitlements",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "list_vm_entitlements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironmentConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironmentConnector",
+          "Service": "evs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "evs",
+          "Method": "update_environment_connector",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "environment",
+      "ARNFormats": [
+        "arn:${Partition}:evs:${Region}:${Account}:environment/${EnvironmentIdentifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

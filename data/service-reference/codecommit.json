@@ -1,0 +1,3127 @@
+{
+  "Name": "codecommit",
+  "Actions": [
+    {
+      "Name": "AssociateApprovalRuleTemplateWithRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchAssociateApprovalRuleTemplateWithRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDescribeMergeConflicts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDisassociateApprovalRuleTemplateFromRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCommits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetPullRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelUploadArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApprovalRuleTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBranch",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCommit",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePullRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePullRequestApprovalRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRepository",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUnreferencedMergeCommit",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApprovalRuleTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBranch",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCommentContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFile",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePullRequestApprovalRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMergeConflicts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePullRequestEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateApprovalRuleTemplateFromRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EvaluatePullRequestApprovalRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApprovalRuleTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBlob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBranch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetComment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommentReactions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommentsForComparedCommit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommentsForPullRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommitHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCommitsFromMergeBase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDifferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFolder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMergeCommit",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMergeConflicts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMergeOptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetObjectIdentifier",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPullRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPullRequestApprovalStates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPullRequestOverrideState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetReferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRepositoryTriggers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTree",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetUploadArchiveStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GitPull",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GitPush",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApprovalRuleTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAssociatedApprovalRuleTemplatesForRepository",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBranches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFileCommitHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPullRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRepositories",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRepositoriesForApprovalRuleTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergeBranchesByFastForward",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergeBranchesBySquash",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergeBranchesByThreeWay",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergePullRequestByFastForward",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergePullRequestBySquash",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MergePullRequestByThreeWay",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "OverridePullRequestApprovalRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostCommentForComparedCommit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostCommentForPullRequest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PostCommentReply",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutCommentReaction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFile",
+      "ActionConditionKeys": [
+        "codecommit:References"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutRepositoryTriggers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestRepositoryTriggers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateDescription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateName",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateComment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDefaultBranch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePullRequestApprovalRuleContent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePullRequestApprovalState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePullRequestDescription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePullRequestStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePullRequestTitle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRepositoryDescription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRepositoryEncryptionKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRepositoryName",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UploadArchive",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "repository"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "codecommit:References",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateApprovalRuleTemplateWithRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApprovalRuleTemplateWithRepository",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "associate_approval_rule_template_with_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateApprovalRuleTemplateWithRepositories",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateApprovalRuleTemplateWithRepositories",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "batch_associate_approval_rule_template_with_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDescribeMergeConflicts",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDescribeMergeConflicts",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "batch_describe_merge_conflicts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateApprovalRuleTemplateFromRepositories",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateApprovalRuleTemplateFromRepositories",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "batch_disassociate_approval_rule_template_from_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCommits",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCommits",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "batch_get_commits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetRepositories",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetRepositories",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "batch_get_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApprovalRuleTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApprovalRuleTemplate",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_approval_rule_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBranch",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePullRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePullRequest",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_pull_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePullRequestApprovalRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePullRequestApprovalRule",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_pull_request_approval_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRepository",
+          "Service": "codecommit"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUnreferencedMergeCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUnreferencedMergeCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "create_unreferenced_merge_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApprovalRuleTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApprovalRuleTemplate",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_approval_rule_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBranch",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCommentContent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCommentContent",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_comment_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFile",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_file",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePullRequestApprovalRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePullRequestApprovalRule",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_pull_request_approval_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRepository",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "delete_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMergeConflicts",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMergeConflicts",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "describe_merge_conflicts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePullRequestEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePullRequestEvents",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "describe_pull_request_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateApprovalRuleTemplateFromRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateApprovalRuleTemplateFromRepository",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "disassociate_approval_rule_template_from_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvaluatePullRequestApprovalRules",
+      "AuthorizedActions": [
+        {
+          "Name": "EvaluatePullRequestApprovalRules",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "evaluate_pull_request_approval_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApprovalRuleTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApprovalRuleTemplate",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_approval_rule_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBlob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBlob",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_blob",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBranch",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComment",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_comment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCommentReactions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCommentReactions",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_comment_reactions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCommentsForComparedCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCommentsForComparedCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_comments_for_compared_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCommentsForPullRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCommentsForPullRequest",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_comments_for_pull_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDifferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDifferences",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_differences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFile",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_file",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFolder",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFolder",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_folder",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMergeCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMergeCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_merge_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMergeConflicts",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMergeConflicts",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_merge_conflicts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMergeOptions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMergeOptions",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_merge_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPullRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPullRequest",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_pull_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPullRequestApprovalStates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPullRequestApprovalStates",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_pull_request_approval_states",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPullRequestOverrideState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPullRequestOverrideState",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_pull_request_override_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRepository",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRepositoryTriggers",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRepositoryTriggers",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "get_repository_triggers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApprovalRuleTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApprovalRuleTemplates",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_approval_rule_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssociatedApprovalRuleTemplatesForRepository",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedApprovalRuleTemplatesForRepository",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_associated_approval_rule_templates_for_repository",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBranches",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBranches",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_branches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFileCommitHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFileCommitHistory",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_file_commit_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPullRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPullRequests",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_pull_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRepositories",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRepositories",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_repositories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRepositoriesForApprovalRuleTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRepositoriesForApprovalRuleTemplate",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_repositories_for_approval_rule_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergeBranchesByFastForward",
+      "AuthorizedActions": [
+        {
+          "Name": "MergeBranchesByFastForward",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_branches_by_fast_forward",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergeBranchesBySquash",
+      "AuthorizedActions": [
+        {
+          "Name": "MergeBranchesBySquash",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_branches_by_squash",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergeBranchesByThreeWay",
+      "AuthorizedActions": [
+        {
+          "Name": "MergeBranchesByThreeWay",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_branches_by_three_way",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergePullRequestByFastForward",
+      "AuthorizedActions": [
+        {
+          "Name": "MergePullRequestByFastForward",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_pull_request_by_fast_forward",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergePullRequestBySquash",
+      "AuthorizedActions": [
+        {
+          "Name": "MergePullRequestBySquash",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_pull_request_by_squash",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MergePullRequestByThreeWay",
+      "AuthorizedActions": [
+        {
+          "Name": "MergePullRequestByThreeWay",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "merge_pull_request_by_three_way",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "OverridePullRequestApprovalRules",
+      "AuthorizedActions": [
+        {
+          "Name": "OverridePullRequestApprovalRules",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "override_pull_request_approval_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostCommentForComparedCommit",
+      "AuthorizedActions": [
+        {
+          "Name": "PostCommentForComparedCommit",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "post_comment_for_compared_commit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostCommentForPullRequest",
+      "AuthorizedActions": [
+        {
+          "Name": "PostCommentForPullRequest",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "post_comment_for_pull_request",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PostCommentReply",
+      "AuthorizedActions": [
+        {
+          "Name": "PostCommentReply",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "post_comment_reply",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutCommentReaction",
+      "AuthorizedActions": [
+        {
+          "Name": "PutCommentReaction",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "put_comment_reaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFile",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFile",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "put_file",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRepositoryTriggers",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRepositoryTriggers",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "put_repository_triggers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestRepositoryTriggers",
+      "AuthorizedActions": [
+        {
+          "Name": "TestRepositoryTriggers",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "test_repository_triggers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateContent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApprovalRuleTemplateContent",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_approval_rule_template_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateDescription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApprovalRuleTemplateDescription",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_approval_rule_template_description",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApprovalRuleTemplateName",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApprovalRuleTemplateName",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_approval_rule_template_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateComment",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_comment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDefaultBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDefaultBranch",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_default_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePullRequestApprovalRuleContent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePullRequestApprovalRuleContent",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_pull_request_approval_rule_content",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePullRequestApprovalState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePullRequestApprovalState",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_pull_request_approval_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePullRequestDescription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePullRequestDescription",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_pull_request_description",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePullRequestStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePullRequestStatus",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_pull_request_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePullRequestTitle",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePullRequestTitle",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_pull_request_title",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRepositoryDescription",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRepositoryDescription",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_repository_description",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRepositoryEncryptionKey",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRepositoryEncryptionKey",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_repository_encryption_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRepositoryName",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "codecommit"
+        },
+        {
+          "Name": "UpdateRepositoryName",
+          "Service": "codecommit"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "codecommit",
+          "Method": "update_repository_name",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "repository",
+      "ARNFormats": [
+        "arn:${Partition}:codecommit:${Region}:${Account}:${RepositoryName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

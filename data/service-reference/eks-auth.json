@@ -1,0 +1,63 @@
+{
+  "Name": "eks-auth",
+  "Actions": [
+    {
+      "Name": "AssumeRoleForPodIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssumeRoleForPodIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "AssumeRoleForPodIdentity",
+          "Service": "eks-auth"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eks-auth",
+          "Method": "assume_role_for_pod_identity",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

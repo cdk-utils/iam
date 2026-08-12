@@ -1,0 +1,1036 @@
+{
+  "Name": "cassandra",
+  "Actions": [
+    {
+      "Name": "Alter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AlterMultiRegionResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Create",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMultiRegionResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Drop",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DropMultiRegionResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetShardIterator",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreams",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Modify",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyMultiRegionResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Restore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreMultiRegionTable",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Select",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SelectMultiRegionResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagMultiRegionResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "stream"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UnTagMultiRegionResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "keyspace"
+        },
+        {
+          "Name": "stream"
+        },
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePartitioner",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "table"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateKeyspace",
+      "AuthorizedActions": [
+        {
+          "Name": "Create",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "CreateMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "create_keyspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "Create",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "CreateMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "create_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateType",
+      "AuthorizedActions": [
+        {
+          "Name": "Create",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "CreateMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "create_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKeyspace",
+      "AuthorizedActions": [
+        {
+          "Name": "Drop",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "DropMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "delete_keyspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTable",
+      "AuthorizedActions": [
+        {
+          "Name": "Drop",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "DropMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "delete_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteType",
+      "AuthorizedActions": [
+        {
+          "Name": "Drop",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "DropMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "delete_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKeyspace",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "get_keyspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecords",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspacesstreams",
+          "Method": "get_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetShardIterator",
+      "AuthorizedActions": [
+        {
+          "Name": "GetShardIterator",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspacesstreams",
+          "Method": "get_shard_iterator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStream",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStream",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspacesstreams",
+          "Method": "get_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTable",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "get_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTableAutoScalingSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeScalableTargets",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "DescribeScalingPolicies",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "SelectMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "get_table_auto_scaling_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetType",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "get_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeyspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "list_keyspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreams",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreams",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspacesstreams",
+          "Method": "list_streams",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTables",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "list_tables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "list_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreTable",
+      "AuthorizedActions": [
+        {
+          "Name": "Restore",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "RestoreMultiRegionTable",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "restore_table",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "Alter",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "AlterMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "Alter",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "AlterMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "UnTagMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateKeyspace",
+      "AuthorizedActions": [
+        {
+          "Name": "Alter",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "AlterMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "Create",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "CreateMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "DescribeScalableTargets",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "DescribeScalableTargets",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "DescribeScalingPolicies",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "Modify",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "ModifyMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "PutScalingPolicy",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "RegisterScalableTarget",
+          "Service": "application-autoscaling"
+        },
+        {
+          "Name": "Select",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "SelectMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagMultiRegionResource",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "update_keyspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTable",
+      "AuthorizedActions": [
+        {
+          "Name": "Alter",
+          "Service": "cassandra"
+        },
+        {
+          "Name": "AlterMultiRegionResource",
+          "Service": "cassandra"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "keyspaces",
+          "Method": "update_table",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "keyspace",
+      "ARNFormats": [
+        "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "stream",
+      "ARNFormats": [
+        "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}/stream/${StreamLabel}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "table",
+      "ARNFormats": [
+        "arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

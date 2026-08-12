@@ -1,0 +1,1386 @@
+{
+  "Name": "m2",
+  "Actions": [
+    {
+      "Name": "CancelBatchJobExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataSetExportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataSetImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEnvironment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplicationFromEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApplicationVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBatchJobExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSetDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSetExportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSetImportTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSignedBluinsightsUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplicationVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBatchJobDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBatchJobExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBatchJobRestartPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSetExportHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSetImportHistory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEngineVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartBatchJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelBatchJobExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelBatchJobExecution",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "cancel_batch_job_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "m2"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "m2.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSetExportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSetExportTask",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "create_data_set_export_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSetImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSetImportTask",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "create_data_set_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeployment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "m2"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "create_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplicationFromEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplicationFromEnvironment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "delete_application_from_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "delete_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplicationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplicationVersion",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_application_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBatchJobExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBatchJobExecution",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_batch_job_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSetDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSetDetails",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_data_set_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSetExportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSetExportTask",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_data_set_export_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSetImportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSetImportTask",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_data_set_import_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDeployment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSignedBluinsightsUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSignedBluinsightsUrl",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "get_signed_bluinsights_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplicationVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplicationVersions",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_application_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchJobDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchJobDefinitions",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_batch_job_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchJobExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchJobExecutions",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_batch_job_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchJobRestartPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchJobRestartPoints",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_batch_job_restart_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSetExportHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSetExportHistory",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_data_set_export_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSetImportHistory",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSetImportHistory",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_data_set_import_history",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSets",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_data_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeployments",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngineVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngineVersions",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_engine_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartApplication",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "start_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartBatchJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartBatchJob",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "start_batch_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StopApplication",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "stop_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironment",
+          "Service": "m2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "m2",
+          "Method": "update_environment",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Application",
+      "ARNFormats": [
+        "arn:${Partition}:m2:${Region}:${Account}:app/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Environment",
+      "ARNFormats": [
+        "arn:${Partition}:m2:${Region}:${Account}:env/${EnvironmentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

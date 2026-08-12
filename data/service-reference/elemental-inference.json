@@ -1,0 +1,696 @@
+{
+  "Name": "elemental-inference",
+  "Actions": [
+    {
+      "Name": "AssociateFeed",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDictionary",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFeed",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDictionary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFeed",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateFeed",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportDictionaryEntries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDictionary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFeed",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDictionaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFeeds",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMedia",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        },
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        },
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDictionary",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dictionary"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFeed",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "feed"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateFeed",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "associate_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDictionary",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDictionary",
+          "Service": "elemental-inference"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_dictionary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFeed",
+          "Service": "elemental-inference"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "elemental-inference.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "create_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDictionary",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDictionary",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_dictionary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFeed",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "delete_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateFeed",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "disassociate_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportDictionaryEntries",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportDictionaryEntries",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "export_dictionary_entries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDictionary",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDictionary",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "get_dictionary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFeed",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "get_feed",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDictionaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDictionaries",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_dictionaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFeeds",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFeeds",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_feeds",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchFixtures",
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "search_fixtures",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDictionary",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDictionary",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "update_dictionary",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFeed",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "elemental-inference.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateFeed",
+          "Service": "elemental-inference"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "elementalinference",
+          "Method": "update_feed",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "dictionary",
+      "ARNFormats": [
+        "arn:${Partition}:elemental-inference:${Region}:${Account}:dictionary/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "feed",
+      "ARNFormats": [
+        "arn:${Partition}:elemental-inference:${Region}:${Account}:feed/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

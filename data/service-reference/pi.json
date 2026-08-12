@@ -1,0 +1,601 @@
+{
+  "Name": "pi",
+  "Actions": [
+    {
+      "Name": "CreatePerformanceAnalysisReport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePerformanceAnalysisReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDimensionKeys",
+      "ActionConditionKeys": [
+        "pi:Dimensions"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDimensionKeyDetails",
+      "ActionConditionKeys": [
+        "pi:Dimensions"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPerformanceAnalysisReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceMetrics",
+      "ActionConditionKeys": [
+        "pi:Dimensions"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAvailableResourceDimensions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAvailableResourceMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPerformanceAnalysisReportRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPerformanceAnalysisReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metric-resource"
+        },
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "perf-reports-resource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "pi:Dimensions",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreatePerformanceAnalysisReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePerformanceAnalysisReport",
+          "Service": "pi"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "create_performance_analysis_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePerformanceAnalysisReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePerformanceAnalysisReport",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "delete_performance_analysis_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDimensionKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDimensionKeys",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "describe_dimension_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDimensionKeyDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDimensionKeyDetails",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "get_dimension_key_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPerformanceAnalysisReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPerformanceAnalysisReport",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "get_performance_analysis_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceMetadata",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "get_resource_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceMetrics",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "get_resource_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAvailableResourceDimensions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDimensionKeys",
+          "Service": "pi"
+        },
+        {
+          "Name": "GetDimensionKeyDetails",
+          "Service": "pi"
+        },
+        {
+          "Name": "GetResourceMetrics",
+          "Service": "pi"
+        },
+        {
+          "Name": "ListAvailableResourceDimensions",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "list_available_resource_dimensions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAvailableResourceMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAvailableResourceMetrics",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "list_available_resource_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPerformanceAnalysisReportRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPerformanceAnalysisReportRecommendations",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "list_performance_analysis_report_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPerformanceAnalysisReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPerformanceAnalysisReports",
+          "Service": "pi"
+        },
+        {
+          "Name": "ListTagsForResource",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "list_performance_analysis_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "pi"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pi",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "metric-resource",
+      "ARNFormats": [
+        "arn:${Partition}:pi:${Region}:${Account}:metrics/${ServiceType}/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "perf-reports-resource",
+      "ARNFormats": [
+        "arn:${Partition}:pi:${Region}:${Account}:perf-reports/${ServiceType}/${Identifier}/${ReportId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

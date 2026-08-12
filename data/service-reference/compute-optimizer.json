@@ -1,0 +1,1032 @@
+{
+  "Name": "compute-optimizer",
+  "Actions": [
+    {
+      "Name": "DeleteRecommendationPreferences",
+      "ActionConditionKeys": [
+        "compute-optimizer:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRecommendationExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportAutoScalingGroupRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportEBSVolumeRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportEC2InstanceRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportECSServiceRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportIdleRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportLambdaFunctionRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportLicenseRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportRDSDatabaseRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAutoScalingGroupRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEBSVolumeRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEC2InstanceRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEC2RecommendationProjectedMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetECSServiceRecommendationProjectedMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetECSServiceRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEffectiveRecommendationPreferences",
+      "ActionConditionKeys": [
+        "compute-optimizer:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEnrollmentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEnrollmentStatusesForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIdleRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLambdaFunctionRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLicenseRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRDSDatabaseRecommendationProjectedMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRDSDatabaseRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecommendationPreferences",
+      "ActionConditionKeys": [
+        "compute-optimizer:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRecommendationSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutRecommendationPreferences",
+      "ActionConditionKeys": [
+        "compute-optimizer:ResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEnrollmentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "compute-optimizer:ResourceType",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DeleteRecommendationPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommendationPreferences",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "delete_recommendation_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRecommendationExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRecommendationExportJobs",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "describe_recommendation_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportAutoScalingGroupRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutoScalingGroups",
+          "Service": "autoscaling"
+        },
+        {
+          "Name": "ExportAutoScalingGroupRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetAutoScalingGroupRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_auto_scaling_group_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportEBSVolumeRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVolumes",
+          "Service": "ec2"
+        },
+        {
+          "Name": "ExportEBSVolumeRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetEBSVolumeRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_ebs_volume_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportEC2InstanceRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "ExportEC2InstanceRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetEC2InstanceRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_ec2_instance_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportECSServiceRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportECSServiceRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetECSServiceRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "ListClusters",
+          "Service": "ecs"
+        },
+        {
+          "Name": "ListServices",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_ecs_service_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportIdleRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportIdleRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetIdleRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_idle_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportLambdaFunctionRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportLambdaFunctionRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetLambdaFunctionRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "ListFunctions",
+          "Service": "lambda"
+        },
+        {
+          "Name": "ListProvisionedConcurrencyConfigs",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_lambda_function_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportLicenseRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "ExportLicenseRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetLicenseRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_license_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportRDSDatabaseRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDBClusters",
+          "Service": "rds"
+        },
+        {
+          "Name": "DescribeDBInstances",
+          "Service": "rds"
+        },
+        {
+          "Name": "ExportRDSDatabaseRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "GetRDSDatabaseRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "export_rds_database_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutoScalingGroupRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutoScalingGroups",
+          "Service": "autoscaling"
+        },
+        {
+          "Name": "GetAutoScalingGroupRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_auto_scaling_group_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEBSVolumeRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVolumes",
+          "Service": "ec2"
+        },
+        {
+          "Name": "GetEBSVolumeRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_ebs_volume_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEC2InstanceRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "GetEC2InstanceRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_ec2_instance_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEC2RecommendationProjectedMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "GetEC2RecommendationProjectedMetrics",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_ec2_recommendation_projected_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetECSServiceRecommendationProjectedMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetECSServiceRecommendationProjectedMetrics",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_ecs_service_recommendation_projected_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetECSServiceRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetECSServiceRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "ListClusters",
+          "Service": "ecs"
+        },
+        {
+          "Name": "ListServices",
+          "Service": "ecs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_ecs_service_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEffectiveRecommendationPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAutoScalingGroups",
+          "Service": "autoscaling"
+        },
+        {
+          "Name": "DescribeAutoScalingInstances",
+          "Service": "autoscaling"
+        },
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "GetEffectiveRecommendationPreferences",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_effective_recommendation_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnrollmentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnrollmentStatus",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_enrollment_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnrollmentStatusesForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnrollmentStatusesForOrganization",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_enrollment_statuses_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdleRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdleRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_idle_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLambdaFunctionRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLambdaFunctionRecommendations",
+          "Service": "compute-optimizer"
+        },
+        {
+          "Name": "ListFunctions",
+          "Service": "lambda"
+        },
+        {
+          "Name": "ListProvisionedConcurrencyConfigs",
+          "Service": "lambda"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_lambda_function_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLicenseRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInstances",
+          "Service": "ec2"
+        },
+        {
+          "Name": "GetLicenseRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_license_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRDSDatabaseRecommendationProjectedMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDBInstances",
+          "Service": "rds"
+        },
+        {
+          "Name": "GetRDSDatabaseRecommendationProjectedMetrics",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_rds_database_recommendation_projected_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRDSDatabaseRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDBClusters",
+          "Service": "rds"
+        },
+        {
+          "Name": "DescribeDBInstances",
+          "Service": "rds"
+        },
+        {
+          "Name": "GetRDSDatabaseRecommendations",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_rds_database_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendationPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendationPreferences",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_recommendation_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendationSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendationSummaries",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "get_recommendation_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRecommendationPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "PutRecommendationPreferences",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "put_recommendation_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnrollmentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnrollmentStatus",
+          "Service": "compute-optimizer"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer",
+          "Method": "update_enrollment_status",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

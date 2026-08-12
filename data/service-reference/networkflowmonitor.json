@@ -1,0 +1,980 @@
+{
+  "Name": "networkflowmonitor",
+  "Actions": [
+    {
+      "Name": "CreateMonitor",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateScope",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResultsMonitorTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResultsWorkloadInsightsTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryResultsWorkloadInsightsTopContributorsData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatusMonitorTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatusWorkloadInsightsTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueryStatusWorkloadInsightsTopContributorsData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMonitors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListScopes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Publish",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQueryMonitorTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQueryWorkloadInsightsTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartQueryWorkloadInsightsTopContributorsData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopQueryMonitorTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopQueryWorkloadInsightsTopContributors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopQueryWorkloadInsightsTopContributorsData",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        },
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMonitor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "monitor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "scope"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMonitor",
+          "Service": "networkflowmonitor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "create_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateScope",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateScope",
+          "Service": "networkflowmonitor"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "create_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "delete_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteScope",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteScope",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "delete_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResultsMonitorTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResultsMonitorTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_results_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResultsWorkloadInsightsTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResultsWorkloadInsightsTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_results_workload_insights_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryResultsWorkloadInsightsTopContributorsData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryResultsWorkloadInsightsTopContributorsData",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_results_workload_insights_top_contributors_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatusMonitorTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatusMonitorTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_status_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatusWorkloadInsightsTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatusWorkloadInsightsTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_status_workload_insights_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueryStatusWorkloadInsightsTopContributorsData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueryStatusWorkloadInsightsTopContributorsData",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_query_status_workload_insights_top_contributors_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetScope",
+      "AuthorizedActions": [
+        {
+          "Name": "GetScope",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "get_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMonitors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMonitors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "list_monitors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListScopes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListScopes",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "list_scopes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQueryMonitorTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQueryMonitorTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "start_query_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQueryWorkloadInsightsTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQueryWorkloadInsightsTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "start_query_workload_insights_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartQueryWorkloadInsightsTopContributorsData",
+      "AuthorizedActions": [
+        {
+          "Name": "StartQueryWorkloadInsightsTopContributorsData",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "start_query_workload_insights_top_contributors_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQueryMonitorTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQueryMonitorTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "stop_query_monitor_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQueryWorkloadInsightsTopContributors",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQueryWorkloadInsightsTopContributors",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "stop_query_workload_insights_top_contributors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopQueryWorkloadInsightsTopContributorsData",
+      "AuthorizedActions": [
+        {
+          "Name": "StopQueryWorkloadInsightsTopContributorsData",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "stop_query_workload_insights_top_contributors_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMonitor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMonitor",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "update_monitor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateScope",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateScope",
+          "Service": "networkflowmonitor"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "networkflowmonitor",
+          "Method": "update_scope",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "monitor",
+      "ARNFormats": [
+        "arn:${Partition}:networkflowmonitor:${Region}:${Account}:monitor/${MonitorName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "scope",
+      "ARNFormats": [
+        "arn:${Partition}:networkflowmonitor:${Region}:${Account}:scope/${ScopeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

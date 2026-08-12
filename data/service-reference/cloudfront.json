@@ -1,0 +1,6193 @@
+{
+  "Name": "cloudfront",
+  "Actions": [
+    {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateDistributionTenantWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateDistributionWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CopyDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAnycastIpList",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCachePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCloudFrontOriginAccessIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectionFunction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectionGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateContinuousDeploymentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDistribution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDistributionTenant",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFieldLevelEncryptionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFieldLevelEncryptionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFunction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInvalidation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateInvalidationForDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateKeyGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateKeyValueStore",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMonitoringSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOriginAccessControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateOriginRequestPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRealtimeLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResponseHeadersPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSavingsPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamingDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStreamingDistributionWithTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTrustStore",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVpcOrigin",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAnycastIpList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCachePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCloudFrontOriginAccessIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteContinuousDeploymentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "continuous-deployment-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFieldLevelEncryptionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFieldLevelEncryptionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKeyGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteKeyValueStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMonitoringSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOriginAccessControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteOriginRequestPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-request-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRealtimeLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "realtime-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResponseHeadersPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-headers-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteStreamingDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streaming-distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTrustStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVpcOrigin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeKeyValueStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDistributionTenantWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateDistributionWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAnycastIpList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCachePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCachePolicyConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCloudFrontOriginAccessIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCloudFrontOriginAccessIdentityConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectionGroupByRoutingEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetContinuousDeploymentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "continuous-deployment-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetContinuousDeploymentPolicyConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "continuous-deployment-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDistributionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDistributionTenantByDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFieldLevelEncryption",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFieldLevelEncryptionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFieldLevelEncryptionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFieldLevelEncryptionProfileConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInvalidation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInvalidationForDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetKeyGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetKeyGroupConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetManagedCertificateDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMonitoringSubscription",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOriginAccessControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOriginAccessControlConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOriginRequestPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-request-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOriginRequestPolicyConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-request-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPublicKeyConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRealtimeLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "realtime-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResponseHeadersPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-headers-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResponseHeadersPolicyConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-headers-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSavingsPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetStreamingDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streaming-distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetStreamingDistributionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streaming-distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTrustStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVpcOrigin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAnycastIpLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCachePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCloudFrontOriginAccessIdentities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConflictingAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectionFunctions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListConnectionGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListContinuousDeploymentPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionTenants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionTenantsByCustomization",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByAnycastIpListId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByCachePolicyId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDistributionsByConnectionMode",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByKeyGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByLambdaFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDistributionsByOriginRequestPolicyId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByRealtimeLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByResponseHeadersPolicyId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByTrustStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDistributionsByVpcOriginId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDistributionsByWebACLId",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainConflicts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        },
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFieldLevelEncryptionConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFieldLevelEncryptionProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFunctions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInvalidations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInvalidationsForDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListKeyGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListKeyValueStores",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOriginAccessControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOriginRequestPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPublicKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRateCards",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRealtimeLogConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResponseHeadersPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSavingsPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListStreamingDistributions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        },
+        {
+          "Name": "connection-function"
+        },
+        {
+          "Name": "connection-group"
+        },
+        {
+          "Name": "distribution"
+        },
+        {
+          "Name": "distribution-tenant"
+        },
+        {
+          "Name": "function"
+        },
+        {
+          "Name": "key-value-store"
+        },
+        {
+          "Name": "trust-store"
+        },
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTrustStores",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListUsages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVpcOrigins",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PublishFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        },
+        {
+          "Name": "connection-function"
+        },
+        {
+          "Name": "connection-group"
+        },
+        {
+          "Name": "distribution"
+        },
+        {
+          "Name": "distribution-tenant"
+        },
+        {
+          "Name": "function"
+        },
+        {
+          "Name": "key-value-store"
+        },
+        {
+          "Name": "streaming-distribution"
+        },
+        {
+          "Name": "trust-store"
+        },
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TestFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        },
+        {
+          "Name": "connection-function"
+        },
+        {
+          "Name": "connection-group"
+        },
+        {
+          "Name": "distribution"
+        },
+        {
+          "Name": "distribution-tenant"
+        },
+        {
+          "Name": "function"
+        },
+        {
+          "Name": "key-value-store"
+        },
+        {
+          "Name": "streaming-distribution"
+        },
+        {
+          "Name": "trust-store"
+        },
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAnycastIpList",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "anycast-ip-list"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCachePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cache-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCloudFrontOriginAccessIdentity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectionFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectionGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connection-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateContinuousDeploymentPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "continuous-deployment-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDistributionTenant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDistributionWithStagingConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution"
+        },
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFieldLevelEncryptionConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFieldLevelEncryptionProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field-level-encryption-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "function"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateKeyGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateKeyValueStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "key-value-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOriginAccessControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-access-control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateOriginRequestPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "origin-request-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdatePublicKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRealtimeLogConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "realtime-log-config"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResponseHeadersPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-headers-policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSavingsPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateStreamingDistribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "streaming-distribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTrustStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "trust-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateVpcOrigin",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpcorigin"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyDnsConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "distribution-tenant"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAlias",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "associate_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateDistributionTenantWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDistributionTenantWebACL",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "associate_distribution_tenant_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateDistributionWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateDistributionWebACL",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "associate_distribution_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "CreateDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "copy_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAnycastIpList",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAnycastIpList",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_anycast_ip_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCachePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCachePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_cache_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudFrontOriginAccessIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudFrontOriginAccessIdentity",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_cloud_front_origin_access_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionFunction",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionGroup",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_connection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateContinuousDeploymentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateContinuousDeploymentPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_continuous_deployment_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionGroup",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "CreateDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDistributionTenant",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDistributionWithTags",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionGroup",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "CreateDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_distribution_with_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFieldLevelEncryptionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFieldLevelEncryptionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_field_level_encryption_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFieldLevelEncryptionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFieldLevelEncryptionProfile",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_field_level_encryption_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFunction",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInvalidation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInvalidation",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_invalidation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInvalidationForDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInvalidationForDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_invalidation_for_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateKeyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateKeyGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_key_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateKeyValueStore",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateKeyValueStore",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_key_value_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMonitoringSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMonitoringSubscription",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_monitoring_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOriginAccessControl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOriginAccessControl",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_origin_access_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOriginRequestPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOriginRequestPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_origin_request_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePublicKey",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRealtimeLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRealtimeLogConfig",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudfront.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_realtime_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResponseHeadersPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResponseHeadersPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_response_headers_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamingDistribution",
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_streaming_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamingDistributionWithTags",
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_streaming_distribution_with_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTrustStore",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTrustStore",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_trust_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcOrigin",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "create_vpc_origin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAnycastIpList",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAnycastIpList",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_anycast_ip_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCachePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCachePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_cache_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudFrontOriginAccessIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudFrontOriginAccessIdentity",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_cloud_front_origin_access_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectionGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_connection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteContinuousDeploymentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteContinuousDeploymentPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_continuous_deployment_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFieldLevelEncryptionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFieldLevelEncryptionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_field_level_encryption_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFieldLevelEncryptionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFieldLevelEncryptionProfile",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_field_level_encryption_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKeyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKeyGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_key_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteKeyValueStore",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteKeyValueStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_key_value_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMonitoringSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMonitoringSubscription",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_monitoring_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOriginAccessControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOriginAccessControl",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_origin_access_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOriginRequestPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOriginRequestPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_origin_request_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePublicKey",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRealtimeLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRealtimeLogConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_realtime_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResponseHeadersPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResponseHeadersPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_response_headers_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceLinkedRole",
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_service_linked_role",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStreamingDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStreamingDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_streaming_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTrustStore",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTrustStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_trust_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcOrigin",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "delete_vpc_origin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "describe_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "describe_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeKeyValueStore",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeKeyValueStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "describe_key_value_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDistributionTenantWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDistributionTenantWebACL",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "disassociate_distribution_tenant_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateDistributionWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateDistributionWebACL",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "disassociate_distribution_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAnycastIpList",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAnycastIpList",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_anycast_ip_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCachePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCachePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_cache_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCachePolicyConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCachePolicyConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_cache_policy_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudFrontOriginAccessIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudFrontOriginAccessIdentity",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_cloud_front_origin_access_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudFrontOriginAccessIdentityConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudFrontOriginAccessIdentityConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_cloud_front_origin_access_identity_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_connection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectionGroupByRoutingEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectionGroupByRoutingEndpoint",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_connection_group_by_routing_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContinuousDeploymentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContinuousDeploymentPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_continuous_deployment_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetContinuousDeploymentPolicyConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetContinuousDeploymentPolicyConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_continuous_deployment_policy_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_distribution_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDistributionTenantByDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistributionTenantByDomain",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_distribution_tenant_by_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFieldLevelEncryption",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFieldLevelEncryption",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_field_level_encryption",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFieldLevelEncryptionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFieldLevelEncryptionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_field_level_encryption_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFieldLevelEncryptionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFieldLevelEncryptionProfile",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_field_level_encryption_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFieldLevelEncryptionProfileConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFieldLevelEncryptionProfileConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_field_level_encryption_profile_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvalidation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvalidation",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_invalidation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvalidationForDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvalidationForDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_invalidation_for_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKeyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKeyGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_key_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetKeyGroupConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetKeyGroupConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_key_group_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedCertificateDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedCertificateDetails",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_managed_certificate_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMonitoringSubscription",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMonitoringSubscription",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_monitoring_subscription",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOriginAccessControl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOriginAccessControl",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_origin_access_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOriginAccessControlConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOriginAccessControlConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_origin_access_control_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOriginRequestPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOriginRequestPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_origin_request_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOriginRequestPolicyConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOriginRequestPolicyConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_origin_request_policy_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPublicKey",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPublicKeyConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPublicKeyConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_public_key_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRealtimeLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRealtimeLogConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_realtime_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResponseHeadersPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResponseHeadersPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_response_headers_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResponseHeadersPolicyConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResponseHeadersPolicyConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_response_headers_policy_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamingDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamingDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_streaming_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStreamingDistributionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetStreamingDistributionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_streaming_distribution_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustStore",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTrustStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_trust_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVpcOrigin",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "get_vpc_origin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnycastIpLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnycastIpLists",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_anycast_ip_lists",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCachePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCachePolicies",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_cache_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudFrontOriginAccessIdentities",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudFrontOriginAccessIdentities",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_cloud_front_origin_access_identities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConflictingAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "ListConflictingAliases",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_conflicting_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectionFunctions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectionFunctions",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_connection_functions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectionGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectionGroups",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_connection_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListContinuousDeploymentPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListContinuousDeploymentPolicies",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_continuous_deployment_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionTenants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionTenants",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distribution_tenants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionTenantsByCustomization",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionTenantsByCustomization",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distribution_tenants_by_customization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributions",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByAnycastIpListId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByAnycastIpListId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_anycast_ip_list_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByCachePolicyId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByCachePolicyId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_cache_policy_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByConnectionMode",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByConnectionMode",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_connection_mode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByKeyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByKeyGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_key_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByOriginRequestPolicyId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByOriginRequestPolicyId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_origin_request_policy_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByOwnedResource",
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_owned_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByRealtimeLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByRealtimeLogConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_realtime_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByResponseHeadersPolicyId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByResponseHeadersPolicyId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_response_headers_policy_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByTrustStore",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByTrustStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_trust_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByVpcOriginId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByVpcOriginId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_vpc_origin_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDistributionsByWebACLId",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDistributionsByWebACLId",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_distributions_by_web_acl_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainConflicts",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetDistributionTenant",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "ListDomainConflicts",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_domain_conflicts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFieldLevelEncryptionConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFieldLevelEncryptionConfigs",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_field_level_encryption_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFieldLevelEncryptionProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFieldLevelEncryptionProfiles",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_field_level_encryption_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFunctions",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_functions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvalidations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvalidations",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_invalidations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvalidationsForDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvalidationsForDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_invalidations_for_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeyGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeyGroups",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_key_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeyValueStores",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeyValueStores",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_key_value_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOriginAccessControls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOriginAccessControls",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_origin_access_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOriginRequestPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOriginRequestPolicies",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_origin_request_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPublicKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPublicKeys",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_public_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRealtimeLogConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRealtimeLogConfigs",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_realtime_log_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResponseHeadersPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResponseHeadersPolicies",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_response_headers_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListStreamingDistributions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListStreamingDistributions",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_streaming_distributions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTrustStores",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTrustStores",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_trust_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVpcOrigins",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVpcOrigins",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "list_vpc_origins",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "publish_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "publish_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "TestConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "test_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "TestFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "test_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAnycastIpList",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAnycastIpList",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_anycast_ip_list",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCachePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCachePolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_cache_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCloudFrontOriginAccessIdentity",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCloudFrontOriginAccessIdentity",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_cloud_front_origin_access_identity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectionFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectionFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_connection_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectionGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectionGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_connection_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateContinuousDeploymentPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateContinuousDeploymentPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_continuous_deployment_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistribution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistributionTenant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDistributionTenant",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_distribution_tenant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDistributionWithStagingConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "GetVpcOrigin",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDistribution",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_distribution_with_staging_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDistribution",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDistributionTenant",
+          "Service": "cloudfront"
+        },
+        {
+          "Name": "UpdateDomainAssociation",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_domain_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFieldLevelEncryptionConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFieldLevelEncryptionConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_field_level_encryption_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFieldLevelEncryptionProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFieldLevelEncryptionProfile",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_field_level_encryption_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFunction",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateKeyGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateKeyGroup",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_key_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateKeyValueStore",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateKeyValueStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_key_value_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOriginAccessControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOriginAccessControl",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_origin_access_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOriginRequestPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOriginRequestPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_origin_request_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePublicKey",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePublicKey",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_public_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRealtimeLogConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "cloudfront.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRealtimeLogConfig",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_realtime_log_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResponseHeadersPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResponseHeadersPolicy",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_response_headers_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStreamingDistribution",
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_streaming_distribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTrustStore",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTrustStore",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_trust_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVpcOrigin",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateVpcOrigin",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "update_vpc_origin",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyDnsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyDnsConfiguration",
+          "Service": "cloudfront"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cloudfront",
+          "Method": "verify_dns_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "anycast-ip-list",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:anycast-ip-list/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cache-policy",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:cache-policy/${Id}"
+      ]
+    },
+    {
+      "Name": "connection-function",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:connection-function/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connection-group",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:connection-group/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "continuous-deployment-policy",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:continuous-deployment-policy/${Id}"
+      ]
+    },
+    {
+      "Name": "distribution",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:distribution/${DistributionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "distribution-tenant",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:distribution-tenant/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "field-level-encryption-config",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:field-level-encryption-config/${Id}"
+      ]
+    },
+    {
+      "Name": "field-level-encryption-profile",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:field-level-encryption-profile/${Id}"
+      ]
+    },
+    {
+      "Name": "function",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:function/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "key-value-store",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:key-value-store/${Name}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "origin-access-control",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:origin-access-control/${Id}"
+      ]
+    },
+    {
+      "Name": "origin-access-identity",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:origin-access-identity/${Id}"
+      ]
+    },
+    {
+      "Name": "origin-request-policy",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:origin-request-policy/${Id}"
+      ]
+    },
+    {
+      "Name": "realtime-log-config",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:realtime-log-config/${Name}"
+      ]
+    },
+    {
+      "Name": "response-headers-policy",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:response-headers-policy/${Id}"
+      ]
+    },
+    {
+      "Name": "streaming-distribution",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:streaming-distribution/${DistributionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "trust-store",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:trust-store/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "vpcorigin",
+      "ARNFormats": [
+        "arn:${Partition}:cloudfront::${Account}:vpcorigin/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

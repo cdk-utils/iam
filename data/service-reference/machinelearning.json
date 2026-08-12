@@ -1,0 +1,1032 @@
+{
+  "Name": "machinelearning",
+  "Actions": [
+    {
+      "Name": "AddTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        },
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "evaluation"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBatchPrediction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        },
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSourceFromRDS",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSourceFromRedshift",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSourceFromS3",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEvaluation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "evaluation"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMLModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRealtimeEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBatchPrediction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEvaluation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "evaluation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMLModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRealtimeEndpoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        },
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "evaluation"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBatchPredictions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEvaluations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMLModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        },
+        {
+          "Name": "datasource"
+        },
+        {
+          "Name": "evaluation"
+        },
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBatchPrediction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEvaluation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMLModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Predict",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBatchPrediction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchprediction"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEvaluation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "evaluation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMLModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mlmodel"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddTags",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "add_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBatchPrediction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchPrediction",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_batch_prediction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSourceFromRDS",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_data_source_from_rds",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSourceFromRedshift",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSourceFromRedshift",
+          "Service": "machinelearning"
+        },
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_data_source_from_redshift",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSourceFromS3",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSourceFromS3",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_data_source_from_s3",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEvaluation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEvaluation",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_evaluation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMLModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMLModel",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_ml_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRealtimeEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRealtimeEndpoint",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "create_realtime_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBatchPrediction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBatchPrediction",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_batch_prediction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEvaluation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEvaluation",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_evaluation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMLModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMLModel",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_ml_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRealtimeEndpoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRealtimeEndpoint",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_realtime_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTags",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "delete_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBatchPredictions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBatchPredictions",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "describe_batch_predictions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataSources",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "describe_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEvaluations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEvaluations",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "describe_evaluations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMLModels",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMLModels",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "describe_ml_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTags",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBatchPrediction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBatchPrediction",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "get_batch_prediction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSource",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "get_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvaluation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvaluation",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "get_evaluation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMLModel",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMLModel",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "get_ml_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Predict",
+      "AuthorizedActions": [
+        {
+          "Name": "Predict",
+          "Service": "machinelearning"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "predict",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBatchPrediction",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "update_batch_prediction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEvaluation",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "update_evaluation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMLModel",
+      "SDK": [
+        {
+          "Name": "machinelearning",
+          "Method": "update_ml_model",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "batchprediction",
+      "ARNFormats": [
+        "arn:${Partition}:machinelearning:${Region}:${Account}:batchprediction/${BatchPredictionId}"
+      ]
+    },
+    {
+      "Name": "datasource",
+      "ARNFormats": [
+        "arn:${Partition}:machinelearning:${Region}:${Account}:datasource/${DatasourceId}"
+      ]
+    },
+    {
+      "Name": "evaluation",
+      "ARNFormats": [
+        "arn:${Partition}:machinelearning:${Region}:${Account}:evaluation/${EvaluationId}"
+      ]
+    },
+    {
+      "Name": "mlmodel",
+      "ARNFormats": [
+        "arn:${Partition}:machinelearning:${Region}:${Account}:mlmodel/${MlModelId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

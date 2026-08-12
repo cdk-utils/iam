@@ -1,0 +1,683 @@
+{
+  "Name": "route53profiles",
+  "Actions": [
+    {
+      "Name": "AssociateProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "route53profiles:ResourceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateResourceToProfile",
+      "ActionConditionKeys": [
+        "route53profiles:FirewallRuleGroupPriority",
+        "route53profiles:HostedZoneDomains",
+        "route53profiles:ResolverRuleDomains",
+        "route53profiles:ResourceArns",
+        "route53profiles:ResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateProfile",
+      "ActionConditionKeys": [
+        "route53profiles:ResourceIds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateResourceFromProfile",
+      "ActionConditionKeys": [
+        "route53profiles:FirewallRuleGroupPriority",
+        "route53profiles:HostedZoneDomains",
+        "route53profiles:ResolverRuleDomains",
+        "route53profiles:ResourceArns",
+        "route53profiles:ResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfilePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProfileResourceAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfileAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfileResourceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProfiles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutProfilePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "profile-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "profile"
+        },
+        {
+          "Name": "profile-association"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProfileResourceAssociation",
+      "ActionConditionKeys": [
+        "route53profiles:FirewallRuleGroupPriority",
+        "route53profiles:HostedZoneDomains",
+        "route53profiles:ResolverRuleDomains",
+        "route53profiles:ResourceTypes"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "route53profiles:FirewallRuleGroupPriority",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "route53profiles:HostedZoneDomains",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "route53profiles:ResolverRuleDomains",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "route53profiles:ResourceArns",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "route53profiles:ResourceIds",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "route53profiles:ResourceTypes",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateProfile",
+          "Service": "route53profiles"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "associate_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResourceToProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResourceToProfile",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "associate_resource_to_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProfile",
+          "Service": "route53profiles"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "create_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProfile",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "delete_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateProfile",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "disassociate_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResourceFromProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResourceFromProfile",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "disassociate_resource_from_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfile",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "get_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileAssociation",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "get_profile_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProfileResourceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProfileResourceAssociation",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "get_profile_resource_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileAssociations",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "list_profile_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfileResourceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfileResourceAssociations",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "list_profile_resource_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProfiles",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProfiles",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "list_profiles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProfileResourceAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProfileResourceAssociation",
+          "Service": "route53profiles"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53profiles",
+          "Method": "update_profile_resource_association",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "profile",
+      "ARNFormats": [
+        "arn:${Partition}:route53profiles:${Region}:${Account}:profile/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "profile-association",
+      "ARNFormats": [
+        "arn:${Partition}:route53profiles:${Region}:${Account}:profile-association/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

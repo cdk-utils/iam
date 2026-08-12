@@ -200,6 +200,16 @@ describe("validateServiceDetail", () => {
 		).not.toThrow();
 	});
 
+	it("accepts service detail without optional arrays", () => {
+		expect(() =>
+			validateServiceDetail({
+				Name: "test",
+				Version: "v1.0",
+				Actions: [],
+			}),
+		).not.toThrow();
+	});
+
 	it("rejects non-object input", () => {
 		expect(() => validateServiceDetail(null)).toThrow("expected an object");
 		expect(() => validateServiceDetail("string")).toThrow(
@@ -260,20 +270,20 @@ describe("validateServiceDetail", () => {
 		).toThrow("'Actions' must be an array");
 	});
 
-	it("rejects non-array ConditionKeys", () => {
+	it("rejects non-array ConditionKeys when present", () => {
 		expect(() =>
 			validateServiceDetail({
 				Name: "test",
 				Version: "v1.0",
 				Actions: [],
-				ConditionKeys: null,
+				ConditionKeys: "not-array",
 				Operations: [],
 				Resources: [],
 			}),
-		).toThrow("'ConditionKeys' must be an array");
+		).toThrow("'ConditionKeys' must be an array if present");
 	});
 
-	it("rejects non-array Operations", () => {
+	it("rejects non-array Operations when present", () => {
 		expect(() =>
 			validateServiceDetail({
 				Name: "test",
@@ -283,10 +293,10 @@ describe("validateServiceDetail", () => {
 				Operations: {},
 				Resources: [],
 			}),
-		).toThrow("'Operations' must be an array");
+		).toThrow("'Operations' must be an array if present");
 	});
 
-	it("rejects non-array Resources", () => {
+	it("rejects non-array Resources when present", () => {
 		expect(() =>
 			validateServiceDetail({
 				Name: "test",
@@ -296,7 +306,7 @@ describe("validateServiceDetail", () => {
 				Operations: [],
 				Resources: 42,
 			}),
-		).toThrow("'Resources' must be an array");
+		).toThrow("'Resources' must be an array if present");
 	});
 
 	it("rejects action with missing Name", () => {

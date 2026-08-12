@@ -1,0 +1,4329 @@
+{
+  "Name": "mgn",
+  "Actions": [
+    {
+      "Name": "ArchiveApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ArchiveWave",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateSourceServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchCreateVolumeSnapshotGroupForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteSnapshotRequestForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ChangeServerLifeCycleState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnector",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLaunchConfigurationTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateNetworkMigrationDefinition",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReplicationConfigurationTemplate",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateVcenterClientForMgn",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWave",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "JobResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteLaunchConfigurationTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteNetworkMigrationDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteReplicationConfigurationTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ReplicationConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVcenterClient",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWave",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobLogItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "JobResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeLaunchConfigurationTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReplicationConfigurationTemplates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReplicationServerAssociationsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSnapshotRequestsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSourceServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeVcenterClients",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateSourceServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisconnectFromService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "FinalizeCutover",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentCommandForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentConfirmedResumeInfoForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentInstallationAssetsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentReplicationInfoForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentRuntimeConfigurationForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentSnapshotCreditsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChannelCommandsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLaunchConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetNetworkMigrationDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetNetworkMigrationMapperSegmentConstruct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReplicationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetVcenterClientCommandsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitializeService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "IssueClientCertificateForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExportErrors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ExportResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListExports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImportErrors",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ImportResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImportFileEnrichments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListImports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListManagedAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationAnalyses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationAnalysisResults",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationCodeGenerationSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationCodeGenerations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationDeployedStacks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationDeployedStacksDeletions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationDeployments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationMapperSegmentConstructs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationMapperSegments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationMappingUpdates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNetworkMigrationMappings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSourceServerActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTemplateActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListWaves",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MarkAsArchived",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "NotifyAgentAuthenticationForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyAgentConnectedForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyAgentDisconnectedForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyAgentReplicationProgressForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "NotifyVcenterClientStartedForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PauseReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutSourceServerAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutTemplateAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterAgentForMgn",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveSourceServerAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveTemplateAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResumeReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RetryDataReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendAgentLogsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendAgentMetricsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendChannelCommandResultForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendClientLogsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendClientMetricsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendVcenterClientCommandResultForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendVcenterClientLogsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendVcenterClientMetricsForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VcenterClientResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCutover",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartExport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartImport",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartImportFileEnrichment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationAnalysis",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationCodeGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationDeployedStacksDeletion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationMapping",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartNetworkMigrationMappingUpdate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSnapshotGroupForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartTest",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopReplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "mgn:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "ConnectorResource"
+        },
+        {
+          "Name": "ExportResource"
+        },
+        {
+          "Name": "ImportResource"
+        },
+        {
+          "Name": "JobResource"
+        },
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        },
+        {
+          "Name": "ReplicationConfigurationTemplateResource"
+        },
+        {
+          "Name": "SourceServerResource"
+        },
+        {
+          "Name": "VcenterClientResource"
+        },
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateTargetInstances",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnarchiveApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnarchiveWave",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        },
+        {
+          "Name": "ConnectorResource"
+        },
+        {
+          "Name": "JobResource"
+        },
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        },
+        {
+          "Name": "ReplicationConfigurationTemplateResource"
+        },
+        {
+          "Name": "SourceServerResource"
+        },
+        {
+          "Name": "VcenterClientResource"
+        },
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAccountSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentBacklogForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentConversionInfoForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentReplicationInfoForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentReplicationProcessStateForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentSourcePropertiesForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApplicationResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnector",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConnectorResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLaunchConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateLaunchConfigurationTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "LaunchConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNetworkMigrationDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNetworkMigrationMapperSegment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateNetworkMigrationMapperSegmentConstruct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "NetworkMigrationDefinitionResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateReplicationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReplicationConfigurationTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ReplicationConfigurationTemplateResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSourceServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSourceServerReplicationType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SourceServerResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWave",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WaveResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "VerifyClientRoleForMgn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "mgn:CreateAction",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ArchiveApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "ArchiveApplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "archive_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ArchiveWave",
+      "AuthorizedActions": [
+        {
+          "Name": "ArchiveWave",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "archive_wave",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApplications",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "associate_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateSourceServers",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateSourceServers",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "associate_source_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ChangeServerLifeCycleState",
+      "AuthorizedActions": [
+        {
+          "Name": "ChangeServerLifeCycleState",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "change_server_life_cycle_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnector",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLaunchConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLaunchConfigurationTemplate",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_launch_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateNetworkMigrationDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateNetworkMigrationDefinition",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_network_migration_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReplicationConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReplicationConfigurationTemplate",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_replication_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWave",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWave",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "create_wave",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnector",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteJob",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLaunchConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLaunchConfigurationTemplate",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_launch_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteNetworkMigrationDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteNetworkMigrationDefinition",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_network_migration_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteReplicationConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteReplicationConfigurationTemplate",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_replication_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSourceServer",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_source_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVcenterClient",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVcenterClient",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_vcenter_client",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWave",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWave",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "delete_wave",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobLogItems",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobLogItems",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_job_log_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobs",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeLaunchConfigurationTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeLaunchConfigurationTemplates",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_launch_configuration_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReplicationConfigurationTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReplicationConfigurationTemplates",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_replication_configuration_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSourceServers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSourceServers",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_source_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeVcenterClients",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVcenterClients",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "describe_vcenter_clients",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateApplications",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "disassociate_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateSourceServers",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateSourceServers",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "disassociate_source_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisconnectFromService",
+      "AuthorizedActions": [
+        {
+          "Name": "DisconnectFromService",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "disconnect_from_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FinalizeCutover",
+      "AuthorizedActions": [
+        {
+          "Name": "FinalizeCutover",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "finalize_cutover",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLaunchConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLaunchConfiguration",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "get_launch_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkMigrationDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNetworkMigrationDefinition",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "get_network_migration_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkMigrationMapperSegmentConstruct",
+      "AuthorizedActions": [
+        {
+          "Name": "GetNetworkMigrationMapperSegmentConstruct",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "get_network_migration_mapper_segment_construct",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReplicationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReplicationConfiguration",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "get_replication_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitializeService",
+      "AuthorizedActions": [
+        {
+          "Name": "InitializeService",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "initialize_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectors",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_connectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExportErrors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExportErrors",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_export_errors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListExports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListExports",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_exports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImportErrors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImportErrors",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_import_errors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImportFileEnrichments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImportFileEnrichments",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_import_file_enrichments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListImports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListImports",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_imports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedAccounts",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_managed_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationAnalyses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationAnalyses",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_analyses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationAnalysisResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationAnalysisResults",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_analysis_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationCodeGenerationSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationCodeGenerationSegments",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_code_generation_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationCodeGenerations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationCodeGenerations",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_code_generations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationDefinitions",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationDeployedStacks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationDeployedStacks",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_deployed_stacks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationDeployments",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationExecutions",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationMapperSegmentConstructs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationMapperSegmentConstructs",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_mapper_segment_constructs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationMapperSegments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationMapperSegments",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_mapper_segments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationMappingUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationMappingUpdates",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_mapping_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNetworkMigrationMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNetworkMigrationMappings",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_network_migration_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceServerActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceServerActions",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_source_server_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTemplateActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTemplateActions",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_template_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWaves",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWaves",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "list_waves",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MarkAsArchived",
+      "AuthorizedActions": [
+        {
+          "Name": "MarkAsArchived",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "mark_as_archived",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PauseReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "PauseReplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "pause_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSourceServerAction",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSourceServerAction",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "put_source_server_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTemplateAction",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTemplateAction",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "put_template_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveSourceServerAction",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveSourceServerAction",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "remove_source_server_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveTemplateAction",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveTemplateAction",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "remove_template_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "ResumeReplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "resume_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RetryDataReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "RetryDataReplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "retry_data_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCutover",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCutover",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_cutover",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartExport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartExport",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImport",
+      "AuthorizedActions": [
+        {
+          "Name": "StartImport",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartImportFileEnrichment",
+      "AuthorizedActions": [
+        {
+          "Name": "StartImportFileEnrichment",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_import_file_enrichment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNetworkMigrationAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNetworkMigrationAnalysis",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_network_migration_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNetworkMigrationCodeGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNetworkMigrationCodeGeneration",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_network_migration_code_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNetworkMigrationDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNetworkMigrationDeployment",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_network_migration_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNetworkMigrationMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNetworkMigrationMapping",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_network_migration_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNetworkMigrationMappingUpdate",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNetworkMigrationMappingUpdate",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_network_migration_mapping_update",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartReplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTest",
+      "AuthorizedActions": [
+        {
+          "Name": "StartTest",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "start_test",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopReplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StopReplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "stop_replication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateTargetInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "mgn"
+        },
+        {
+          "Name": "TerminateTargetInstances",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "terminate_target_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnarchiveApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UnarchiveApplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "unarchive_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnarchiveWave",
+      "AuthorizedActions": [
+        {
+          "Name": "UnarchiveWave",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "unarchive_wave",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApplication",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnector",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnector",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_connector",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLaunchConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLaunchConfiguration",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_launch_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLaunchConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLaunchConfigurationTemplate",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_launch_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNetworkMigrationDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNetworkMigrationDefinition",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_network_migration_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateNetworkMigrationMapperSegment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateNetworkMigrationMapperSegment",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_network_migration_mapper_segment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReplicationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReplicationConfiguration",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_replication_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReplicationConfigurationTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReplicationConfigurationTemplate",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_replication_configuration_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSourceServer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSourceServer",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_source_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSourceServerReplicationType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSourceServerReplicationType",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_source_server_replication_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWave",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWave",
+          "Service": "mgn"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "mgn",
+          "Method": "update_wave",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ApplicationResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:application/${ApplicationID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ConnectorResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:connector/${ConnectorID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ExportResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:export/${ExportID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ImportResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:import/${ImportID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "JobResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:job/${JobID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "LaunchConfigurationTemplateResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "NetworkMigrationDefinitionResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:network-migration-definition/${NetworkMigrationDefinitionID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ReplicationConfigurationTemplateResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SourceServerResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:source-server/${SourceServerID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VcenterClientResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:vcenter-client/${VcenterClientID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "WaveResource",
+      "ARNFormats": [
+        "arn:${Partition}:mgn:${Region}:${Account}:wave/${WaveID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

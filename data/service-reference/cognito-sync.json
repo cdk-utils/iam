@@ -1,0 +1,679 @@
+{
+  "Name": "cognito-sync",
+  "Actions": [
+    {
+      "Name": "BulkPublish",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIdentityPoolUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIdentityUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBulkPublishDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCognitoEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIdentityPoolConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIdentityPoolUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "QueryRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterDevice",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetCognitoEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetDatasetConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetIdentityPoolConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "identitypool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SubscribeToDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UnsubscribeFromDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BulkPublish",
+      "AuthorizedActions": [
+        {
+          "Name": "BulkPublish",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "bulk_publish",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIdentityPoolUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentityPoolUsage",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "describe_identity_pool_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIdentityUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIdentityUsage",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "describe_identity_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBulkPublishDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBulkPublishDetails",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "get_bulk_publish_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCognitoEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCognitoEvents",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "get_cognito_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIdentityPoolConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIdentityPoolConfiguration",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "get_identity_pool_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIdentityPoolUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIdentityPoolUsage",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "list_identity_pool_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecords",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "list_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDevice",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterDevice",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "register_device",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetCognitoEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "SetCognitoEvents",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "set_cognito_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetIdentityPoolConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Service": "iam"
+        },
+        {
+          "Name": "SetIdentityPoolConfiguration",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "set_identity_pool_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SubscribeToDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "SubscribeToDataset",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "subscribe_to_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UnsubscribeFromDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "UnsubscribeFromDataset",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "unsubscribe_from_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecords",
+          "Service": "cognito-sync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "cognito-sync",
+          "Method": "update_records",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}/identity/${IdentityId}/dataset/${DatasetName}"
+      ]
+    },
+    {
+      "Name": "identity",
+      "ARNFormats": [
+        "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}/identity/${IdentityId}"
+      ]
+    },
+    {
+      "Name": "identitypool",
+      "ARNFormats": [
+        "arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,1176 @@
+{
+  "Name": "identitystore",
+  "Actions": [
+    {
+      "Name": "AddRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGroup",
+      "ActionConditionKeys": [
+        "identitystore:GroupExternalIdIssuers",
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGroupMembership",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIdentityStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUser",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion",
+        "identitystore:ReservedUserId",
+        "identitystore:UserExternalIdIssuers"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGroup",
+      "ActionConditionKeys": [
+        "identitystore:GroupExternalIdIssuers",
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGroupMembership",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "GroupMembership"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIdentityStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion",
+        "identitystore:UserExternalIdIssuers"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGroup",
+      "ActionConditionKeys": [
+        "identitystore:GroupExternalIdIssuers",
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeGroupMembership",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "GroupMembership"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeRegion",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeUser",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion",
+        "identitystore:UserExternalIdIssuers"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupId",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGroupMembershipId",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "GroupMembership"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetUserId",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "IsMemberInGroups",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllGroupMemberships"
+        },
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupMemberships",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllGroupMemberships"
+        },
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroupMembershipsForMember",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllGroupMemberships"
+        },
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGroups",
+      "ActionConditionKeys": [
+        "identitystore:GroupExternalIdIssuers",
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllGroups"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRegions",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListUsers",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion",
+        "identitystore:UserExternalIdIssuers"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AllUsers"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReserveUser",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGroup",
+      "ActionConditionKeys": [
+        "identitystore:GroupExternalIdIssuers",
+        "identitystore:PrimaryRegion"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Group"
+        },
+        {
+          "Name": "Identitystore"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIdentityStore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateUser",
+      "ActionConditionKeys": [
+        "identitystore:PrimaryRegion",
+        "identitystore:UserExternalIdIssuers"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Identitystore"
+        },
+        {
+          "Name": "User"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "identitystore:GroupExternalIdIssuers",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "identitystore:IdentityStoreArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "identitystore:PrimaryRegion",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "identitystore:ReservedUserId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "identitystore:UserExternalIdIssuers",
+      "Types": [
+        "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "identitystore:UserId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGroup",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "CreateGroup",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "create_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGroupMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "AddMemberToGroup",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "CreateGroupMembership",
+          "Service": "identitystore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "create_group_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "CreateUser",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroup",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "DeleteGroup",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "delete_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroupMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroupMembership",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "RemoveMemberFromGroup",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "delete_group_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "DeleteUser",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGroup",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "DescribeGroup",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "DescribeGroups",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "describe_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGroupMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGroupMembership",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListGroupsForMember",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "ListGroupsForUser",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "describe_group_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUser",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "DescribeUser",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "DescribeUsers",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "describe_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupId",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "GetGroupId",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "get_group_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGroupMembershipId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGroupMembershipId",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListGroupsForMember",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "ListGroupsForUser",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "get_group_membership_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUserId",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUserId",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "GetUserId",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "get_user_id",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IsMemberInGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "IsMemberInGroup",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "IsMemberInGroups",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "IsMemberInGroups",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "is_member_in_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupMemberships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupMemberships",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListMembersInGroup",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "list_group_memberships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupMembershipsForMember",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupMembershipsForMember",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListGroupsForMember",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "ListGroupsForUser",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "list_group_memberships_for_member",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroups",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListGroups",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "SearchGroups",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "list_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListUsers",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "ListUsers",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "SearchUsers",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "list_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGroup",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "UpdateGroup",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "UpdateGroupDisplayName",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "update_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUser",
+          "Service": "identitystore"
+        },
+        {
+          "Name": "UpdateUser",
+          "Service": "sso-directory"
+        },
+        {
+          "Name": "UpdateUserName",
+          "Service": "sso-directory"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "identitystore",
+          "Method": "update_user",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AllGroupMemberships",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::membership/*"
+      ]
+    },
+    {
+      "Name": "AllGroups",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::group/*"
+      ]
+    },
+    {
+      "Name": "AllUsers",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::user/*"
+      ]
+    },
+    {
+      "Name": "Group",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::group/${GroupId}"
+      ]
+    },
+    {
+      "Name": "GroupMembership",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::membership/${MembershipId}"
+      ]
+    },
+    {
+      "Name": "Identitystore",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore::${Account}:identitystore/${IdentityStoreId}"
+      ]
+    },
+    {
+      "Name": "User",
+      "ARNFormats": [
+        "arn:${Partition}:identitystore:::user/${UserId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

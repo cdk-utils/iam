@@ -1,0 +1,849 @@
+{
+  "Name": "sqs",
+  "Actions": [
+    {
+      "Name": "AddPermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelMessageMoveTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ChangeMessageVisibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateQueue",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetQueueAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetQueueUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDeadLetterSourceQueues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMessageMoveTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQueueTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListQueues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PurgeQueue",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReceiveMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemovePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendMessage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetQueueAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartMessageMoveTask",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagQueue",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagQueue",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "AddPermission",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "add_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelMessageMoveTask",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelMessageMoveTask",
+          "Service": "sqs"
+        },
+        {
+          "Name": "DeleteMessage",
+          "Service": "sqs"
+        },
+        {
+          "Name": "GetQueueAttributes",
+          "Service": "sqs"
+        },
+        {
+          "Name": "ReceiveMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "cancel_message_move_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ChangeMessageVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "ChangeMessageVisibility",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "change_message_visibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ChangeMessageVisibilityBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "ChangeMessageVisibility",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "change_message_visibility_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateQueue",
+          "Service": "sqs"
+        },
+        {
+          "Name": "TagQueue",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "create_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "delete_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMessageBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "delete_message_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueue",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "delete_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueueAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueueAttributes",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "get_queue_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetQueueUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueueUrl",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "get_queue_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDeadLetterSourceQueues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDeadLetterSourceQueues",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "list_dead_letter_source_queues",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMessageMoveTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "GetQueueAttributes",
+          "Service": "sqs"
+        },
+        {
+          "Name": "ListMessageMoveTasks",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "list_message_move_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQueueTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueueTags",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "list_queue_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListQueues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueues",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "list_queues",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurgeQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "PurgeQueue",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "purge_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReceiveMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "ReceiveMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "receive_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemovePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "RemovePermission",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "remove_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "SendMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "send_message",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendMessageBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "SendMessage",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "send_message_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetQueueAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "SetQueueAttributes",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "set_queue_attributes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartMessageMoveTask",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMessage",
+          "Service": "sqs"
+        },
+        {
+          "Name": "GetQueueAttributes",
+          "Service": "sqs"
+        },
+        {
+          "Name": "ReceiveMessage",
+          "Service": "sqs"
+        },
+        {
+          "Name": "SendMessage",
+          "Service": "sqs"
+        },
+        {
+          "Name": "StartMessageMoveTask",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "start_message_move_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "TagQueue",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "tag_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagQueue",
+          "Service": "sqs"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sqs",
+          "Method": "untag_queue",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "queue",
+      "ARNFormats": [
+        "arn:${Partition}:sqs:${Region}:${Account}:${QueueName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

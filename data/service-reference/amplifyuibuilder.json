@@ -1,0 +1,1160 @@
+{
+  "Name": "amplifyuibuilder",
+  "Actions": [
+    {
+      "Name": "CreateComponent",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateForm",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTheme",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ComponentResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteForm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FormResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTheme",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExchangeCodeForToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ExportForms",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExportThemes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCodegenJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CodegenJobResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ComponentResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetForm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FormResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTheme",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCodegenJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListForms",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CodegenJobResource"
+        },
+        {
+          "Name": "ComponentResource"
+        },
+        {
+          "Name": "FormResource"
+        },
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThemes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutMetadataFlag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RefreshToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResetMetadataFlag",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCodegenJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CodegenJobResource"
+        },
+        {
+          "Name": "ComponentResource"
+        },
+        {
+          "Name": "FormResource"
+        },
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CodegenJobResource"
+        },
+        {
+          "Name": "ComponentResource"
+        },
+        {
+          "Name": "FormResource"
+        },
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateComponent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ComponentResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateForm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "FormResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTheme",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ThemeResource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "amplifyuibuilder:CodegenJobResourceAppId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:CodegenJobResourceEnvironmentName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:CodegenJobResourceId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ComponentResourceAppId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ComponentResourceEnvironmentName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ComponentResourceId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:FormResourceAppId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:FormResourceEnvironmentName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:FormResourceId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ThemeResourceAppId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ThemeResourceEnvironmentName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "amplifyuibuilder:ThemeResourceId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateComponent",
+          "Service": "amplifyuibuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "create_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateForm",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateForm",
+          "Service": "amplifyuibuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "create_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTheme",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTheme",
+          "Service": "amplifyuibuilder"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "create_theme",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteComponent",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "delete_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteForm",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteForm",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "delete_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTheme",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTheme",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "delete_theme",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExchangeCodeForToken",
+      "AuthorizedActions": [
+        {
+          "Name": "ExchangeCodeForToken",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "exchange_code_for_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportComponents",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "export_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportForms",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportForms",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "export_forms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportThemes",
+      "AuthorizedActions": [
+        {
+          "Name": "ExportThemes",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "export_themes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCodegenJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodegenJob",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "get_codegen_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetComponent",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "get_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetForm",
+      "AuthorizedActions": [
+        {
+          "Name": "GetForm",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "get_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMetadata",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "get_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTheme",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTheme",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "get_theme",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodegenJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodegenJobs",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "list_codegen_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListComponents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListComponents",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "list_components",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListForms",
+      "AuthorizedActions": [
+        {
+          "Name": "ListForms",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "list_forms",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThemes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThemes",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "list_themes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMetadataFlag",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMetadataFlag",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "put_metadata_flag",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RefreshToken",
+      "AuthorizedActions": [
+        {
+          "Name": "RefreshToken",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "refresh_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCodegenJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCodegenJob",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "start_codegen_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateComponent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateComponent",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "update_component",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateForm",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateForm",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "update_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTheme",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTheme",
+          "Service": "amplifyuibuilder"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplifyuibuilder",
+          "Method": "update_theme",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "CodegenJobResource",
+      "ARNFormats": [
+        "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/codegen-jobs/${Id}"
+      ],
+      "ConditionKeys": [
+        "amplifyuibuilder:CodegenJobResourceAppId",
+        "amplifyuibuilder:CodegenJobResourceEnvironmentName",
+        "amplifyuibuilder:CodegenJobResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ComponentResource",
+      "ARNFormats": [
+        "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/components/${Id}"
+      ],
+      "ConditionKeys": [
+        "amplifyuibuilder:ComponentResourceAppId",
+        "amplifyuibuilder:ComponentResourceEnvironmentName",
+        "amplifyuibuilder:ComponentResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "FormResource",
+      "ARNFormats": [
+        "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/forms/${Id}"
+      ],
+      "ConditionKeys": [
+        "amplifyuibuilder:FormResourceAppId",
+        "amplifyuibuilder:FormResourceEnvironmentName",
+        "amplifyuibuilder:FormResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ThemeResource",
+      "ARNFormats": [
+        "arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/themes/${Id}"
+      ],
+      "ConditionKeys": [
+        "amplifyuibuilder:ThemeResourceAppId",
+        "amplifyuibuilder:ThemeResourceEnvironmentName",
+        "amplifyuibuilder:ThemeResourceId",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

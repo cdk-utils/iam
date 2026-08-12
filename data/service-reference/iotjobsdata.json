@@ -1,0 +1,190 @@
+{
+  "Name": "iotjobsdata",
+  "Actions": [
+    {
+      "Name": "DescribeJobExecution",
+      "ActionConditionKeys": [
+        "iot:JobId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPendingJobExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartNextPendingJobExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateJobExecution",
+      "ActionConditionKeys": [
+        "iot:JobId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "thing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "iot:JobId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DescribeJobExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJobExecution",
+          "Service": "iotjobsdata"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-jobs-data",
+          "Method": "describe_job_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPendingJobExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPendingJobExecutions",
+          "Service": "iotjobsdata"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-jobs-data",
+          "Method": "get_pending_job_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCommandExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCommandExecution",
+          "Service": "iot"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-jobs-data",
+          "Method": "start_command_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartNextPendingJobExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartNextPendingJobExecution",
+          "Service": "iotjobsdata"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-jobs-data",
+          "Method": "start_next_pending_job_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJobExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateJobExecution",
+          "Service": "iotjobsdata"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "iot-jobs-data",
+          "Method": "update_job_execution",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "thing",
+      "ARNFormats": [
+        "arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

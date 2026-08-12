@@ -1,0 +1,1118 @@
+{
+  "Name": "application-signals",
+  "Actions": [
+    {
+      "Name": "BatchDeleteInstrumentationConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetServiceLevelObjectiveBudgetReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateExclusionWindows",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInstrumentationConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateServiceLevelObjective",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGroupingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInstrumentationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteServiceLevelObjective",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstrumentationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstrumentationConfigurationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetServiceLevelObjective",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Link",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAuditFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEntityEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGroupingAttributeDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstrumentationConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListObservedEntities",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceDependencies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceDependents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceLevelObjectiveExclusionWindows",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceLevelObjectives",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceOperations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServiceStates",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        },
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutGroupingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReportInstrumentationConfigurationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDiscovery",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        },
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "instrumentationConfig"
+        },
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateServiceLevelObjective",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchDeleteInstrumentationConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteInstrumentationConfigurations",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "batch_delete_instrumentation_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetServiceLevelObjectiveBudgetReport",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetServiceLevelObjectiveBudgetReport",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "batch_get_service_level_objective_budget_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateExclusionWindows",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateExclusionWindows",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "batch_update_exclusion_windows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInstrumentationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInstrumentationConfiguration",
+          "Service": "application-signals"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "create_instrumentation_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateServiceLevelObjective",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateServiceLevelObjective",
+          "Service": "application-signals"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "create_service_level_objective",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGroupingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGroupingConfiguration",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "delete_grouping_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstrumentationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstrumentationConfiguration",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "delete_instrumentation_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteServiceLevelObjective",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteServiceLevelObjective",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "delete_service_level_objective",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstrumentationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstrumentationConfiguration",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "get_instrumentation_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstrumentationConfigurationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstrumentationConfigurationStatus",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "get_instrumentation_configuration_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetService",
+      "AuthorizedActions": [
+        {
+          "Name": "GetService",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "get_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServiceLevelObjective",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceLevelObjective",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "get_service_level_objective",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAuditFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServiceLevelObjective",
+          "Service": "application-signals"
+        },
+        {
+          "Name": "ListAuditFindings",
+          "Service": "application-signals"
+        },
+        {
+          "Name": "ListServiceLevelObjectives",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_audit_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEntityEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityEvents",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_entity_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGroupingAttributeDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGroupingAttributeDefinitions",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_grouping_attribute_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstrumentationConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstrumentationConfigurations",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_instrumentation_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceDependencies",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceDependencies",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_dependencies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceDependents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceDependents",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_dependents",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceLevelObjectiveExclusionWindows",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceLevelObjectiveExclusionWindows",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_level_objective_exclusion_windows",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceLevelObjectives",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceLevelObjectives",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_level_objectives",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceOperations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceOperations",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_operations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceStates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceStates",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_service_states",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServices",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServices",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGroupingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutGroupingConfiguration",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "put_grouping_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReportInstrumentationConfigurationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "ReportInstrumentationConfigurationStatus",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "report_instrumentation_configuration_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDiscovery",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDiscovery",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "start_discovery",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceLevelObjective",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceLevelObjective",
+          "Service": "application-signals"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "application-signals",
+          "Method": "update_service_level_objective",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "instrumentationConfig",
+      "ARNFormats": [
+        "arn:${Partition}:application-signals:${Region}:${Account}:instrumentationConfig/${Service}/${Environment}/${SignalType}/${LocationHash}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "slo",
+      "ARNFormats": [
+        "arn:${Partition}:application-signals:${Region}:${Account}:slo/${SloName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,612 @@
+{
+  "Name": "nova-act",
+  "Actions": [
+    {
+      "Name": "CreateAct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkflowDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkflowDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkflowDefinition",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeActStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListActs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflowDefinitions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkflowRuns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkflowRun",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workflow-definition"
+        },
+        {
+          "Name": "workflow-run"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAct",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAct",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "create_act",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSession",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSession",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "create_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkflowDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkflowDefinition",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "create_workflow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkflowRun",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "create_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflowDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflowDefinition",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "delete_workflow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkflowRun",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "delete_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowDefinition",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowDefinition",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "get_workflow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkflowRun",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "get_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InvokeActStep",
+      "AuthorizedActions": [
+        {
+          "Name": "InvokeActStep",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "invoke_act_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActs",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "list_acts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListModels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListModels",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "list_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessions",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "list_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowDefinitions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowDefinitions",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "list_workflow_definitions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkflowRuns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkflowRuns",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "list_workflow_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAct",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAct",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "update_act",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkflowRun",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkflowRun",
+          "Service": "nova-act"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "nova-act",
+          "Method": "update_workflow_run",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "workflow-definition",
+      "ARNFormats": [
+        "arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}"
+      ]
+    },
+    {
+      "Name": "workflow-run",
+      "ARNFormats": [
+        "arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}/workflow-run/${WorkflowRunId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

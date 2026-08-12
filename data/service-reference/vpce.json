@@ -1,0 +1,43 @@
+{
+  "Name": "vpce",
+  "Actions": [
+    {
+      "Name": "AllowMultiRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vpc-endpoint"
+        },
+        {
+          "Name": "vpc-endpoint-service"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "vpc-endpoint",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint/${VpcEndpointId}"
+      ]
+    },
+    {
+      "Name": "vpc-endpoint-service",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint-service/${VpcEndpointServiceId}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

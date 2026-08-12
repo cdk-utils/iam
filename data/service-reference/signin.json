@@ -1,0 +1,602 @@
+{
+  "Name": "signin",
+  "Actions": [
+    {
+      "Name": "Authenticate",
+      "ActionConditionKeys": [
+        "signin:PrincipalArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "console"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AuthorizeOAuth2Access",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "console"
+        },
+        {
+          "Name": "oauth2-public-client-localhost",
+          "ConditionKeys": [
+            "signin:OAuthClientId",
+            "signin:OAuthRedirectUri"
+          ]
+        },
+        {
+          "Name": "oauth2-public-client-remote",
+          "ConditionKeys": [
+            "signin:OAuthClientId",
+            "signin:OAuthRedirectUri"
+          ]
+        },
+        {
+          "Name": "oauth2-resource-service-principal",
+          "ConditionKeys": [
+            "signin:OAuthClientId",
+            "signin:OAuthRedirectUri"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "console"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOAuth2PublicClient",
+      "ActionConditionKeys": [
+        "signin:OAuthRedirectUri"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "oauth2-public-client-registration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOAuth2Token",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "console"
+        },
+        {
+          "Name": "oauth2-public-client-localhost",
+          "ConditionKeys": [
+            "signin:OAuthClientAuthentication",
+            "signin:OAuthClientId",
+            "signin:OAuthGrantType",
+            "signin:OAuthRedirectUri"
+          ]
+        },
+        {
+          "Name": "oauth2-public-client-remote",
+          "ConditionKeys": [
+            "signin:OAuthClientAuthentication",
+            "signin:OAuthClientId",
+            "signin:OAuthGrantType",
+            "signin:OAuthRedirectUri"
+          ]
+        },
+        {
+          "Name": "oauth2-resource-service-principal",
+          "ConditionKeys": [
+            "signin:OAuthClientAuthentication",
+            "signin:OAuthClientId",
+            "signin:OAuthGrantType",
+            "signin:OAuthRedirectUri"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTrustedIdentityPropagationApplicationForConsole",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConsoleAuthorizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePermissionStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConsoleAuthorizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "IntrospectOAuth2Token",
+      "ActionConditionKeys": [
+        "signin:OAuthClientId",
+        "signin:OAuthTokenType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "oauth2-public-client-localhost"
+        },
+        {
+          "Name": "oauth2-public-client-remote"
+        },
+        {
+          "Name": "oauth2-resource-service-principal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourcePermissionStatements",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTrustedIdentityPropagationApplicationsForConsole",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutConsoleAuthorizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePermissionStatement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeOAuth2Token",
+      "ActionConditionKeys": [
+        "signin:OAuthTokenType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "oauth2-public-client-localhost"
+        },
+        {
+          "Name": "oauth2-public-client-remote"
+        },
+        {
+          "Name": "oauth2-resource-service-principal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "signin:OAuthClientAuthentication",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "signin:OAuthClientId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "signin:OAuthGrantType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "signin:OAuthRedirectUri",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "signin:OAuthTokenType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "signin:PrincipalArn",
+      "Types": [
+        "ARN"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateOAuth2Token",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOAuth2Token",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "create_oauth2_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOAuth2TokenWithIAM",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOAuth2Token",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "create_oauth2_token_with_iam",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConsoleAuthorizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConsoleAuthorizationConfiguration",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "delete_console_authorization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePermissionStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePermissionStatement",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "delete_resource_permission_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConsoleAuthorizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConsoleAuthorizationConfiguration",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "get_console_authorization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "get_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "IntrospectOAuth2TokenWithIAM",
+      "AuthorizedActions": [
+        {
+          "Name": "IntrospectOAuth2Token",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "introspect_oauth2_token_with_iam",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourcePermissionStatements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourcePermissionStatements",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "list_resource_permission_statements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutConsoleAuthorizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutConsoleAuthorizationConfiguration",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "put_console_authorization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePermissionStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePermissionStatement",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "put_resource_permission_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeOAuth2TokenWithIAM",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeOAuth2Token",
+          "Service": "signin"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "signin",
+          "Method": "revoke_oauth2_token_with_iam",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "console",
+      "ARNFormats": [
+        "arn:${Partition}:signin:::console/${ConsoleName}"
+      ]
+    },
+    {
+      "Name": "oauth2-public-client-localhost",
+      "ARNFormats": [
+        "arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/localhost"
+      ]
+    },
+    {
+      "Name": "oauth2-public-client-registration",
+      "ARNFormats": [
+        "arn:${Partition}:signin:${Region}::external-client/dcr/*"
+      ]
+    },
+    {
+      "Name": "oauth2-public-client-remote",
+      "ARNFormats": [
+        "arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/remote"
+      ]
+    },
+    {
+      "Name": "oauth2-resource-service-principal",
+      "ARNFormats": [
+        "arn:${Partition}:signin:${Region}:${Account}:service-principal/${ServicePrincipalName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

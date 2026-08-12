@@ -1,0 +1,647 @@
+{
+  "Name": "arc-zonal-shift",
+  "Actions": [
+    {
+      "Name": "CancelPracticeRun",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelZonalShift",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePracticeRunConfiguration",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePracticeRunConfiguration",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutoshiftObserverNotificationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetManagedResource",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutoshifts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListManagedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListZonalShifts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartPracticeRun",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartZonalShift",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutoshiftObserverNotificationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePracticeRunConfiguration",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateZonalAutoshiftConfiguration",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateZonalShift",
+      "ActionConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ALB"
+        },
+        {
+          "Name": "NLB"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "arc-zonal-shift:ResourceIdentifier",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "elasticloadbalancing:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelPracticeRun",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelPracticeRun",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "cancel_practice_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelZonalShift",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelZonalShift",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "cancel_zonal_shift",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePracticeRunConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePracticeRunConfiguration",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "create_practice_run_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePracticeRunConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePracticeRunConfiguration",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "delete_practice_run_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutoshiftObserverNotificationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutoshiftObserverNotificationStatus",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "get_autoshift_observer_notification_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetManagedResource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetManagedResource",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "get_managed_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutoshifts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutoshifts",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "list_autoshifts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListManagedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListManagedResources",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "list_managed_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListZonalShifts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListZonalShifts",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "list_zonal_shifts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPracticeRun",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPracticeRun",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "start_practice_run",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartZonalShift",
+      "AuthorizedActions": [
+        {
+          "Name": "StartZonalShift",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "start_zonal_shift",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutoshiftObserverNotificationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutoshiftObserverNotificationStatus",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "update_autoshift_observer_notification_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePracticeRunConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePracticeRunConfiguration",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "update_practice_run_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateZonalAutoshiftConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateZonalAutoshiftConfiguration",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "update_zonal_autoshift_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateZonalShift",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateZonalShift",
+          "Service": "arc-zonal-shift"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-zonal-shift",
+          "Method": "update_zonal_shift",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "ALB",
+      "ARNFormats": [
+        "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}"
+      ],
+      "ConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "NLB",
+      "ARNFormats": [
+        "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId}"
+      ],
+      "ConditionKeys": [
+        "arc-zonal-shift:ResourceIdentifier",
+        "aws:ResourceTag/${TagKey}",
+        "elasticloadbalancing:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

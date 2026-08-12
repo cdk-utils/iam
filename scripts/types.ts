@@ -148,6 +148,9 @@ export interface ServiceResource {
 /**
  * The full response from a service detail endpoint.
  * Contains all IAM-related metadata for a single AWS service.
+ *
+ * Note: Some services (e.g., "a2c") only have Actions and may lack
+ * ConditionKeys, Operations, or Resources entirely.
  */
 export interface ServiceDetail {
 	/** The service identifier (e.g., "dynamodb"). */
@@ -156,10 +159,10 @@ export interface ServiceDetail {
 	readonly Version: string;
 	/** All IAM actions defined by this service. */
 	readonly Actions: ServiceAction[];
-	/** All condition keys available for this service. */
-	readonly ConditionKeys: ServiceConditionKey[];
-	/** API operations and their IAM action mappings. */
-	readonly Operations: ServiceOperation[];
-	/** Resource types defined by this service. */
-	readonly Resources: ServiceResource[];
+	/** All condition keys available for this service. May be absent for some services. */
+	readonly ConditionKeys?: ServiceConditionKey[];
+	/** API operations and their IAM action mappings. May be absent for some services. */
+	readonly Operations?: ServiceOperation[];
+	/** Resource types defined by this service. May be absent for some services. */
+	readonly Resources?: ServiceResource[];
 }

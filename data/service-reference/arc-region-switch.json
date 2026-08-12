@@ -1,0 +1,881 @@
+{
+  "Name": "arc-region-switch",
+  "Actions": [
+    {
+      "Name": "ApprovePlanExecutionStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlanEvaluationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPlanInRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPlanExecutionEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPlanExecutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPlansInRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRoute53HealthChecks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRoute53HealthChecksInRegion",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartPlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePlanExecution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePlanExecutionStep",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "ApprovePlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "ApprovePlanExecutionStep",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "approve_plan_execution_step",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelPlanExecution",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "cancel_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePlan",
+          "Service": "arc-region-switch"
+        },
+        {
+          "Name": "GetPlan",
+          "Service": "arc-region-switch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "arc-region-switch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "create_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePlan",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "delete_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlan",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "get_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlanEvaluationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlanEvaluationStatus",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "get_plan_evaluation_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlanExecution",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "get_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPlanInRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlanInRegion",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "get_plan_in_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlanExecutionEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlanExecutionEvents",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_plan_execution_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlanExecutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlanExecutions",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_plan_executions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlans",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPlansInRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPlansInRegion",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_plans_in_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoute53HealthChecks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoute53HealthChecks",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_route53_health_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoute53HealthChecksInRegion",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoute53HealthChecksInRegion",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_route53_health_checks_in_region",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPlanExecution",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "start_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPlan",
+          "Service": "arc-region-switch"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "arc-region-switch.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdatePlan",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "update_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePlanExecution",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "update_plan_execution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePlanExecutionStep",
+          "Service": "arc-region-switch"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "arc-region-switch",
+          "Method": "update_plan_execution_step",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "plan",
+      "ARNFormats": [
+        "arn:${Partition}:arc-region-switch::${Account}:plan/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

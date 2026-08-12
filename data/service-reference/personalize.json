@@ -1,0 +1,3313 @@
+{
+  "Name": "personalize",
+  "Actions": [
+    {
+      "Name": "CreateBatchInferenceJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchInferenceJob"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBatchSegmentJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchSegmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataDeletionJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataDeletionJob"
+        },
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataInsightsJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataInsightsJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatasetExportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetExportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatasetGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDatasetImportJob",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetImportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateEventTracker",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "eventTracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFilter",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMetricAttribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "metricAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRecommender",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSolution",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSolutionVersion",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDatasetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEventTracker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "eventTracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMetricAttribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metricAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSolution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeAlgorithm",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "algorithm"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBatchInferenceJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchInferenceJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeBatchSegmentJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchSegmentJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataDeletionJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataDeletionJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataInsightsJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataInsightsJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatasetExportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetExportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatasetGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetGroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeDatasetImportJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "datasetImportJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeEventTracker",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "eventTracker"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFeatureTransformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "featureTransformation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeFilter",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "filter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeMetricAttribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metricAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRecipe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recipe"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "schema"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSolution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeSolutionVersion",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetActionRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataInsightsJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPersonalizedRanking",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSolutionMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBatchInferenceJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBatchSegmentJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCampaigns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataDeletionJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataInsightsJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetExportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasetImportJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDatasets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEventTrackers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFilters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMetricAttributionMetrics",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMetricAttributions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecipes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommenders",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSchemas",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSolutionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSolutions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchInferenceJob"
+        },
+        {
+          "Name": "batchSegmentJob"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "dataDeletionJob"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetExportJob"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "eventTracker"
+        },
+        {
+          "Name": "filter"
+        },
+        {
+          "Name": "recommender"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutActionInteractions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutUsers",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopSolutionVersionCreation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchInferenceJob"
+        },
+        {
+          "Name": "batchSegmentJob"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "dataDeletionJob"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetExportJob"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "eventTracker"
+        },
+        {
+          "Name": "filter"
+        },
+        {
+          "Name": "recommender"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "batchInferenceJob"
+        },
+        {
+          "Name": "batchSegmentJob"
+        },
+        {
+          "Name": "campaign"
+        },
+        {
+          "Name": "dataDeletionJob"
+        },
+        {
+          "Name": "dataset"
+        },
+        {
+          "Name": "datasetExportJob"
+        },
+        {
+          "Name": "datasetGroup"
+        },
+        {
+          "Name": "datasetImportJob"
+        },
+        {
+          "Name": "eventTracker"
+        },
+        {
+          "Name": "filter"
+        },
+        {
+          "Name": "recommender"
+        },
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMetricAttribution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "metricAttribution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRecommender",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "recommender"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSolution",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "solution"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateBatchInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchInferenceJob",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_batch_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBatchSegmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBatchSegmentJob",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_batch_segment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCampaign",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataDeletionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataDeletionJob",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_data_deletion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataset",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetExportJob",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_dataset_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetGroup",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDatasetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDatasetImportJob",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_dataset_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventTracker",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_event_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFilter",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMetricAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMetricAttribution",
+          "Service": "personalize"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_metric_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRecommender",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSchema",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSolution",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSolution",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_solution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSolutionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSolutionVersion",
+          "Service": "personalize"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "create_solution_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaign",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataset",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatasetGroup",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventTracker",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_event_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFilter",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMetricAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMetricAttribution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_metric_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecommender",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSchema",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSolution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSolution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "delete_solution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAlgorithm",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAlgorithm",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_algorithm",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBatchInferenceJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBatchInferenceJob",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_batch_inference_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBatchSegmentJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBatchSegmentJob",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_batch_segment_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCampaign",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataDeletionJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataDeletionJob",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_data_deletion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDataset",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetExportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetExportJob",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_dataset_export_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetGroup",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_dataset_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeDatasetImportJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeDatasetImportJob",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_dataset_import_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventTracker",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventTracker",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_event_tracker",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFeatureTransformation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFeatureTransformation",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_feature_transformation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFilter",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFilter",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_filter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMetricAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMetricAttribution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_metric_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRecipe",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRecipe",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_recipe",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRecommender",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSchema",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSolution",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSolution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_solution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSolutionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSolutionVersion",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "describe_solution_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetActionRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetActionRecommendations",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-runtime",
+          "Method": "get_action_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPersonalizedRanking",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPersonalizedRanking",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-runtime",
+          "Method": "get_personalized_ranking",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecommendations",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-runtime",
+          "Method": "get_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSolutionMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSolutionMetrics",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "get_solution_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchInferenceJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchInferenceJobs",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_batch_inference_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBatchSegmentJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBatchSegmentJobs",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_batch_segment_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCampaigns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCampaigns",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_campaigns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataDeletionJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataDeletionJobs",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_data_deletion_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetExportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetExportJobs",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_dataset_export_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetGroups",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_dataset_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetImportJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetImportJobs",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_dataset_import_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasets",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_datasets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventTrackers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventTrackers",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_event_trackers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFilters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFilters",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_filters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMetricAttributionMetrics",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMetricAttributionMetrics",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_metric_attribution_metrics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMetricAttributions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMetricAttributions",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_metric_attributions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecipes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecipes",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_recipes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommenders",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommenders",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_recommenders",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSchemas",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSchemas",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_schemas",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolutionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolutionVersions",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_solution_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSolutions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSolutions",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_solutions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutActionInteractions",
+      "AuthorizedActions": [
+        {
+          "Name": "PutActionInteractions",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-events",
+          "Method": "put_action_interactions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutActions",
+      "AuthorizedActions": [
+        {
+          "Name": "PutActions",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-events",
+          "Method": "put_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "PutEvents",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-events",
+          "Method": "put_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutItems",
+      "AuthorizedActions": [
+        {
+          "Name": "PutItems",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-events",
+          "Method": "put_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "PutUsers",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize-events",
+          "Method": "put_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "StartRecommender",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "start_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "StopRecommender",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "stop_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopSolutionVersionCreation",
+      "AuthorizedActions": [
+        {
+          "Name": "StopSolutionVersionCreation",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "stop_solution_version_creation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaign",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "update_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataset",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "update_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMetricAttribution",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "personalize.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateMetricAttribution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "update_metric_attribution",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRecommender",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRecommender",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "update_recommender",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSolution",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSolution",
+          "Service": "personalize"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "personalize",
+          "Method": "update_solution",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "algorithm",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:::algorithm/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "batchInferenceJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:batch-inference-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "batchSegmentJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:batch-segment-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "campaign",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:campaign/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataDeletionJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:data-deletion-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataInsightsJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:data-insights-job/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "dataset",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:dataset/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasetExportJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:dataset-export-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasetGroup",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:dataset-group/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasetImportJob",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:dataset-import-job/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "eventTracker",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:event-tracker/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "featureTransformation",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:::feature-transformation/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "filter",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:filter/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "metricAttribution",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:metric-attribution/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "recipe",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:::recipe/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "recommender",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:recommender/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "schema",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:schema/${ResourceId}"
+      ]
+    },
+    {
+      "Name": "solution",
+      "ARNFormats": [
+        "arn:${Partition}:personalize:${Region}:${Account}:solution/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

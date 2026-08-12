@@ -1,0 +1,1245 @@
+{
+  "Name": "ssm-incidents",
+  "Actions": [
+    {
+      "Name": "BatchGetIncidentFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReplicationSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResponsePlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTimelineEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIncidentRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteReplicationSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replication-set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResponsePlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteTimelineEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIncidentRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReplicationSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replication-set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResponsePlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTimelineEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIncidentFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListIncidentRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRelatedItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReplicationSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResponsePlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "replication-set"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTimelineEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartIncident",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "replication-set"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "replication-set"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDeletionProtection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replication-set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateIncidentRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRelatedItems",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateReplicationSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "replication-set"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResponsePlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateTimelineEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "incident-record"
+        },
+        {
+          "Name": "response-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetIncidentFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetIncidentFindings",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "batch_get_incident_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReplicationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReplicationSet",
+          "Service": "ssm-incidents"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "create_replication_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResponsePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResponsePlan",
+          "Service": "ssm-incidents"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm-incidents.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "create_response_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTimelineEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTimelineEvent",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "create_timeline_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIncidentRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIncidentRecord",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "delete_incident_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteReplicationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteReplicationSet",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "delete_replication_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourcePolicy",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "delete_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResponsePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResponsePlan",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "delete_response_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTimelineEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTimelineEvent",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "delete_timeline_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIncidentRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIncidentRecord",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "get_incident_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReplicationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetReplicationSet",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "get_replication_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicies",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "get_resource_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResponsePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResponsePlan",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "get_response_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTimelineEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTimelineEvent",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "get_timeline_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIncidentFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIncidentFindings",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_incident_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIncidentRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIncidentRecords",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_incident_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRelatedItems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRelatedItems",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_related_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReplicationSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReplicationSets",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_replication_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResponsePlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResponsePlans",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_response_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTimelineEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTimelineEvents",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "list_timeline_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartIncident",
+      "AuthorizedActions": [
+        {
+          "Name": "StartIncident",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "start_incident",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeletionProtection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDeletionProtection",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_deletion_protection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIncidentRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIncidentRecord",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_incident_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRelatedItems",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRelatedItems",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_related_items",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateReplicationSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateReplicationSet",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_replication_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResponsePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "ssm-incidents.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ssm-incidents"
+        },
+        {
+          "Name": "UpdateResponsePlan",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_response_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTimelineEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTimelineEvent",
+          "Service": "ssm-incidents"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ssm-incidents",
+          "Method": "update_timeline_event",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "incident-record",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-incidents::${Account}:incident-record/${ResponsePlan}/${IncidentRecord}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "replication-set",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-incidents::${Account}:replication-set/${ReplicationSet}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "response-plan",
+      "ARNFormats": [
+        "arn:${Partition}:ssm-incidents::${Account}:response-plan/${ResponsePlan}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

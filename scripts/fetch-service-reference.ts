@@ -101,21 +101,21 @@ function validateServiceDetail(
 		throw new Error("Invalid service detail: 'Actions' must be an array");
 	}
 
-	if (!Array.isArray(obj.ConditionKeys)) {
+	if (obj.ConditionKeys !== undefined && !Array.isArray(obj.ConditionKeys)) {
 		throw new Error(
-			"Invalid service detail: 'ConditionKeys' must be an array",
+			"Invalid service detail: 'ConditionKeys' must be an array if present",
 		);
 	}
 
-	if (!Array.isArray(obj.Operations)) {
+	if (obj.Operations !== undefined && !Array.isArray(obj.Operations)) {
 		throw new Error(
-			"Invalid service detail: 'Operations' must be an array",
+			"Invalid service detail: 'Operations' must be an array if present",
 		);
 	}
 
-	if (!Array.isArray(obj.Resources)) {
+	if (obj.Resources !== undefined && !Array.isArray(obj.Resources)) {
 		throw new Error(
-			"Invalid service detail: 'Resources' must be an array",
+			"Invalid service detail: 'Resources' must be an array if present",
 		);
 	}
 
@@ -129,38 +129,44 @@ function validateServiceDetail(
 		}
 	}
 
-	// Validate condition keys have Name and Types
-	for (let i = 0; i < obj.ConditionKeys.length; i++) {
-		const ck = obj.ConditionKeys[i] as Record<string, unknown>;
-		if (typeof ck?.Name !== "string" || ck.Name.length === 0) {
-			throw new Error(
-				`Invalid service detail: ConditionKeys[${i}].Name must be a non-empty string`,
-			);
-		}
-		if (!Array.isArray(ck?.Types)) {
-			throw new Error(
-				`Invalid service detail: ConditionKeys[${i}].Types must be an array`,
-			);
-		}
-	}
-
-	// Validate operations have a Name
-	for (let i = 0; i < obj.Operations.length; i++) {
-		const op = obj.Operations[i] as Record<string, unknown>;
-		if (typeof op?.Name !== "string" || op.Name.length === 0) {
-			throw new Error(
-				`Invalid service detail: Operations[${i}].Name must be a non-empty string`,
-			);
+	// Validate condition keys have Name and Types (if present)
+	if (Array.isArray(obj.ConditionKeys)) {
+		for (let i = 0; i < obj.ConditionKeys.length; i++) {
+			const ck = obj.ConditionKeys[i] as Record<string, unknown>;
+			if (typeof ck?.Name !== "string" || ck.Name.length === 0) {
+				throw new Error(
+					`Invalid service detail: ConditionKeys[${i}].Name must be a non-empty string`,
+				);
+			}
+			if (!Array.isArray(ck?.Types)) {
+				throw new Error(
+					`Invalid service detail: ConditionKeys[${i}].Types must be an array`,
+				);
+			}
 		}
 	}
 
-	// Validate resources have a Name
-	for (let i = 0; i < obj.Resources.length; i++) {
-		const res = obj.Resources[i] as Record<string, unknown>;
-		if (typeof res?.Name !== "string" || res.Name.length === 0) {
-			throw new Error(
-				`Invalid service detail: Resources[${i}].Name must be a non-empty string`,
-			);
+	// Validate operations have a Name (if present)
+	if (Array.isArray(obj.Operations)) {
+		for (let i = 0; i < obj.Operations.length; i++) {
+			const op = obj.Operations[i] as Record<string, unknown>;
+			if (typeof op?.Name !== "string" || op.Name.length === 0) {
+				throw new Error(
+					`Invalid service detail: Operations[${i}].Name must be a non-empty string`,
+				);
+			}
+		}
+	}
+
+	// Validate resources have a Name (if present)
+	if (Array.isArray(obj.Resources)) {
+		for (let i = 0; i < obj.Resources.length; i++) {
+			const res = obj.Resources[i] as Record<string, unknown>;
+			if (typeof res?.Name !== "string" || res.Name.length === 0) {
+				throw new Error(
+					`Invalid service detail: Resources[${i}].Name must be a non-empty string`,
+				);
+			}
 		}
 	}
 }

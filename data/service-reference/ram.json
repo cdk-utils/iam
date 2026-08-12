@@ -1,0 +1,1474 @@
+{
+  "Name": "ram",
+  "Actions": [
+    {
+      "Name": "AcceptResourceShareInvitation",
+      "ActionConditionKeys": [
+        "ram:ResourceShareName",
+        "ram:ShareOwnerAccountId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResourceShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:Principal",
+        "ram:RequestedResourceType",
+        "ram:ResourceArn",
+        "ram:ResourceShareName",
+        "ram:ResourceTag/${TagKey}",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateResourceSharePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "permission"
+        },
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePermission",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreatePermissionVersion",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceShare",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "ram:AllowsExternalPrincipals",
+        "ram:Principal",
+        "ram:RequestedAllowsExternalPrincipals",
+        "ram:RequestedResourceType",
+        "ram:ResourceArn",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePermission",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeletePermissionVersion",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:ResourceShareName",
+        "ram:ResourceTag/${TagKey}",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResourceShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:Principal",
+        "ram:RequestedResourceType",
+        "ram:ResourceArn",
+        "ram:ResourceShareName",
+        "ram:ResourceTag/${TagKey}",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateResourceSharePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "permission"
+        },
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EnableSharingWithAwsOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetPermission",
+      "ActionConditionKeys": [
+        "ram:PermissionArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceShareAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceShareInvitations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceShares",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPendingInvitationResources",
+      "ActionConditionKeys": [
+        "ram:ResourceShareName"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPermissionAssociations",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPermissionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPrincipals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReplacePermissionAssociationsWork",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceSharePermissions",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:ResourceShareName",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListSourceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PromotePermissionCreatedFromPolicy",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PromoteResourceShareCreatedFromPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RejectResourceShareInvitation",
+      "ActionConditionKeys": [
+        "ram:ResourceShareName",
+        "ram:ShareOwnerAccountId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share-invitation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ReplacePermissionAssociations",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SetDefaultPermissionVersion",
+      "ActionConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "customer-managed-permission"
+        },
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateResourceShare",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:RequestedAllowsExternalPrincipals",
+        "ram:ResourceShareName",
+        "ram:ResourceTag/${TagKey}",
+        "ram:RetainSharingOnAccountLeaveOrganization"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "resource-share"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "ram:AllowsExternalPrincipals",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "ram:PermissionArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "ram:PermissionResourceType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ram:Principal",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ram:RequestedAllowsExternalPrincipals",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "ram:RequestedResourceType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ram:ResourceArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "ram:ResourceShareName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ram:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "ram:RetainSharingOnAccountLeaveOrganization",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "ram:ShareOwnerAccountId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptResourceShareInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptResourceShareInvitation",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "accept_resource_share_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResourceShare",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResourceShare",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "associate_resource_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateResourceSharePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateResourceSharePermission",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "associate_resource_share_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePermission",
+          "Service": "ram"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "create_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePermissionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePermissionVersion",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "create_permission_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceShare",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceShare",
+          "Service": "ram"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "create_resource_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermission",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "delete_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermissionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermissionVersion",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "delete_permission_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceShare",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "delete_resource_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResourceShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResourceShare",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "disassociate_resource_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateResourceSharePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateResourceSharePermission",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "disassociate_resource_share_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableSharingWithAwsOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableSharingWithAwsOrganization",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "enable_sharing_with_aws_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPermission",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "get_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourcePolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicies",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "get_resource_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceShareAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceShareAssociations",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "get_resource_share_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceShareInvitations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceShareInvitations",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "get_resource_share_invitations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceShares",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceShares",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "get_resource_shares",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPendingInvitationResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPendingInvitationResources",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_pending_invitation_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissionAssociations",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_permission_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissionVersions",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_permission_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPermissions",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrincipals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrincipals",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_principals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReplacePermissionAssociationsWork",
+      "AuthorizedActions": [
+        {
+          "Name": "ListReplacePermissionAssociationsWork",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_replace_permission_associations_work",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceSharePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceSharePermissions",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_resource_share_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceTypes",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_resource_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResources",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceAssociations",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "list_source_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PromotePermissionCreatedFromPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PromotePermissionCreatedFromPolicy",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "promote_permission_created_from_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PromoteResourceShareCreatedFromPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PromoteResourceShareCreatedFromPolicy",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "promote_resource_share_created_from_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectResourceShareInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectResourceShareInvitation",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "reject_resource_share_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReplacePermissionAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ReplacePermissionAssociations",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "replace_permission_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SetDefaultPermissionVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "SetDefaultPermissionVersion",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "set_default_permission_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceShare",
+          "Service": "ram"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "ram",
+          "Method": "update_resource_share",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "customer-managed-permission",
+      "ARNFormats": [
+        "arn:${Partition}:ram:${Region}:${Account}:permission/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ]
+    },
+    {
+      "Name": "permission",
+      "ARNFormats": [
+        "arn:${Partition}:ram::${Account}:permission/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "ram:PermissionArn",
+        "ram:PermissionResourceType"
+      ]
+    },
+    {
+      "Name": "resource-share",
+      "ARNFormats": [
+        "arn:${Partition}:ram:${Region}:${Account}:resource-share/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "ram:AllowsExternalPrincipals",
+        "ram:ResourceShareName"
+      ]
+    },
+    {
+      "Name": "resource-share-invitation",
+      "ARNFormats": [
+        "arn:${Partition}:ram:${Region}:${Account}:resource-share-invitation/${ResourcePath}"
+      ],
+      "ConditionKeys": [
+        "ram:ShareOwnerAccountId"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

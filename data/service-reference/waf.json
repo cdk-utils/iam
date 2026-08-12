@@ -1,0 +1,2867 @@
+{
+  "Name": "waf",
+  "Actions": [
+    {
+      "Name": "CreateByteMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bytematchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGeoMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geomatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIPSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ipset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRateBasedRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRegexMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRegexPatternSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexpatternset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRuleGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSizeConstraintSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sizeconstraintset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSqlInjectionMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sqlinjectionmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWebACL",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWebACLMigrationStack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateXssMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "xssmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteByteMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bytematchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGeoMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geomatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIPSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ipset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePermissionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRateBasedRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRegexMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRegexPatternSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexpatternset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSizeConstraintSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sizeconstraintset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSqlInjectionMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sqlinjectionmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteXssMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "xssmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetByteMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bytematchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChangeToken",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetChangeTokenStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGeoMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geomatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIPSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ipset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPermissionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRateBasedRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRateBasedRuleManagedKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRegexMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRegexPatternSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexpatternset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSampledRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSizeConstraintSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sizeconstraintset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSqlInjectionMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sqlinjectionmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetXssMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "xssmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListActivatedRulesInRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListByteMatchSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGeoMatchSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIPSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListLoggingConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRateBasedRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegexMatchSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegexPatternSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRuleGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSizeConstraintSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSqlInjectionMatchSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSubscribedRuleGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "rulegroup"
+        },
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWebACLs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListXssMatchSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutLoggingConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPermissionPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "rulegroup"
+        },
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        },
+        {
+          "Name": "rule"
+        },
+        {
+          "Name": "rulegroup"
+        },
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateByteMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "bytematchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGeoMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "geomatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIPSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ipset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRateBasedRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ratebasedrule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRegexMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRegexPatternSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "regexpatternset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRuleGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rulegroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSizeConstraintSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sizeconstraintset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSqlInjectionMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sqlinjectionmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webacl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateXssMatchSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "xssmatchset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateByteMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateByteMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_byte_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGeoMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGeoMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_geo_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIPSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIPSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_ip_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRateBasedRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRateBasedRule",
+          "Service": "waf"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_rate_based_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegexMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegexMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_regex_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRegexPatternSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRegexPatternSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_regex_pattern_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRule",
+          "Service": "waf"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRuleGroup",
+          "Service": "waf"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSizeConstraintSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSizeConstraintSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_size_constraint_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSqlInjectionMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSqlInjectionMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_sql_injection_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWebACL",
+          "Service": "waf"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWebACLMigrationStack",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWebACLMigrationStack",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_web_acl_migration_stack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateXssMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateXssMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "create_xss_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteByteMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteByteMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_byte_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGeoMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGeoMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_geo_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIPSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIPSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_ip_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteLoggingConfiguration",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePermissionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePermissionPolicy",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_permission_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRateBasedRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRateBasedRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_rate_based_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegexMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegexMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_regex_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRegexPatternSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRegexPatternSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_regex_pattern_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRuleGroup",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSizeConstraintSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSizeConstraintSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_size_constraint_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSqlInjectionMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSqlInjectionMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_sql_injection_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebACL",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteXssMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteXssMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "delete_xss_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetByteMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetByteMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_byte_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChangeToken",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChangeToken",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_change_token",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChangeTokenStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChangeTokenStatus",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_change_token_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGeoMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGeoMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_geo_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIPSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIPSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_ip_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetLoggingConfiguration",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPermissionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPermissionPolicy",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_permission_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRateBasedRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRateBasedRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_rate_based_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRateBasedRuleManagedKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRateBasedRuleManagedKeys",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_rate_based_rule_managed_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegexMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegexMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_regex_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRegexPatternSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRegexPatternSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_regex_pattern_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRuleGroup",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSampledRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSampledRequests",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_sampled_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSizeConstraintSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSizeConstraintSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_size_constraint_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSqlInjectionMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSqlInjectionMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_sql_injection_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWebACL",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetXssMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetXssMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "get_xss_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListActivatedRulesInRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ListActivatedRulesInRuleGroup",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_activated_rules_in_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListByteMatchSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListByteMatchSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_byte_match_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGeoMatchSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGeoMatchSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_geo_match_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIPSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIPSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_ip_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLoggingConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLoggingConfigurations",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_logging_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRateBasedRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRateBasedRules",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_rate_based_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegexMatchSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegexMatchSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_regex_match_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegexPatternSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegexPatternSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_regex_pattern_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRuleGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRuleGroups",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRules",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSizeConstraintSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSizeConstraintSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_size_constraint_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSqlInjectionMatchSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSqlInjectionMatchSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_sql_injection_match_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSubscribedRuleGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSubscribedRuleGroups",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_subscribed_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebACLs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWebACLs",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_web_acls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListXssMatchSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListXssMatchSets",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "list_xss_match_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutLoggingConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutLoggingConfiguration",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "put_logging_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPermissionPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPermissionPolicy",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "put_permission_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateByteMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateByteMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_byte_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGeoMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGeoMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_geo_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIPSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIPSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_ip_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRateBasedRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRateBasedRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_rate_based_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegexMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRegexMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_regex_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRegexPatternSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRegexPatternSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_regex_pattern_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRule",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRuleGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRuleGroup",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_rule_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSizeConstraintSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSizeConstraintSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_size_constraint_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSqlInjectionMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSqlInjectionMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_sql_injection_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWebACL",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_web_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateXssMatchSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateXssMatchSet",
+          "Service": "waf"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "waf",
+          "Method": "update_xss_match_set",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "bytematchset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:bytematchset/${Id}"
+      ]
+    },
+    {
+      "Name": "geomatchset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:geomatchset/${Id}"
+      ]
+    },
+    {
+      "Name": "ipset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:ipset/${Id}"
+      ]
+    },
+    {
+      "Name": "ratebasedrule",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:ratebasedrule/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "regexmatchset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:regexmatch/${Id}"
+      ]
+    },
+    {
+      "Name": "regexpatternset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:regexpatternset/${Id}"
+      ]
+    },
+    {
+      "Name": "rule",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:rule/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "rulegroup",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:rulegroup/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "sizeconstraintset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:sizeconstraintset/${Id}"
+      ]
+    },
+    {
+      "Name": "sqlinjectionmatchset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:sqlinjectionset/${Id}"
+      ]
+    },
+    {
+      "Name": "webacl",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:webacl/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "xssmatchset",
+      "ARNFormats": [
+        "arn:${Partition}:waf::${Account}:xssmatchset/${Id}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

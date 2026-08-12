@@ -1,0 +1,2237 @@
+{
+  "Name": "auditmanager",
+  "Actions": [
+    {
+      "Name": "AssociateAssessmentReportEvidenceFolder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchAssociateAssessmentReportEvidence",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchCreateDelegationByAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        },
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDeleteDelegationByAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        },
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchDisassociateAssessmentReportEvidence",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "BatchImportEvidenceToAssessmentControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssessment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssessmentFramework",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        },
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAssessmentReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateControl",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessment",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentFramework",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentFrameworkShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAssessmentReport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteControl",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateAssessmentReportEvidenceFolder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssessmentFramework",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAssessmentReportUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChangeLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDelegations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidence",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidenceByEvidenceFolder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidenceFileUploadUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidenceFolder",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidenceFoldersByAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetEvidenceFoldersByAssessmentControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetInsightsByAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetServicesInScope",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentControlInsightsByControlDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentFrameworkShareRequests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentFrameworks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessmentReports",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAssessments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControlDomainInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControlDomainInsightsByAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControlInsightsByControlDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListControls",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListKeywordsForDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNotifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        },
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RegisterAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterOrganizationAdminAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartAssessmentFrameworkShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        },
+        {
+          "Name": "assessmentFramework"
+        },
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "assessmentFramework",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "control",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAssessment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentControlSetStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentControlSet"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentFramework",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        },
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentFrameworkShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessmentFramework"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateAssessmentStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assessment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateControl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "control"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSettings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ValidateAssessmentReportIntegrity",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateAssessmentReportEvidenceFolder",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAssessmentReportEvidenceFolder",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "associate_assessment_report_evidence_folder",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchAssociateAssessmentReportEvidence",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAssociateAssessmentReportEvidence",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "batch_associate_assessment_report_evidence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateDelegationByAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateDelegationByAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "batch_create_delegation_by_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteDelegationByAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteDelegationByAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "batch_delete_delegation_by_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDisassociateAssessmentReportEvidence",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDisassociateAssessmentReportEvidence",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "batch_disassociate_assessment_report_evidence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchImportEvidenceToAssessmentControl",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchImportEvidenceToAssessmentControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "batch_import_evidence_to_assessment_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssessment",
+          "Service": "auditmanager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "create_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessmentFramework",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssessmentFramework",
+          "Service": "auditmanager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "create_assessment_framework",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAssessmentReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAssessmentReport",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "create_assessment_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateControl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateControl",
+          "Service": "auditmanager"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "create_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "delete_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentFramework",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentFramework",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "delete_assessment_framework",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentFrameworkShare",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentFrameworkShare",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "delete_assessment_framework_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAssessmentReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAssessmentReport",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "delete_assessment_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteControl",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "delete_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterAccount",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "deregister_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterOrganizationAdminAccount",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "deregister_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAssessmentReportEvidenceFolder",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAssessmentReportEvidenceFolder",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "disassociate_assessment_report_evidence_folder",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountStatus",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_account_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessmentFramework",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssessmentFramework",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_assessment_framework",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAssessmentReportUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAssessmentReportUrl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_assessment_report_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChangeLogs",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChangeLogs",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_change_logs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetControl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDelegations",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDelegations",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_delegations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidence",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidence",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidenceByEvidenceFolder",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidenceByEvidenceFolder",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence_by_evidence_folder",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidenceFileUploadUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidenceFileUploadUrl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence_file_upload_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidenceFolder",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidenceFolder",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence_folder",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidenceFoldersByAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidenceFoldersByAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence_folders_by_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEvidenceFoldersByAssessmentControl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvidenceFoldersByAssessmentControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_evidence_folders_by_assessment_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInsights",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInsightsByAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInsightsByAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_insights_by_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOrganizationAdminAccount",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetServicesInScope",
+      "AuthorizedActions": [
+        {
+          "Name": "GetServicesInScope",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_services_in_scope",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSettings",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "get_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentControlInsightsByControlDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentControlInsightsByControlDomain",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_assessment_control_insights_by_control_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentFrameworkShareRequests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentFrameworkShareRequests",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_assessment_framework_share_requests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentFrameworks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentFrameworks",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_assessment_frameworks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessmentReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessmentReports",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_assessment_reports",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAssessments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssessments",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_assessments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControlDomainInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControlDomainInsights",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_control_domain_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControlDomainInsightsByAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControlDomainInsightsByAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_control_domain_insights_by_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControlInsightsByControlDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControlInsightsByControlDomain",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_control_insights_by_control_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListControls",
+      "AuthorizedActions": [
+        {
+          "Name": "ListControls",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_controls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListKeywordsForDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListKeywordsForDataSource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_keywords_for_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotifications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotifications",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_notifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterAccount",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "register_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterOrganizationAdminAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "RegisterOrganizationAdminAccount",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "register_organization_admin_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAssessmentFrameworkShare",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAssessmentFrameworkShare",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "start_assessment_framework_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessment",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentControlSetStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentControlSetStatus",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment_control_set_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentFramework",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentFramework",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment_framework",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentFrameworkShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentFrameworkShare",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment_framework_share",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAssessmentStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAssessmentStatus",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_assessment_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateControl",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateControl",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_control",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSettings",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "update_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ValidateAssessmentReportIntegrity",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidateAssessmentReportIntegrity",
+          "Service": "auditmanager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "auditmanager",
+          "Method": "validate_assessment_report_integrity",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "assessment",
+      "ARNFormats": [
+        "arn:${Partition}:auditmanager:${Region}:${Account}:assessment/${AssessmentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "assessmentControlSet",
+      "ARNFormats": [
+        "arn:${Partition}:auditmanager:${Region}:${Account}:assessment/${AssessmentId}/controlSet/${ControlSetId}"
+      ]
+    },
+    {
+      "Name": "assessmentFramework",
+      "ARNFormats": [
+        "arn:${Partition}:auditmanager:${Region}:${Account}:assessmentFramework/${AssessmentFrameworkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "control",
+      "ARNFormats": [
+        "arn:${Partition}:auditmanager:${Region}:${Account}:control/${ControlId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

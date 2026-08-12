@@ -1,0 +1,725 @@
+{
+  "Name": "s3vectors",
+  "Actions": [
+    {
+      "Name": "CreateIndex",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "s3vectors:VectorBucketTag/${TagKey}",
+        "s3vectors:kmsKeyArn",
+        "s3vectors:sseType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateVectorBucket",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "s3vectors:VectorBucketTag/${TagKey}",
+        "s3vectors:kmsKeyArn",
+        "s3vectors:sseType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIndex",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVectorBucket",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVectorBucketPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIndex",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVectorBucket",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVectorBucketPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIndexes",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        },
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVectorBuckets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutVectorBucketPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutVectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "QueryVectors",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        },
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Index"
+        },
+        {
+          "Name": "VectorBucket"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "s3vectors:VectorBucketTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "s3vectors:kmsKeyArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "s3vectors:sseType",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateIndex",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "create_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVectorBucket",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "create_vector_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIndex",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "delete_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVectorBucket",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "delete_vector_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVectorBucketPolicy",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "delete_vector_bucket_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVectors",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "delete_vectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIndex",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "get_index",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVectorBucket",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "get_vector_bucket",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVectorBucketPolicy",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "get_vector_bucket_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVectors",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "get_vectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIndexes",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "list_indexes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVectorBuckets",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "list_vector_buckets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVectors",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "list_vectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutVectorBucketPolicy",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "put_vector_bucket_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutVectors",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "put_vectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "QueryVectors",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "query_vectors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "SDK": [
+        {
+          "Name": "s3vectors",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Index",
+      "ARNFormats": [
+        "arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}/index/${IndexName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VectorBucket",
+      "ARNFormats": [
+        "arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "s3vectors:VectorBucketTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

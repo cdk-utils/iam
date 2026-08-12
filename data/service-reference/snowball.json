@@ -1,0 +1,881 @@
+{
+  "Name": "snowball",
+  "Actions": [
+    {
+      "Name": "CancelCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateLongTermPricing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateReturnShippingLabel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAddress",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAddresses",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReturnShippingLabel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobManifest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJobUnlockCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSnowballUsage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSoftwareUpdates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusterJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListCompatibleImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListLongTermPricing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListPickupLocations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListServiceVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateJobShipmentState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateLongTermPricing",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CancelCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelCluster",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "cancel_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "cancel_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAddress",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "create_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "snowball"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "importexport.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateJob",
+          "Service": "snowball"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "importexport.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "create_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateLongTermPricing",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateLongTermPricing",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "create_long_term_pricing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateReturnShippingLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateReturnShippingLabel",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "create_return_shipping_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAddress",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAddress",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "describe_address",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAddresses",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAddresses",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "describe_addresses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCluster",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "describe_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeJob",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "describe_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReturnShippingLabel",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReturnShippingLabel",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "describe_return_shipping_label",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobManifest",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobManifest",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "get_job_manifest",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobUnlockCode",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobUnlockCode",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "get_job_unlock_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSnowballUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSnowballUsage",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "get_snowball_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSoftwareUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSoftwareUpdates",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "get_software_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusterJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterJobs",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_cluster_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusters",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCompatibleImages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCompatibleImages",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_compatible_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListLongTermPricing",
+      "AuthorizedActions": [
+        {
+          "Name": "ListLongTermPricing",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_long_term_pricing",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPickupLocations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPickupLocations",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_pickup_locations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListServiceVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListServiceVersions",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "list_service_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "importexport.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateCluster",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "importexport.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateJob",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "update_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateJobShipmentState",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateJobShipmentState",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "update_job_shipment_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateLongTermPricing",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateLongTermPricing",
+          "Service": "snowball"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "snowball",
+          "Method": "update_long_term_pricing",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

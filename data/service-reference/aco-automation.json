@@ -1,0 +1,823 @@
+{
+  "Name": "aco-automation",
+  "Actions": [
+    {
+      "Name": "AssociateAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutomationRule",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutomationRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutomationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutomationRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEnrollmentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccounts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationEventSteps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationEventSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationRulePreview",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationRulePreviewSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutomationRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommendedActionSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRecommendedActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RollbackAutomationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAutomationEvent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutomationRule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AutomationRule",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateEnrollmentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateAccounts",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "associate_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutomationRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutomationRule",
+          "Service": "aco-automation"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "create_automation_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutomationRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutomationRule",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "delete_automation_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateAccounts",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "disassociate_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutomationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutomationEvent",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "get_automation_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutomationRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutomationRule",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "get_automation_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEnrollmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnrollmentConfiguration",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "get_enrollment_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccounts",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationEventSteps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationEventSteps",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_event_steps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationEventSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationEventSummaries",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_event_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationEvents",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationRulePreview",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVolumes",
+          "Service": "ec2"
+        },
+        {
+          "Name": "ListAutomationRulePreview",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_rule_preview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationRulePreviewSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationRulePreviewSummaries",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_rule_preview_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutomationRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutomationRules",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_automation_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendedActionSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommendedActionSummaries",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_recommended_action_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendedActions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeVolumes",
+          "Service": "ec2"
+        },
+        {
+          "Name": "ListRecommendedActions",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_recommended_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RollbackAutomationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "RollbackAutomationEvent",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "rollback_automation_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAutomationEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAutomationEvent",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "start_automation_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutomationRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutomationRule",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "update_automation_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEnrollmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnrollmentConfiguration",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "update_enrollment_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AutomationRule",
+      "ARNFormats": [
+        "arn:${Partition}:compute-optimizer::${Account}:automation-rule/${RuleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

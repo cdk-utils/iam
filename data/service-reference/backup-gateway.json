@@ -1,0 +1,1034 @@
+{
+  "Name": "backup-gateway",
+  "Actions": [
+    {
+      "Name": "AssociateGatewayToServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Backup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualmachine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteHypervisor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateGatewayFromServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBandwidthRateLimitSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHypervisor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetHypervisorPropertyMappings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetVirtualMachine",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "virtualmachine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportHypervisorConfiguration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGateways",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListHypervisors",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "hypervisor"
+        },
+        {
+          "Name": "virtualmachine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListVirtualMachines",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBandwidthRateLimitSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutHypervisorPropertyMappings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutMaintenanceStartTime",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Restore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartVirtualMachinesMetadataSync",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hypervisor"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "hypervisor"
+        },
+        {
+          "Name": "virtualmachine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TestHypervisorConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        },
+        {
+          "Name": "hypervisor"
+        },
+        {
+          "Name": "virtualmachine"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewayInformation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGatewaySoftwareNow",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateHypervisor",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateGatewayToServer",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateGatewayToServer",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "associate_gateway_to_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGateway",
+          "Service": "backup-gateway"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "create_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGateway",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "delete_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteHypervisor",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHypervisor",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "delete_hypervisor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateGatewayFromServer",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateGatewayFromServer",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "disassociate_gateway_from_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBandwidthRateLimitSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBandwidthRateLimitSchedule",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "get_bandwidth_rate_limit_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGateway",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "get_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHypervisor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHypervisor",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "get_hypervisor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetHypervisorPropertyMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHypervisorPropertyMappings",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "get_hypervisor_property_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVirtualMachine",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVirtualMachine",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "get_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportHypervisorConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportHypervisorConfiguration",
+          "Service": "backup-gateway"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "import_hypervisor_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGateways",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "list_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHypervisors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHypervisors",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "list_hypervisors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListVirtualMachines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListVirtualMachines",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "list_virtual_machines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutBandwidthRateLimitSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "PutBandwidthRateLimitSchedule",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "put_bandwidth_rate_limit_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutHypervisorPropertyMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "backup-gateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "PutHypervisorPropertyMappings",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "put_hypervisor_property_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMaintenanceStartTime",
+      "AuthorizedActions": [
+        {
+          "Name": "PutMaintenanceStartTime",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "put_maintenance_start_time",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartVirtualMachinesMetadataSync",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "backup-gateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "StartVirtualMachinesMetadataSync",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "start_virtual_machines_metadata_sync",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestHypervisorConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "TestHypervisorConfiguration",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "test_hypervisor_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayInformation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewayInformation",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "update_gateway_information",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewaySoftwareNow",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGatewaySoftwareNow",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "update_gateway_software_now",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateHypervisor",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateHypervisor",
+          "Service": "backup-gateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "backup-gateway",
+          "Method": "update_hypervisor",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "gateway",
+      "ARNFormats": [
+        "arn:${Partition}:backup-gateway:${Region}:${Account}:gateway/${GatewayId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "hypervisor",
+      "ARNFormats": [
+        "arn:${Partition}:backup-gateway:${Region}:${Account}:hypervisor/${HypervisorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "virtualmachine",
+      "ARNFormats": [
+        "arn:${Partition}:backup-gateway:${Region}:${Account}:vm/${VirtualmachineId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

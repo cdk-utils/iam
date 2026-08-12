@@ -1,0 +1,3836 @@
+{
+  "Name": "securityagent",
+  "Actions": [
+    {
+      "Name": "AddArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchCreateSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteCodeReviews",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeletePentests",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteThreatModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchDeleteThreats",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetAgentSpaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetArtifactMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCodeReviewJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCodeReviewJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetCodeReviews",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetPentestJobContentMetadata",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetPentestJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetPentestJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetPentests",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetTargetDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetThreatModelJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetThreatModelJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetThreatModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchGetThreats",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchUpdateSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentSpace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCodeReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDesignReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateIntegration",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOneTimeLoginSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePentest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePrivateConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSecurityRequirement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateSecurityRequirementPack",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateTargetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateThreat",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateThreatModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAgentSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDesignReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMembership",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePrivateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateConnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSecurityRequirement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSecurityRequirementPack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTargetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribePrivateConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateConnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDesignReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDesignReviewArtifact",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDesignReviewFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProviderRegistrationManifest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSecurityRequirement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSecurityRequirementPack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "HandleProviderRegistrationCallback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitiateProviderRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentSpaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCodeReviewJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCodeReviewJobsForCodeReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCodeReviews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDesignReviewComments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDesignReviews",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDiscoveredEndpoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFindings",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntegratedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMemberships",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPentestJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPentestJobsForPentest",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPentests",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPrivateConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListResourcesFromIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSecurityRequirementPacks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSecurityRequirements",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        },
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "PrivateConnection"
+        },
+        {
+          "Name": "SecurityRequirementPack"
+        },
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTargetDomains",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThreatModelJobTasks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThreatModelJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThreatModels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListThreats",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDesignReviewFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCodeRemediation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCodeReviewJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartPentestJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartThreatModelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopCodeReviewJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopPentestJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopThreatModelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        },
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "PrivateConnection"
+        },
+        {
+          "Name": "SecurityRequirementPack"
+        },
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ToggleManagedSecurityRequirement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        },
+        {
+          "Name": "Application"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "PrivateConnection"
+        },
+        {
+          "Name": "SecurityRequirementPack"
+        },
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentSpace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApplication",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Application"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCodeReview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateFinding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateIntegratedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        },
+        {
+          "Name": "Integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePentest",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePrivateConnectionCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateConnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSecurityRequirement",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateSecurityRequirementPack",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SecurityRequirementPack"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateTargetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateThreat",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateThreatModel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyTargetDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "TargetDomain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "AddArtifact",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "add_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchCreateSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_create_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteCodeReviews",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteCodeReviews",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_delete_code_reviews",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeletePentests",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeletePentests",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_delete_pentests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_delete_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchDeleteThreatModels",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteThreatModels",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_delete_threat_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetAgentSpaces",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetAgentSpaces",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_agent_spaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetArtifactMetadata",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetArtifactMetadata",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_artifact_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCodeReviewJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCodeReviewJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_code_review_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCodeReviewJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCodeReviewJobs",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_code_review_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetCodeReviews",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetCodeReviews",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_code_reviews",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetFindings",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetPentestJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetPentestJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_pentest_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetPentestJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetPentestJobs",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_pentest_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetPentests",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetPentests",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_pentests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetTargetDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetTargetDomains",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_target_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetThreatModelJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetThreatModelJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_threat_model_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetThreatModelJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetThreatModelJobs",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_threat_model_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetThreatModels",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetThreatModels",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_threat_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetThreats",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetThreats",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_get_threats",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchUpdateSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "batch_update_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentSpace",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "securityagent.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_agent_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApplication",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "securityagent.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCodeReview",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCodeReview",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_code_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntegration",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMembership",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePentest",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePentest",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_pentest",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePrivateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePrivateConnection",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_private_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSecurityRequirementPack",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSecurityRequirementPack",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_security_requirement_pack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTargetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTargetDomain",
+          "Service": "securityagent"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_target_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateThreat",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateThreat",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_threat",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateThreatModel",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateThreatModel",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "create_threat_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentSpace",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_agent_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApplication",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteArtifact",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntegration",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMembership",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMembership",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_membership",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePrivateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePrivateConnection",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_private_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityRequirementPack",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSecurityRequirementPack",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_security_requirement_pack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTargetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTargetDomain",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "delete_target_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribePrivateConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribePrivateConnection",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "describe_private_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApplication",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "get_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetArtifact",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "get_artifact",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntegration",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "get_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSecurityRequirementPack",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSecurityRequirementPack",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "get_security_requirement_pack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "import_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitiateProviderRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "InitiateProviderRegistration",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "initiate_provider_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentSpaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentSpaces",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_agent_spaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApplications",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListArtifacts",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeReviewJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeReviewJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_code_review_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeReviewJobsForCodeReview",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeReviewJobsForCodeReview",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_code_review_jobs_for_code_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCodeReviews",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeReviews",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_code_reviews",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDiscoveredEndpoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDiscoveredEndpoints",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_discovered_endpoints",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFindings",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_findings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntegratedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegratedResources",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_integrated_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrations",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMemberships",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMemberships",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_memberships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPentestJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPentestJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_pentest_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPentestJobsForPentest",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPentestJobsForPentest",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_pentest_jobs_for_pentest",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPentests",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPentests",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_pentests",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPrivateConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPrivateConnections",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_private_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityRequirementPacks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityRequirementPacks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_security_requirement_packs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSecurityRequirements",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSecurityRequirements",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_security_requirements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTargetDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTargetDomains",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_target_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThreatModelJobTasks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThreatModelJobTasks",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_threat_model_job_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThreatModelJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThreatModelJobs",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_threat_model_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThreatModels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThreatModels",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_threat_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListThreats",
+      "AuthorizedActions": [
+        {
+          "Name": "ListThreats",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "list_threats",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCodeRemediation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCodeRemediation",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "start_code_remediation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCodeReviewJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCodeReviewJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "start_code_review_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartPentestJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartPentestJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "start_pentest_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartThreatModelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartThreatModelJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "start_threat_model_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopCodeReviewJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopCodeReviewJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "stop_code_review_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopPentestJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopPentestJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "stop_pentest_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopThreatModelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopThreatModelJob",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "stop_threat_model_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentSpace",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "securityagent.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAgentSpace",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_agent_space",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "securityagent.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateApplication",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCodeReview",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCodeReview",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_code_review",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFinding",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFinding",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_finding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntegratedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateIntegratedResources",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_integrated_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePentest",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePentest",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_pentest",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePrivateConnectionCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePrivateConnectionCertificate",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_private_connection_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSecurityRequirementPack",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSecurityRequirementPack",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_security_requirement_pack",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateTargetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateTargetDomain",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_target_domain",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateThreat",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateThreat",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_threat",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateThreatModel",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateThreatModel",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "update_threat_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyTargetDomain",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyTargetDomain",
+          "Service": "securityagent"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "verify_target_domain",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AgentSpace",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:agent-space/${AgentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Application",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:application/${ApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Integration",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:integration/${IntegrationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PrivateConnection",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:private-connection/${PrivateConnectionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SecurityRequirementPack",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:security-requirement-pack/${SecurityRequirementPackId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "TargetDomain",
+      "ARNFormats": [
+        "arn:${Partition}:securityagent:${Region}:${Account}:target-domain/${TargetDomainId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

@@ -1,0 +1,609 @@
+{
+  "Name": "tax",
+  "Actions": [
+    {
+      "Name": "BatchDeleteTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchPutTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteSupplementalTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDocumentUploadUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetExemptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaxInfoReportingDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaxInheritance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaxInterview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetTaxRegistrationDocument",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDocuments",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSupplementalTaxRegistrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTaxRegistrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWithholdingEligibleInvoices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSupplementalTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutTaxInheritance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutTaxInterview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutTaxRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateExemptions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchDeleteTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchDeleteTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "batch_delete_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchGetTaxExemptions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExemptions",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "batch_get_tax_exemptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BatchPutTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchPutTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "batch_put_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSupplementalTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSupplementalTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "delete_supplemental_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "delete_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTaxExemptionTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExemptions",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "get_tax_exemption_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTaxInheritance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTaxInheritance",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "get_tax_inheritance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "get_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTaxRegistrationDocument",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTaxRegistrationDocument",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "get_tax_registration_document",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSupplementalTaxRegistrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSupplementalTaxRegistrations",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "list_supplemental_tax_registrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTaxExemptions",
+      "AuthorizedActions": [
+        {
+          "Name": "GetExemptions",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "list_tax_exemptions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTaxRegistrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTaxRegistrations",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "list_tax_registrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSupplementalTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSupplementalTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "put_supplemental_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTaxExemption",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateExemptions",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "put_tax_exemption",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTaxInheritance",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTaxInheritance",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "put_tax_inheritance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTaxRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTaxRegistration",
+          "Service": "tax"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "taxsettings",
+          "Method": "put_tax_registration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

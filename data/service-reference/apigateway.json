@@ -1,0 +1,5961 @@
+{
+  "Name": "apigateway",
+  "Actions": [
+    {
+      "Name": "AddCertificateToDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainName"
+        },
+        {
+          "Name": "DomainNames"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateDomainName"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePortal",
+      "ActionConditionKeys": [
+        "apigateway:Request/CognitoUserPoolArn",
+        "apigateway:Request/PortalDisplayName",
+        "apigateway:Request/PortalDomainName",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePortalProduct",
+      "ActionConditionKeys": [
+        "apigateway:Request/PortalProductDisplayName",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProductPage",
+      "ActionConditionKeys": [
+        "apigateway:Request/ProductPageTitle"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProductPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProductRestEndpointPage",
+      "ActionConditionKeys": [
+        "apigateway:Request/Method",
+        "apigateway:Request/ProductRestEndpointPageEndpointPrefix",
+        "apigateway:Request/RestApiId",
+        "apigateway:Request/Stage"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProductRestEndpointPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateRoutingRule",
+      "ActionConditionKeys": [
+        "apigateway:Request/ConditionBasePaths",
+        "apigateway:Request/Priority",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RoutingRule",
+          "ConditionKeys": [
+            "apigateway:Request/ConditionBasePaths",
+            "apigateway:Request/Priority"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DELETE",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSettings"
+        },
+        {
+          "Name": "Api"
+        },
+        {
+          "Name": "ApiKey"
+        },
+        {
+          "Name": "ApiMapping"
+        },
+        {
+          "Name": "Authorizer"
+        },
+        {
+          "Name": "AuthorizersCache"
+        },
+        {
+          "Name": "BasePathMapping"
+        },
+        {
+          "Name": "ClientCertificate"
+        },
+        {
+          "Name": "Cors"
+        },
+        {
+          "Name": "Deployment"
+        },
+        {
+          "Name": "DocumentationPart"
+        },
+        {
+          "Name": "DocumentationVersion"
+        },
+        {
+          "Name": "DomainName"
+        },
+        {
+          "Name": "DomainNameAccessAssociation"
+        },
+        {
+          "Name": "GatewayResponse"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "IntegrationResponse"
+        },
+        {
+          "Name": "Method"
+        },
+        {
+          "Name": "MethodResponse"
+        },
+        {
+          "Name": "Model"
+        },
+        {
+          "Name": "PrivateBasePathMapping"
+        },
+        {
+          "Name": "PrivateDomainName"
+        },
+        {
+          "Name": "RequestValidator"
+        },
+        {
+          "Name": "Resource"
+        },
+        {
+          "Name": "RestApi"
+        },
+        {
+          "Name": "Route"
+        },
+        {
+          "Name": "RouteRequestParameter"
+        },
+        {
+          "Name": "RouteResponse"
+        },
+        {
+          "Name": "RouteSettings"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Tags"
+        },
+        {
+          "Name": "Template"
+        },
+        {
+          "Name": "UsagePlan"
+        },
+        {
+          "Name": "UsagePlanKey"
+        },
+        {
+          "Name": "VpcLink"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePortalProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePortalProductSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProductPage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProductPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProductRestEndpointPage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        },
+        {
+          "Name": "ProductRestEndpointPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRoutingRule",
+      "ActionConditionKeys": [
+        "apigateway:Resource/ConditionBasePaths",
+        "apigateway:Resource/Priority",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RoutingRule",
+          "ConditionKeys": [
+            "apigateway:Resource/ConditionBasePaths",
+            "apigateway:Resource/Priority"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisablePortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GET",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AccessLogSettings"
+        },
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Api"
+        },
+        {
+          "Name": "ApiKey"
+        },
+        {
+          "Name": "ApiKeys"
+        },
+        {
+          "Name": "ApiMapping"
+        },
+        {
+          "Name": "ApiMappings"
+        },
+        {
+          "Name": "Apis"
+        },
+        {
+          "Name": "Authorizer"
+        },
+        {
+          "Name": "Authorizers"
+        },
+        {
+          "Name": "AuthorizersCache"
+        },
+        {
+          "Name": "BasePathMapping"
+        },
+        {
+          "Name": "BasePathMappings"
+        },
+        {
+          "Name": "ClientCertificate"
+        },
+        {
+          "Name": "ClientCertificates"
+        },
+        {
+          "Name": "Cors"
+        },
+        {
+          "Name": "Deployment"
+        },
+        {
+          "Name": "Deployments"
+        },
+        {
+          "Name": "DocumentationPart"
+        },
+        {
+          "Name": "DocumentationParts"
+        },
+        {
+          "Name": "DocumentationVersion"
+        },
+        {
+          "Name": "DocumentationVersions"
+        },
+        {
+          "Name": "DomainName"
+        },
+        {
+          "Name": "DomainNameAccessAssociations"
+        },
+        {
+          "Name": "DomainNames"
+        },
+        {
+          "Name": "ExportedAPI"
+        },
+        {
+          "Name": "GatewayResponse"
+        },
+        {
+          "Name": "GatewayResponses"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "IntegrationResponse"
+        },
+        {
+          "Name": "IntegrationResponses"
+        },
+        {
+          "Name": "Integrations"
+        },
+        {
+          "Name": "Method"
+        },
+        {
+          "Name": "MethodResponse"
+        },
+        {
+          "Name": "Model"
+        },
+        {
+          "Name": "ModelTemplate"
+        },
+        {
+          "Name": "Models"
+        },
+        {
+          "Name": "PrivateBasePathMapping"
+        },
+        {
+          "Name": "PrivateBasePathMappings"
+        },
+        {
+          "Name": "PrivateDomainName"
+        },
+        {
+          "Name": "RequestValidator"
+        },
+        {
+          "Name": "RequestValidators"
+        },
+        {
+          "Name": "Resource"
+        },
+        {
+          "Name": "Resources"
+        },
+        {
+          "Name": "RestApi"
+        },
+        {
+          "Name": "RestApis"
+        },
+        {
+          "Name": "Route"
+        },
+        {
+          "Name": "RouteRequestParameter"
+        },
+        {
+          "Name": "RouteResponse"
+        },
+        {
+          "Name": "RouteResponses"
+        },
+        {
+          "Name": "RouteSettings"
+        },
+        {
+          "Name": "Routes"
+        },
+        {
+          "Name": "Sdk"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Stages"
+        },
+        {
+          "Name": "Tags"
+        },
+        {
+          "Name": "UsagePlan"
+        },
+        {
+          "Name": "UsagePlanKey"
+        },
+        {
+          "Name": "UsagePlanKeys"
+        },
+        {
+          "Name": "UsagePlans"
+        },
+        {
+          "Name": "VpcLink"
+        },
+        {
+          "Name": "VpcLinks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPortalProduct",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPortalProductSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProductPage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        },
+        {
+          "Name": "ProductPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProductRestEndpointPage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        },
+        {
+          "Name": "ProductRestEndpointPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetRoutingRule",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RoutingRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPortalProducts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPortals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProductPages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        },
+        {
+          "Name": "ProductPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProductRestEndpointPages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        },
+        {
+          "Name": "ProductRestEndpointPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRoutingRules",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RoutingRule"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PATCH",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Account"
+        },
+        {
+          "Name": "Api"
+        },
+        {
+          "Name": "ApiKey"
+        },
+        {
+          "Name": "ApiMapping"
+        },
+        {
+          "Name": "Authorizer"
+        },
+        {
+          "Name": "BasePathMapping"
+        },
+        {
+          "Name": "ClientCertificate"
+        },
+        {
+          "Name": "Deployment"
+        },
+        {
+          "Name": "DocumentationPart"
+        },
+        {
+          "Name": "DocumentationVersion"
+        },
+        {
+          "Name": "DomainName"
+        },
+        {
+          "Name": "GatewayResponse"
+        },
+        {
+          "Name": "Integration"
+        },
+        {
+          "Name": "IntegrationResponse"
+        },
+        {
+          "Name": "Method"
+        },
+        {
+          "Name": "MethodResponse"
+        },
+        {
+          "Name": "Model"
+        },
+        {
+          "Name": "PrivateBasePathMapping"
+        },
+        {
+          "Name": "PrivateDomainName"
+        },
+        {
+          "Name": "RequestValidator"
+        },
+        {
+          "Name": "Resource"
+        },
+        {
+          "Name": "RestApi"
+        },
+        {
+          "Name": "Route"
+        },
+        {
+          "Name": "RouteRequestParameter"
+        },
+        {
+          "Name": "RouteResponse"
+        },
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Template"
+        },
+        {
+          "Name": "UsagePlan"
+        },
+        {
+          "Name": "UsagePlanKey"
+        },
+        {
+          "Name": "VpcLink"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "POST",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ApiKeys"
+        },
+        {
+          "Name": "ApiMappings"
+        },
+        {
+          "Name": "Apis"
+        },
+        {
+          "Name": "Authorizers"
+        },
+        {
+          "Name": "BasePathMappings"
+        },
+        {
+          "Name": "ClientCertificates"
+        },
+        {
+          "Name": "Deployments"
+        },
+        {
+          "Name": "DocumentationParts"
+        },
+        {
+          "Name": "DocumentationVersions"
+        },
+        {
+          "Name": "DomainNameAccessAssociations"
+        },
+        {
+          "Name": "DomainNames"
+        },
+        {
+          "Name": "GatewayResponses"
+        },
+        {
+          "Name": "IntegrationResponse"
+        },
+        {
+          "Name": "IntegrationResponses"
+        },
+        {
+          "Name": "Integrations"
+        },
+        {
+          "Name": "MethodResponse"
+        },
+        {
+          "Name": "Models"
+        },
+        {
+          "Name": "PrivateBasePathMappings"
+        },
+        {
+          "Name": "RequestValidators"
+        },
+        {
+          "Name": "Resources"
+        },
+        {
+          "Name": "RestApis"
+        },
+        {
+          "Name": "RouteResponses"
+        },
+        {
+          "Name": "Routes"
+        },
+        {
+          "Name": "Stages"
+        },
+        {
+          "Name": "UsagePlanKeys"
+        },
+        {
+          "Name": "UsagePlans"
+        },
+        {
+          "Name": "VpcLinks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PUT",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Api"
+        },
+        {
+          "Name": "Apis"
+        },
+        {
+          "Name": "DocumentationPart"
+        },
+        {
+          "Name": "GatewayResponse"
+        },
+        {
+          "Name": "IntegrationResponse"
+        },
+        {
+          "Name": "MethodResponse"
+        },
+        {
+          "Name": "RestApi"
+        },
+        {
+          "Name": "Tags"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PreviewPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishPortal",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutPortalProductSharingPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RejectAccessAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateDomainName"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveCertificateFromDomain",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainName"
+        },
+        {
+          "Name": "DomainNames"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Stage"
+        },
+        {
+          "Name": "Stages"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainNameManagementPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PrivateDomainName"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDomainNamePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DomainNames"
+        },
+        {
+          "Name": "PrivateDomainName"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePortal",
+      "ActionConditionKeys": [
+        "apigateway:Request/CognitoUserPoolArn",
+        "apigateway:Request/PortalDisplayName",
+        "apigateway:Request/PortalDomainName",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Portal"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePortalProduct",
+      "ActionConditionKeys": [
+        "apigateway:Request/PortalProductDisplayName",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "PortalProduct"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProductPage",
+      "ActionConditionKeys": [
+        "apigateway:Request/ProductPageTitle"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProductPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProductRestEndpointPage",
+      "ActionConditionKeys": [
+        "apigateway:Request/ProductRestEndpointPageEndpointPrefix"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ProductRestEndpointPage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRestApiPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RestApi"
+        },
+        {
+          "Name": "RestApis"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRoutingRule",
+      "ActionConditionKeys": [
+        "apigateway:Request/ConditionBasePaths",
+        "apigateway:Request/Priority",
+        "apigateway:Resource/ConditionBasePaths",
+        "apigateway:Resource/Priority",
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "RoutingRule",
+          "ConditionKeys": [
+            "apigateway:Request/ConditionBasePaths",
+            "apigateway:Request/Priority",
+            "apigateway:Resource/ConditionBasePaths",
+            "apigateway:Resource/Priority"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "apigateway:Request/AccessAssociationSource",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/AccessLoggingDestination",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/AccessLoggingFormat",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/ApiKeyRequired",
+      "Types": [
+        "ArrayOfBool"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/ApiName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/AuthorizerType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/AuthorizerUri",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/CognitoUserPoolArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/ConditionBasePaths",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/DisableExecuteApiEndpoint",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/DomainNameArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/EndpointType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/Method",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/MtlsTrustStoreUri",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/MtlsTrustStoreVersion",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/PortalDisplayName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/PortalDomainName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/PortalProductDisplayName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/Priority",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/ProductPageTitle",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/ProductRestEndpointPageEndpointPrefix",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/RestApiId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/RouteAuthorizationType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/RoutingMode",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/SecurityPolicy",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/Stage",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Request/StageName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/AccessLoggingDestination",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/AccessLoggingFormat",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/ApiKeyRequired",
+      "Types": [
+        "ArrayOfBool"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/ApiName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/AuthorizerType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/AuthorizerUri",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/CognitoUserPoolArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/ConditionBasePaths",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/DisableExecuteApiEndpoint",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/EndpointType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/Method",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/MtlsTrustStoreUri",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/MtlsTrustStoreVersion",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/PortalDisplayName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/PortalDomainName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/PortalProductDisplayName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/PortalPublishStatus",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/Priority",
+      "Types": [
+        "Numeric"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/ProductPageTitle",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/ProductRestEndpointPageEndpointPrefix",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/RestApiId",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/RouteAuthorizationType",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/RoutingMode",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/SecurityPolicy",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "apigateway:Resource/Stage",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApiMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_api_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAuthorizer",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_authorizer",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_authorizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBasePathMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_base_path_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDocumentationPart",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_documentation_part",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDocumentationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_documentation_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCertificateToDomain",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdateDomainNamePolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_domain_name",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainNameAccessAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessAssociation",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_domain_name_access_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIntegrationResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_integration_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateModel",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_model",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePortal",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "GetPortalProduct",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePortalProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePortalProduct",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_portal_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProductPage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProductPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_product_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProductRestEndpointPage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProductRestEndpointPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_product_rest_endpoint_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRequestValidator",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_request_validator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdateRestApiPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRouteResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_route_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRoutingRule",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStage",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_stage",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUsagePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_usage_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUsagePlanKey",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_usage_plan_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVpcLink",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "create_vpc_link",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "create_vpc_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessLogSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_access_log_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApiMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_api_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAuthorizer",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_authorizer",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_authorizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBasePathMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_base_path_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClientCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_client_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCorsConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_cors_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_deployment",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDocumentationPart",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_documentation_part",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDocumentationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_documentation_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "RemoveCertificateFromDomain",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_domain_name",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainNameAccessAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_domain_name_access_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGatewayResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_gateway_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_integration",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIntegrationResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_integration_response",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_integration_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMethodResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_method_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteModel",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_model",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortalProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortalProduct",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_portal_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeletePortalProductSharingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePortalProductSharingPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_portal_product_sharing_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProductPage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProductPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_product_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProductRestEndpointPage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProductRestEndpointPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_product_rest_endpoint_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRequestValidator",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_request_validator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouteRequestParameter",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_route_request_parameter",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouteResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_route_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRouteSettings",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_route_settings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRoutingRule",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStage",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_stage",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUsagePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_usage_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUsagePlanKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_usage_plan_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVpcLink",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "delete_vpc_link",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "delete_vpc_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisablePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "DisablePortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "disable_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExportApi",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "export_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FlushStageAuthorizersCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "flush_stage_authorizers_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FlushStageCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "flush_stage_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateClientCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "generate_client_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApi",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_api_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_api_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_api_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApis",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_apis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAuthorizer",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_authorizer",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_authorizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAuthorizers",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_authorizers",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_authorizers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBasePathMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_base_path_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBasePathMappings",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_base_path_mappings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClientCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_client_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetClientCertificates",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_client_certificates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDeployments",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_deployments",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_deployments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocumentationPart",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_documentation_part",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocumentationParts",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_documentation_parts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocumentationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_documentation_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDocumentationVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_documentation_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_domain_name",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainNameAccessAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_domain_name_access_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainNames",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_domain_names",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_domain_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetExport",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_export",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGatewayResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_gateway_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGatewayResponses",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_gateway_responses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_integration",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegrationResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_integration_response",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_integration_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegrationResponses",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_integration_responses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMethodResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_method_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetModel",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_model",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetModelTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_model_template",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_model_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetModels",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_models",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_models",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPortalProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortalProduct",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_portal_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPortalProductSharingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortalProductSharingPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_portal_product_sharing_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProductPage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProductPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_product_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProductRestEndpointPage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProductRestEndpointPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_product_rest_endpoint_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRequestValidator",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_request_validator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRequestValidators",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_request_validators",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResource",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResources",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRestApis",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_rest_apis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouteResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_route_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRouteResponses",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_route_responses",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoutes",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_routes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRoutingRule",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSdk",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_sdk",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSdkType",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_sdk_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSdkTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_sdk_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStage",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_stage",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetStages",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_stages",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_stages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTags",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_tags",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsagePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_usage_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsagePlanKey",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_usage_plan_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsagePlanKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_usage_plan_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetUsagePlans",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_usage_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVpcLink",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_vpc_link",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_vpc_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetVpcLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "GET",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "get_vpc_links",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "get_vpc_links",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportApi",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "import_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportApiKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "import_api_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportDocumentationParts",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "import_documentation_parts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRestApiPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "import_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortalProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortalProducts",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "list_portal_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPortals",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPortals",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "list_portals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProductPages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProductPages",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "list_product_pages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProductRestEndpointPages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProductRestEndpointPages",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "list_product_rest_endpoint_pages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRoutingRules",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRoutingRules",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "list_routing_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PreviewPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortalProduct",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PreviewPortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "preview_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PublishPortal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortalProduct",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PublishPortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "publish_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGatewayResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_gateway_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutIntegrationResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_integration_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutMethodResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_method_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutPortalProductSharingPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutPortalProductSharingPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "put_portal_product_sharing_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateRestApiPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "put_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutRoutingRule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRoutingRule",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "put_routing_rule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReimportApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "reimport_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectDomainNameAccessAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectAccessAssociation",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "reject_domain_name_access_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetAuthorizersCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "reset_authorizers_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PUT",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestInvokeAuthorizer",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "test_invoke_authorizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TestInvokeMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "POST",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "test_invoke_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DELETE",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApiMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_api_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAuthorizer",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_authorizer",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_authorizer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBasePathMapping",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_base_path_mapping",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateClientCertificate",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_client_certificate",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_deployment",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDocumentationPart",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_documentation_part",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDocumentationVersion",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_documentation_version",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "AddCertificateToDomain",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "RemoveCertificateFromDomain",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdateDomainNameManagementPolicy",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdateDomainNamePolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_domain_name",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGatewayResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_gateway_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "apigateway.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_integration",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateIntegrationResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_integration_response",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_integration_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMethod",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_method",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMethodResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_method_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateModel",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_model",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_model",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePortal",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPortalProduct",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdatePortal",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_portal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePortalProduct",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePortalProduct",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_portal_product",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProductPage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProductPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_product_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProductRestEndpointPage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateProductRestEndpointPage",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_product_rest_endpoint_page",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRequestValidator",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_request_validator",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResource",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRestApi",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        },
+        {
+          "Name": "UpdateRestApiPolicy",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_rest_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRoute",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_route",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRouteResponse",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_route_response",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStage",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_stage",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_stage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUsagePlan",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_usage_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateVpcLink",
+      "AuthorizedActions": [
+        {
+          "Name": "PATCH",
+          "Service": "apigateway"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "apigateway",
+          "Method": "update_vpc_link",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "apigatewayv2",
+          "Method": "update_vpc_link",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "AccessLogSettings",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/accesslogsettings"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Account",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/account"
+      ]
+    },
+    {
+      "Name": "Api",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/ApiName",
+        "apigateway:Resource/AuthorizerType",
+        "apigateway:Resource/AuthorizerUri",
+        "apigateway:Resource/DisableExecuteApiEndpoint",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ApiKey",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apikeys/${ApiKeyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ApiKeys",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apikeys"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ApiMapping",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/apimappings/${ApiMappingId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ApiMappings",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/apimappings"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Apis",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Authorizer",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers/${AuthorizerId}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers/${AuthorizerId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "apigateway:Resource/AuthorizerType",
+        "apigateway:Resource/AuthorizerUri",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Authorizers",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/AuthorizerUri",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "AuthorizersCache",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/cache/authorizers"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "BasePathMapping",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/basepathmappings/${BasePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "BasePathMappings",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/basepathmappings"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ClientCertificate",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/clientcertificates/${ClientCertificateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ClientCertificates",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/clientcertificates"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Cors",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/cors"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Deployment",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/deployments/${DeploymentId}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments/${DeploymentId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Deployments",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/deployments",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/StageName",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DocumentationPart",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/parts/${DocumentationPartId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DocumentationParts",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/parts"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DocumentationVersion",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/versions/${DocumentationVersionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DocumentationVersions",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/versions"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DomainName",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/MtlsTrustStoreUri",
+        "apigateway:Request/MtlsTrustStoreVersion",
+        "apigateway:Request/SecurityPolicy",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/MtlsTrustStoreUri",
+        "apigateway:Resource/MtlsTrustStoreVersion",
+        "apigateway:Resource/RoutingMode",
+        "apigateway:Resource/SecurityPolicy",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DomainNameAccessAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/domainnameaccessassociations/domainname/${DomainName}/${SourceType}/${SourceId}"
+      ]
+    },
+    {
+      "Name": "DomainNameAccessAssociations",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/domainnameaccessassociations"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/AccessAssociationSource",
+        "apigateway:Request/DomainNameArn",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "DomainNames",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/MtlsTrustStoreUri",
+        "apigateway:Request/MtlsTrustStoreVersion",
+        "apigateway:Request/SecurityPolicy",
+        "apigateway:Resource/RoutingMode",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ExportedAPI",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/exports/${Specification}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "GatewayResponse",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/gatewayresponses/${ResponseType}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "GatewayResponses",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/gatewayresponses"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Integration",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "IntegrationResponse",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}/integrationresponses/${IntegrationResponseId}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration/responses/${StatusCode}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "IntegrationResponses",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}/integrationresponses"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Integrations",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Method",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "MethodResponse",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/responses/${StatusCode}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Model",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/models/${ModelId}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models/${ModelName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ModelTemplate",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/models/${ModelId}/template"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Models",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/models",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Portal",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/portals/${PortalId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Resource/CognitoUserPoolArn",
+        "apigateway:Resource/PortalDisplayName",
+        "apigateway:Resource/PortalDomainName",
+        "apigateway:Resource/PortalPublishStatus",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PortalProduct",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProductId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Resource/PortalProductDisplayName",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PrivateBasePathMapping",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}+${DomainIdentifier}/basepathmappings/${BasePath}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PrivateBasePathMappings",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}+${DomainIdentifier}/basepathmappings"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "PrivateDomainName",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/domainnames/${DomainName}+${DomainIdentifier}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/EndpointType",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/RoutingMode",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProductPage",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProductId}/productpages/${ProductPageId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Resource/ProductPageTitle",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "ProductRestEndpointPage",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProductId}/productrestendpointpages/${ProductRestEndpointPageId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Resource/Method",
+        "apigateway:Resource/ProductRestEndpointPageEndpointPrefix",
+        "apigateway:Resource/RestApiId",
+        "apigateway:Resource/Stage",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RequestValidator",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/requestvalidators/${RequestValidatorId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RequestValidators",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/requestvalidators"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Resource",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Resources",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RestApi",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Request/SecurityPolicy",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/ApiName",
+        "apigateway:Resource/AuthorizerType",
+        "apigateway:Resource/DisableExecuteApiEndpoint",
+        "apigateway:Resource/EndpointType",
+        "apigateway:Resource/RouteAuthorizationType",
+        "apigateway:Resource/SecurityPolicy",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RestApis",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/ApiName",
+        "apigateway:Request/AuthorizerType",
+        "apigateway:Request/DisableExecuteApiEndpoint",
+        "apigateway:Request/EndpointType",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Request/SecurityPolicy",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Route",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/RouteAuthorizationType",
+        "apigateway:Resource/ApiKeyRequired",
+        "apigateway:Resource/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouteRequestParameter",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/requestparameters/${RequestParameterKey}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouteResponse",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/routeresponses/${RouteResponseId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouteResponses",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/routeresponses"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RouteSettings",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/routesettings/${RouteKey}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Routes",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/ApiKeyRequired",
+        "apigateway:Request/RouteAuthorizationType",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "RoutingRule",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}:${Account}:/domainnames/${DomainName}/routingrules/${RoutingRuleId}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Resource/ConditionBasePaths",
+        "apigateway:Resource/Priority",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Sdk",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}/sdks/${SdkType}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Stage",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/AccessLoggingDestination",
+        "apigateway:Request/AccessLoggingFormat",
+        "apigateway:Resource/AccessLoggingDestination",
+        "apigateway:Resource/AccessLoggingFormat",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Stages",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages",
+        "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages"
+      ],
+      "ConditionKeys": [
+        "apigateway:Request/AccessLoggingDestination",
+        "apigateway:Request/AccessLoggingFormat",
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Tags",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/tags/${UrlEncodedResourceARN}"
+      ]
+    },
+    {
+      "Name": "Template",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/restapis/models/${ModelName}/template"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "UsagePlan",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "UsagePlanKey",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}/keys/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "UsagePlanKeys",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}/keys"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "UsagePlans",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/usageplans"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VpcLink",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/vpclinks/${VpcLinkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "VpcLinks",
+      "ARNFormats": [
+        "arn:${Partition}:apigateway:${Region}::/vpclinks"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

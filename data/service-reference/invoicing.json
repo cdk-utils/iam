@@ -1,0 +1,897 @@
+{
+  "Name": "invoicing",
+  "Actions": [
+    {
+      "Name": "BatchGetInvoiceProfile",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateInvoiceUnit",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateProcurementPortalPreference",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInvoiceUnit",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteProcurementPortalPreference",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvoiceCorrection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvoiceEmailDeliveryPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvoicePDF",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInvoiceUnit",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProcurementPortalPreference",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvoiceCorrections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvoiceSummaries",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInvoiceUnits",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProcurementPortalPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProcurementPortalSuppliers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProcurementPortals",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        },
+        {
+          "Name": "procurement-portal-preference"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutInvoiceEmailDeliveryPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutProcurementPortalPreference",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendProcurementPortalValidation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartInvoiceCorrection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        },
+        {
+          "Name": "procurement-portal-preference"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        },
+        {
+          "Name": "procurement-portal-preference"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateInvoiceUnit",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "invoice-unit"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateProcurementPortalPreferenceStatus",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "VerifyProcurementPortalValidation",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetInvoiceProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetInvoiceProfile",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "batch_get_invoice_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateInvoiceUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateInvoiceUnit",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "create_invoice_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateProcurementPortalPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateProcurementPortalPreference",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "create_procurement_portal_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInvoiceUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInvoiceUnit",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "delete_invoice_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProcurementPortalPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteProcurementPortalPreference",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "delete_procurement_portal_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvoicePDF",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvoicePDF",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "get_invoice_pdf",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInvoiceUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInvoiceUnit",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "get_invoice_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProcurementPortalPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProcurementPortalPreference",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "get_procurement_portal_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvoiceSummaries",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvoiceSummaries",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_invoice_summaries",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInvoiceUnits",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInvoiceUnits",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_invoice_units",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProcurementPortalPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProcurementPortalPreferences",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_procurement_portal_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProcurementPortalPreference",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "PutProcurementPortalPreference",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "put_procurement_portal_preference",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendProcurementPortalValidation",
+      "AuthorizedActions": [
+        {
+          "Name": "SendProcurementPortalValidation",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "send_procurement_portal_validation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "UntagResource",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateInvoiceUnit",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateInvoiceUnit",
+          "Service": "invoicing"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "update_invoice_unit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProcurementPortalPreferenceStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyBilling",
+          "Service": "aws-portal"
+        },
+        {
+          "Name": "UpdateProcurementPortalPreferenceStatus",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "update_procurement_portal_preference_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "VerifyProcurementPortalValidation",
+      "AuthorizedActions": [
+        {
+          "Name": "VerifyProcurementPortalValidation",
+          "Service": "invoicing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "invoicing",
+          "Method": "verify_procurement_portal_validation",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "invoice-unit",
+      "ARNFormats": [
+        "arn:${Partition}:invoicing::${Account}:invoice-unit/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "procurement-portal-preference",
+      "ARNFormats": [
+        "arn:${Partition}:invoicing::${Account}:procurement-portal-preference/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

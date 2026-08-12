@@ -1,0 +1,1001 @@
+{
+  "Name": "devops-guru",
+  "Actions": [
+    {
+      "Name": "AddNotificationChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteInsight",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountHealth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountOverview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAnomaly",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEventSourcesConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeInsight",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOrganizationHealth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOrganizationOverview",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeOrganizationResourceCollectionHealth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeResourceCollectionHealth",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetCostEstimation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourceCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAnomaliesForInsight",
+      "ActionConditionKeys": [
+        "devops-guru:ServiceNames"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAnomalousLogGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListMonitoredResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListNotificationChannels",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListOrganizationInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutFeedback",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RemoveNotificationChannel",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "topic"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchInsights",
+      "ActionConditionKeys": [
+        "devops-guru:ServiceNames"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SearchOrganizationInsights",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartCostEstimation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventSourcesConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResourceCollection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateServiceIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "devops-guru:ServiceNames",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AddNotificationChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "AddNotificationChannel",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "add_notification_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInsight",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "delete_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountHealth",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_account_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountOverview",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountOverview",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_account_overview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAnomaly",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAnomaly",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_anomaly",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEventSourcesConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEventSourcesConfig",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_event_sources_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeFeedback",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeInsight",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationHealth",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_organization_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationOverview",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationOverview",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_organization_overview",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeOrganizationResourceCollectionHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeOrganizationResourceCollectionHealth",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_organization_resource_collection_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeResourceCollectionHealth",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourceCollectionHealth",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_resource_collection_health",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceIntegration",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "describe_service_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCostEstimation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCostEstimation",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "get_cost_estimation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResourceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourceCollection",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "get_resource_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnomaliesForInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnomaliesForInsight",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_anomalies_for_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAnomalousLogGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAnomalousLogGroups",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_anomalous_log_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEvents",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInsights",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMonitoredResources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMonitoredResources",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_monitored_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListNotificationChannels",
+      "AuthorizedActions": [
+        {
+          "Name": "ListNotificationChannels",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_notification_channels",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationInsights",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_organization_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRecommendations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRecommendations",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "list_recommendations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFeedback",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFeedback",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "put_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveNotificationChannel",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveNotificationChannel",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "remove_notification_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchInsights",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "search_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchOrganizationInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchOrganizationInsights",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "search_organization_insights",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCostEstimation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCostEstimation",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "start_cost_estimation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventSourcesConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventSourcesConfig",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "update_event_sources_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResourceCollection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResourceCollection",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "update_resource_collection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateServiceIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateServiceIntegration",
+          "Service": "devops-guru"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "devops-guru",
+          "Method": "update_service_integration",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "topic",
+      "ARNFormats": [
+        "arn:${Partition}:sns:${Region}:${Account}:${TopicName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

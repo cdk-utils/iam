@@ -1,0 +1,506 @@
+{
+  "Name": "workspaces-instances",
+  "Actions": [
+    {
+      "Name": "AssociateVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateWorkspaceInstance",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "VolumeId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateVolume",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWorkspaceInstance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInstanceTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRegions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWorkspaceInstances",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "WorkspaceInstanceId"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateVolume",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "associate_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateVolume",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "create_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWorkspaceInstance",
+          "Service": "workspaces-instances"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "create_workspace_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVolume",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "delete_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceInstance",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "delete_workspace_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateVolume",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateVolume",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "disassociate_volume",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWorkspaceInstance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWorkspaceInstance",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "get_workspace_instance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInstanceTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInstanceTypes",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "list_instance_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRegions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRegions",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "list_regions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWorkspaceInstances",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWorkspaceInstances",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "list_workspace_instances",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "workspaces-instances"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces-instances",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "VolumeId",
+      "ARNFormats": [
+        "arn:${Partition}:ec2:${Region}:${Account}:volume/${VolumeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "WorkspaceInstanceId",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces-instances:${Region}:${Account}:workspaceinstance/${WorkspaceInstanceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

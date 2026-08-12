@@ -1,0 +1,1643 @@
+{
+  "Name": "dataexchange",
+  "Actions": [
+    {
+      "Name": "AcceptDataGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-grants"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAsset",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataGrant",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-grants"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataSet",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateEventAction",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-actions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateJob",
+      "ActionConditionKeys": [
+        "dataexchange:JobType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRevision",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-grants"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "entitled-data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteEventAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-actions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "entitled-assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-grants"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "entitled-data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetEventAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-actions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetReceivedDataGrant",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-grants"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entitled-revisions"
+        },
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSetRevisions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "entitled-data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListEventActions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListReceivedDataGrants",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListRevisionAssets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "entitled-revisions"
+        },
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "data-grants"
+        },
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "event-actions"
+        },
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishDataSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PublishToDataGrant",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RevokeRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "SendApiAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "entitled-assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendDataSetNotification",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "data-grants"
+        },
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "event-actions"
+        },
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        },
+        {
+          "Name": "data-grants"
+        },
+        {
+          "Name": "data-sets"
+        },
+        {
+          "Name": "event-actions"
+        },
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAsset",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "assets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDataSet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "data-sets"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateEventAction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-actions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateRevision",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "revisions"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "dataexchange:JobType",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptDataGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptDataGrant",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "Subscribe",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "accept_data_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelJob",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "cancel_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataGrant",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "CreateJob",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "PublishDataSet",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "PublishToDataGrant",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "StartJob",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "create_data_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSet",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "create_data_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateEventAction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEventAction",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "create_event_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateJob",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "dataexchange.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "create_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRevision",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "create_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAsset",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "delete_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataGrant",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "delete_data_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSet",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSet",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "delete_data_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteEventAction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEventAction",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "delete_event_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRevision",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "delete_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAsset",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataGrant",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "GetDataSet",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_data_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSet",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSet",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_data_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventAction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventAction",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_event_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJob",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetReceivedDataGrant",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSet",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "GetReceivedDataGrant",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_received_data_grant",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRevision",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "get_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataGrants",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "ListDataSets",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_data_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSetRevisions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSetRevisions",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_data_set_revisions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSets",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_data_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventActions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventActions",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_event_actions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListReceivedDataGrants",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSets",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "ListReceivedDataGrants",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_received_data_grants",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRevisionAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRevisionAssets",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_revision_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeRevision",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "revoke_revision",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendApiAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "SendApiAsset",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "send_api_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendDataSetNotification",
+      "AuthorizedActions": [
+        {
+          "Name": "SendDataSetNotification",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "send_data_set_notification",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartJob",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAsset",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "StartJob",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "start_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAsset",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "update_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSet",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDataSet",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "update_data_set",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateEventAction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEventAction",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "update_event_action",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRevision",
+      "AuthorizedActions": [
+        {
+          "Name": "PublishDataSet",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "PublishToDataGrant",
+          "Service": "dataexchange"
+        },
+        {
+          "Name": "UpdateRevision",
+          "Service": "dataexchange"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "dataexchange",
+          "Method": "update_revision",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "assets",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "data-grants",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:data-grants/${DataGrantId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "data-sets",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "entitled-assets",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}"
+      ]
+    },
+    {
+      "Name": "entitled-data-sets",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}"
+      ]
+    },
+    {
+      "Name": "entitled-revisions",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}"
+      ]
+    },
+    {
+      "Name": "event-actions",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:event-actions/${EventActionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "jobs",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:jobs/${JobId}"
+      ],
+      "ConditionKeys": [
+        "dataexchange:JobType"
+      ]
+    },
+    {
+      "Name": "revisions",
+      "ARNFormats": [
+        "arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

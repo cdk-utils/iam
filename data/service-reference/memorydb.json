@@ -1,0 +1,2021 @@
+{
+  "Name": "memorydb",
+  "Actions": [
+    {
+      "Name": "BatchUpdateCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Connect",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CopySnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAcl",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "memorydb:TLSEnabled"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "parametergroup"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "subnetgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateMultiRegionCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "memorydb:TLSEnabled"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregionparametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateParameterGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSnapshot",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateSubnetGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateUser",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "memorydb:UserAuthenticationMode"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAcl",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteMultiRegionCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregioncluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteParameterGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSnapshot",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteSubnetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subnetgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteUser",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAcls",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClusters",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEngineVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeEvents",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMultiRegionClusters",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregioncluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMultiRegionParameterGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregionparametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeMultiRegionParameters",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregionparametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeParameterGroups",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeParameters",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReservedNodes",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "reservednode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeReservedNodesOfferings",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeServiceUpdates",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSnapshots",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "snapshot"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeSubnetGroups",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subnetgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeUsers",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "FailoverShard",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAllowedMultiRegionClusterUpdates",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregioncluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAllowedNodeTypeUpdates",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTags",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "parametergroup"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "subnetgroup"
+        },
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PauseMultiRegionClusterReplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregioncluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PurchaseReservedNodesOffering",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "reservednode"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ResetParameterGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "parametergroup"
+        },
+        {
+          "Name": "reservednode"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "subnetgroup"
+        },
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "parametergroup"
+        },
+        {
+          "Name": "snapshot"
+        },
+        {
+          "Name": "subnetgroup"
+        },
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAcl",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "acl"
+        },
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateMultiRegionCluster",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "multiregioncluster"
+        },
+        {
+          "Name": "multiregionparametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateParameterGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "parametergroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSubnetGroup",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "subnetgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateUser",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "memorydb:UserAuthenticationMode"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "memorydb:TLSEnabled",
+      "Types": [
+        "Bool"
+      ]
+    },
+    {
+      "Name": "memorydb:UserAuthenticationMode",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchUpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchUpdateCluster",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "batch_update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopySnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CopySnapshot",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "copy_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateACL",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAcl",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCluster",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMultiRegionCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMultiRegionCluster",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_multi_region_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateParameterGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateParameterGroup",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_parameter_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshot",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSubnetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSubnetGroup",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_subnet_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateUser",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "create_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteACL",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAcl",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshot",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "DeleteCluster",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMultiRegionCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMultiRegionCluster",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_multi_region_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteParameterGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteParameterGroup",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_parameter_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSnapshot",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapshot",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_snapshot",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSubnetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSubnetGroup",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_subnet_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUser",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteUser",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "delete_user",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeACLs",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAcls",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_acls",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusters",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEngineVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEngineVersions",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_engine_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeEvents",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMultiRegionClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMultiRegionClusters",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_multi_region_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMultiRegionParameterGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMultiRegionParameterGroups",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_multi_region_parameter_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeMultiRegionParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeMultiRegionParameters",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_multi_region_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeParameterGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeParameterGroups",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_parameter_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeParameters",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeParameters",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_parameters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReservedNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReservedNodes",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_reserved_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeReservedNodesOfferings",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeReservedNodesOfferings",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_reserved_nodes_offerings",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeServiceUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServiceUpdates",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_service_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapshots",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSubnetGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSubnetGroups",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_subnet_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeUsers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeUsers",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "describe_users",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FailoverShard",
+      "AuthorizedActions": [
+        {
+          "Name": "FailoverShard",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "failover_shard",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAllowedMultiRegionClusterUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAllowedMultiRegionClusterUpdates",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "list_allowed_multi_region_cluster_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAllowedNodeTypeUpdates",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAllowedNodeTypeUpdates",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "list_allowed_node_type_updates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTags",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "list_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PurchaseReservedNodesOffering",
+      "AuthorizedActions": [
+        {
+          "Name": "PurchaseReservedNodesOffering",
+          "Service": "memorydb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "purchase_reserved_nodes_offering",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResetParameterGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "ResetParameterGroup",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "reset_parameter_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateACL",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAcl",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_acl",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCluster",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMultiRegionCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMultiRegionCluster",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_multi_region_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateParameterGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateParameterGroup",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_parameter_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSubnetGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSubnetGroup",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_subnet_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateUser",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateUser",
+          "Service": "memorydb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "memorydb",
+          "Method": "update_user",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "acl",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:acl/${AclName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:cluster/${ClusterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "multiregioncluster",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb::${Account}:multiregioncluster/${ClusterName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "memorydb:TLSEnabled"
+      ]
+    },
+    {
+      "Name": "multiregionparametergroup",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb::${Account}:multiregionparametergroup/${MultiRegionParameterGroupName}"
+      ]
+    },
+    {
+      "Name": "parametergroup",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:parametergroup/${ParameterGroupName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "reservednode",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:reservednode/${ReservationID}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "snapshot",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:snapshot/${SnapshotName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "subnetgroup",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:subnetgroup/${SubnetGroupName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "user",
+      "ARNFormats": [
+        "arn:${Partition}:memorydb:${Region}:${Account}:user/${UserName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

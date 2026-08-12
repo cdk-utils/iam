@@ -1,0 +1,2974 @@
+{
+  "Name": "appsync",
+  "Actions": [
+    {
+      "Name": "AssociateApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateMergedGraphqlApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateSourceGraphqlApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApi",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApiCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateApiKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateChannelNamespace",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomainName",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateGraphqlApi",
+      "ActionConditionKeys": [
+        "appsync:Visibility",
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApiCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApiKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteChannelNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomainName",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteGraphqlApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateMergedGraphqlApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "mergedApiAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateSourceGraphqlApi",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceApiAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EvaluateCode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EvaluateMappingTemplate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "EventConnect",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EventPublish",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EventSubscribe",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "FlushApiCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApiAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApiCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetChannelNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDataSourceIntrospection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomainName",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGraphqlApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetGraphqlApiEnvironmentVariables",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIntrospectionSchema",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSchemaCreationStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetSourceApiAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceApiAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWebACLForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GraphQL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListApiKeys",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApis",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListChannelNamespaces",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDataSources",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainNames",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListFunctions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListGraphqlApis",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolvers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResolversByFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourcesForWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSourceApiAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "channelNamespace"
+        },
+        {
+          "Name": "domain"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTypes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTypesByAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutGraphqlApiEnvironmentVariables",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SourceGraphQL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "field"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDataSourceIntrospection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSchemaCreation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartSchemaMerge",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceApiAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "channelNamespace"
+        },
+        {
+          "Name": "domain"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        },
+        {
+          "Name": "channelNamespace"
+        },
+        {
+          "Name": "domain"
+        },
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "api"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApiCache",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateApiKey",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateChannelNamespace",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "channelNamespace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDataSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomainName",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domain"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateFunction",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateGraphqlApi",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "graphqlapi"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateResolver",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateSourceApiAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sourceApiAssociation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateType",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "appsync:Visibility",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AssociateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "associate_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateMergedGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMergedGraphqlApi",
+          "Service": "appsync"
+        },
+        {
+          "Name": "AssociateSourceGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "associate_merged_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateSourceGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateMergedGraphqlApi",
+          "Service": "appsync"
+        },
+        {
+          "Name": "AssociateSourceGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "associate_source_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApi",
+          "Service": "appsync"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApiCache",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApiCache",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_api_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApiKey",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateChannelNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateChannelNamespace",
+          "Service": "appsync"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_channel_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataSource",
+          "Service": "appsync"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainName",
+          "Service": "appsync"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFunction",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateGraphqlApi",
+          "Service": "appsync"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResolver",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateType",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateType",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "create_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApiCache",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApiCache",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_api_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApiKey",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteChannelNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteChannelNamespace",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_channel_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataSource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainName",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFunction",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResolver",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteType",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteType",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "delete_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "disassociate_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateMergedGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateMergedGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "disassociate_merged_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateSourceGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateSourceGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "disassociate_source_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvaluateCode",
+      "AuthorizedActions": [
+        {
+          "Name": "EvaluateCode",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "evaluate_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EvaluateMappingTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "EvaluateMappingTemplate",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "evaluate_mapping_template",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FlushApiCache",
+      "AuthorizedActions": [
+        {
+          "Name": "FlushApiCache",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "flush_api_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApi",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApiAssociation",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_api_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApiCache",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApiCache",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_api_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetChannelNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "GetChannelNamespace",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_channel_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDataSourceIntrospection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataSourceIntrospection",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_data_source_introspection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainName",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFunction",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetGraphqlApiEnvironmentVariables",
+      "AuthorizedActions": [
+        {
+          "Name": "GetGraphqlApiEnvironmentVariables",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_graphql_api_environment_variables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetIntrospectionSchema",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntrospectionSchema",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_introspection_schema",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResolver",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSchemaCreationStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSchemaCreationStatus",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_schema_creation_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSourceApiAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSourceApiAssociation",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_source_api_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetType",
+      "AuthorizedActions": [
+        {
+          "Name": "GetType",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "get_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApiKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApiKeys",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_api_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApis",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApis",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_apis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListChannelNamespaces",
+      "AuthorizedActions": [
+        {
+          "Name": "ListChannelNamespaces",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_channel_namespaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDataSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataSources",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_data_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainNames",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainNames",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_domain_names",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFunctions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFunctions",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_functions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGraphqlApis",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGraphqlApis",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_graphql_apis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolvers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolvers",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_resolvers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResolversByFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResolversByFunction",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_resolvers_by_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSourceApiAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSourceApiAssociations",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_source_api_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTypes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTypes",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_types",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTypesByAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTypesByAssociation",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "list_types_by_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutGraphqlApiEnvironmentVariables",
+      "AuthorizedActions": [
+        {
+          "Name": "PutGraphqlApiEnvironmentVariables",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "put_graphql_api_environment_variables",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDataSourceIntrospection",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDataSourceIntrospection",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "start_data_source_introspection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSchemaCreation",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSchemaCreation",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "start_schema_creation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartSchemaMerge",
+      "AuthorizedActions": [
+        {
+          "Name": "StartSchemaMerge",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "start_schema_merge",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApi",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApiCache",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApiCache",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_api_cache",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApiKey",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateApiKey",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_api_key",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateChannelNamespace",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateChannelNamespace",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_channel_namespace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataSource",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataSource",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_data_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainName",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDomainName",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_domain_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateFunction",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateFunction",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_function",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGraphqlApi",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "appsync.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateGraphqlApi",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_graphql_api",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateResolver",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateResolver",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_resolver",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSourceApiAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSourceApiAssociation",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_source_api_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateType",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateType",
+          "Service": "appsync"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "appsync",
+          "Method": "update_type",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "api",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "channelNamespace",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}/channelNamespace/${ChannelNamespaceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "datasource",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/datasources/${DatasourceName}"
+      ]
+    },
+    {
+      "Name": "domain",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:domainnames/${DomainName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "field",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}/fields/${FieldName}"
+      ]
+    },
+    {
+      "Name": "function",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/functions/${FunctionId}"
+      ]
+    },
+    {
+      "Name": "graphqlapi",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "mergedApiAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${SourceGraphQLAPIId}/mergedApiAssociations/${Associationid}"
+      ]
+    },
+    {
+      "Name": "sourceApiAssociation",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${MergedGraphQLAPIId}/sourceApiAssociations/${Associationid}"
+      ]
+    },
+    {
+      "Name": "type",
+      "ARNFormats": [
+        "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

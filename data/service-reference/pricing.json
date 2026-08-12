@@ -1,0 +1,163 @@
+{
+  "Name": "pricing",
+  "Actions": [
+    {
+      "Name": "DescribeServices",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAttributeValues",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPriceListFileUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetProducts",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPriceLists",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "DescribeServices",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeServices",
+          "Service": "pricing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing",
+          "Method": "describe_services",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAttributeValues",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAttributeValues",
+          "Service": "pricing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing",
+          "Method": "get_attribute_values",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPriceListFileUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPriceListFileUrl",
+          "Service": "pricing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing",
+          "Method": "get_price_list_file_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProducts",
+      "AuthorizedActions": [
+        {
+          "Name": "GetProducts",
+          "Service": "pricing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing",
+          "Method": "get_products",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPriceLists",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPriceLists",
+          "Service": "pricing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "pricing",
+          "Method": "list_price_lists",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

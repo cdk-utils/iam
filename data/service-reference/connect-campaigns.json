@@ -1,0 +1,1549 @@
+{
+  "Name": "connect-campaigns",
+  "Actions": [
+    {
+      "Name": "CreateCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaignChannelSubtypeConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaignCommunicationLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaignCommunicationTime",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaignEntryLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnectInstanceConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteConnectInstanceIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteInstanceOnboardingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignState",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignStateBatch",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetConnectInstanceConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstanceCommunicationLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetInstanceOnboardingJobStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCampaigns",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListConnectInstanceIntegrations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PauseCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutConnectInstanceIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutDialRequestBatch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutInstanceCommunicationLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutOutboundRequestBatch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutProfileOutboundRequestBatch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ResumeCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartInstanceOnboardingJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopCampaign",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignChannelSubtypeConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignCommunicationLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignCommunicationTime",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignDialerConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignEntryLimits",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignFlowAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignName",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignOutboundCallConfig",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignSchedule",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignSource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCampaign",
+          "Service": "connect-campaigns"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "create_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "create_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "delete_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaignChannelSubtypeConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaignChannelSubtypeConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_campaign_channel_subtype_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaignCommunicationLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaignCommunicationLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_campaign_communication_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaignCommunicationTime",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaignCommunicationTime",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_campaign_communication_time",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaignEntryLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaignEntryLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_campaign_entry_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectInstanceConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectInstanceConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "delete_connect_instance_config",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_connect_instance_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectInstanceIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectInstanceIntegration",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_connect_instance_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteInstanceOnboardingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteInstanceOnboardingJob",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "delete_instance_onboarding_job",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "delete_instance_onboarding_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "describe_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "describe_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignState",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignState",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "get_campaign_state",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "get_campaign_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignStateBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignStateBatch",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "get_campaign_state_batch",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "get_campaign_state_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetConnectInstanceConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetConnectInstanceConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "get_connect_instance_config",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "get_connect_instance_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceCommunicationLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceCommunicationLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "get_instance_communication_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetInstanceOnboardingJobStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetInstanceOnboardingJobStatus",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "get_instance_onboarding_job_status",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "get_instance_onboarding_job_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCampaigns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCampaigns",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "list_campaigns",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "list_campaigns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListConnectInstanceIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListConnectInstanceIntegrations",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "list_connect_instance_integrations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PauseCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "PauseCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "pause_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "pause_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutConnectInstanceIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutConnectInstanceIntegration",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "put_connect_instance_integration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutDialRequestBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "PutDialRequestBatch",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "put_dial_request_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutInstanceCommunicationLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "PutInstanceCommunicationLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "put_instance_communication_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutOutboundRequestBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "PutOutboundRequestBatch",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "put_outbound_request_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProfileOutboundRequestBatch",
+      "AuthorizedActions": [
+        {
+          "Name": "PutProfileOutboundRequestBatch",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "put_profile_outbound_request_batch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumeCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "ResumeCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "resume_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "resume_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "start_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "start_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartInstanceOnboardingJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartInstanceOnboardingJob",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "start_instance_onboarding_job",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "start_instance_onboarding_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "StopCampaign",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "stop_campaign",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "stop_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignChannelSubtypeConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignChannelSubtypeConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_channel_subtype_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignCommunicationLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignCommunicationLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_communication_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignCommunicationTime",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignCommunicationTime",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_communication_time",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignDialerConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignDialerConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "update_campaign_dialer_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignEntryLimits",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignEntryLimits",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_entry_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignFlowAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignFlowAssociation",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_flow_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignName",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignName",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "update_campaign_name",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_name",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignOutboundCallConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignOutboundCallConfig",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaigns",
+          "Method": "update_campaign_outbound_call_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignSchedule",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignSchedule",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignSource",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignSource",
+          "Service": "connect-campaigns"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectcampaignsv2",
+          "Method": "update_campaign_source",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "campaign",
+      "ARNFormats": [
+        "arn:${Partition}:connect-campaigns:${Region}:${Account}:campaign/${CampaignId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

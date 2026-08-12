@@ -1,0 +1,1573 @@
+{
+  "Name": "amplify",
+  "Actions": [
+    {
+      "Name": "AssociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateApp",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBackendEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateBranch",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateDomainAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWebHook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBackendEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteBranch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteDomainAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWebHook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GenerateAccessLogs",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetArtifactUrl",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBackendEnvironment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetBranch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetDomainAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetWebACLForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetWebHook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListApps",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListArtifacts",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBackendEnvironments",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListBranches",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListDomainAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListJobs",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourcesForWebACL",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        },
+        {
+          "Name": "branches"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListWebHooks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartDeployment",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "jobs"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        },
+        {
+          "Name": "branches"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        },
+        {
+          "Name": "branches"
+        },
+        {
+          "Name": "domains"
+        },
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateApp",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "apps"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateBranch",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "branches"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateDomainAssociation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "domains"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWebHook",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "webhooks"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateApp",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateApp",
+          "Service": "amplify"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBackendEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBackendEnvironment",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_backend_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateBranch",
+          "Service": "amplify"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDeployment",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDomainAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDomainAssociation",
+          "Service": "amplify"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_domain_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateWebHook",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "create_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteApp",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteApp",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBackendEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBackendEnvironment",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_backend_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteBranch",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDomainAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDomainAssociation",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_domain_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteJob",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteJob",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWebHook",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "delete_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GenerateAccessLogs",
+      "AuthorizedActions": [
+        {
+          "Name": "GenerateAccessLogs",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "generate_access_logs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetApp",
+      "AuthorizedActions": [
+        {
+          "Name": "GetApp",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetArtifactUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetArtifactUrl",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_artifact_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBackendEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBackendEnvironment",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_backend_environment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "GetBranch",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDomainAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDomainAssociation",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_domain_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJob",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "GetWebHook",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "get_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListApps",
+      "AuthorizedActions": [
+        {
+          "Name": "ListApps",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_apps",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListArtifacts",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_artifacts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBackendEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBackendEnvironments",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_backend_environments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListBranches",
+      "AuthorizedActions": [
+        {
+          "Name": "ListBranches",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_branches",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDomainAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDomainAssociations",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_domain_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListJobs",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListWebhooks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListWebHooks",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "list_webhooks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDeployment",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDeployment",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "start_deployment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartJob",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "start_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StopJob",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "stop_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateApp",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateApp",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "update_app",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateBranch",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateBranch",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "update_branch",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDomainAssociation",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "amplify.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDomainAssociation",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "update_domain_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWebhook",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWebHook",
+          "Service": "amplify"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "amplify",
+          "Method": "update_webhook",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "apps",
+      "ARNFormats": [
+        "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "branches",
+      "ARNFormats": [
+        "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "domains",
+      "ARNFormats": [
+        "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/domains/${DomainName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "jobs",
+      "ARNFormats": [
+        "arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}/jobs/${JobId}"
+      ]
+    },
+    {
+      "Name": "webhooks",
+      "ARNFormats": [
+        "arn:${Partition}:amplify:${Region}:${Account}:webhooks/${WebhookId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

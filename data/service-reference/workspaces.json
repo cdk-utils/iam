@@ -1,0 +1,3674 @@
+{
+  "Name": "workspaces",
+  "Actions": [
+    {
+      "Name": "AcceptAccountLinkInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateConnectionAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectionalias"
+        },
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateIpGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        },
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AssociateWorkspaceApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceapplication"
+        },
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "AuthorizeIpRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CopyWorkspaceImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateAccountLinkInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectClientAddIn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateConnectionAlias",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIpGroup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateRootClientCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificateid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateStandbyWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspaceid",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateUpdatedWorkspaceImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaceBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacebundle",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "workspaceimage",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaceImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspaceimage",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspacebundle",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspaceid",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateWorkspacesPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspacebundle",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "workspacespool",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteAccountLinkInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteClientBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectClientAddIn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteConnectionAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectionalias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIpGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteRootClientCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificateid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteTags",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacebundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteWorkspaceImage",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeployWorkspaceApplications",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeregisterWorkspaceDirectory",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeAccountModifications",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeApplicationAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceapplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeApplications",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeBundleAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacebundle"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClientBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeClientProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectClientAddIns",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectionAliasPermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectionalias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConnectionAliases",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeConsent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeCustomWorkspaceImageImport",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeImageAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeIpGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeTags",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceAssociations",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceBundles",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceDirectories",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceImagePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceImages",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeWorkspaceSnapshots",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspacesConnectionStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspacesPoolSessions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacespool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeWorkspacesPools",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DirectoryAccessManagement",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateConnectionAlias",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectionalias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateIpGroups",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        },
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DisassociateWorkspaceApplication",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceapplication"
+        },
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetAccountLink",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetTroubleshootingRecommendation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportClientBranding",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ImportCustomWorkspaceImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ImportWorkspaceImage",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "InvokeTroubleshootingInvestigation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccountLinks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListAvailableManagementCidrRanges",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListTroubleshootingRecommendations",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "MigrateWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacebundle"
+        },
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyAccount",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyCertificateBasedAuthProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyClientProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyEndpointEncryptionMode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifySamlProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifySelfservicePermissions",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyStreamingProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyWorkspaceAccessProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyWorkspaceCreationProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyWorkspaceProperties",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ModifyWorkspaceState",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RebootWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RebuildWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RegisterWorkspaceDirectory",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RejectAccountLinkInvitation",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RestoreWorkspace",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RevokeIpRules",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StartWorkspacesPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacespool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "StopWorkspacesPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacespool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "Stream",
+      "ActionConditionKeys": [
+        "workspaces:userId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TerminateWorkspaces",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TerminateWorkspacesPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacespool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "TerminateWorkspacesPoolSession",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectClientAddIn",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "directoryid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConnectionAliasPermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "connectionalias"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateConsent",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRootClientCertificate",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "certificateid"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRulesOfIpGroup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceipgroup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceBundle",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacebundle"
+        },
+        {
+          "Name": "workspaceimage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspaceImagePermission",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspaceimage"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "UpdateWorkspacesPool",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "workspacespool"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "workspaces:userId",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptAccountLinkInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptAccountLinkInvitation",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "accept_account_link_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateConnectionAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateConnectionAlias",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "associate_connection_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateIpGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateIpGroups",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "associate_ip_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateWorkspaceApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateWorkspaceApplication",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "associate_workspace_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AuthorizeIpRules",
+      "AuthorizedActions": [
+        {
+          "Name": "AuthorizeIpRules",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "UpdateRulesOfIpGroup",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "authorize_ip_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CopyWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CopyWorkspaceImage",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "DescribeWorkspaceImages",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "copy_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAccountLinkInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccountLinkInvitation",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_account_link_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectClientAddIn",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectClientAddIn",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_connect_client_add_in",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateConnectionAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateConnectionAlias",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_connection_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateIpGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIpGroup",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_ip_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStandbyWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStandbyWorkspaces",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "DescribeWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_standby_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateTags",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateUpdatedWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateUpdatedWorkspaceImage",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_updated_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateWorkspaceBundle",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_workspace_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateWorkspaceImage",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateWorkspacesPool",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "CreateWorkspacesPool",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "create_workspaces_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountLinkInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccountLinkInvitation",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_account_link_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClientBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClientBranding",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_client_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectClientAddIn",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectClientAddIn",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_connect_client_add_in",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteConnectionAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteConnectionAlias",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_connection_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIpGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIpGroup",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_ip_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteTags",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceBundle",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_workspace_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteWorkspaceImage",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "delete_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeployWorkspaceApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "DeployWorkspaceApplications",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "deploy_workspace_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeregisterWorkspaceDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "DeregisterWorkspaceDirectory",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "deregister_workspace_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccount",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeAccountModifications",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeAccountModifications",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_account_modifications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplicationAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplicationAssociations",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_application_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeApplications",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeApplications",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_applications",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeBundleAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeBundleAssociations",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_bundle_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClientBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClientBranding",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_client_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClientProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClientProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_client_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectClientAddIns",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectClientAddIns",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_connect_client_add_ins",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectionAliasPermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectionAliasPermissions",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_connection_alias_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeConnectionAliases",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeConnectionAliases",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_connection_aliases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeCustomWorkspaceImageImport",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCustomWorkspaceImageImport",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_custom_workspace_image_import",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeImageAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeImageAssociations",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_image_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeIpGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeIpGroups",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_ip_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTags",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceAssociations",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceBundles",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceBundles",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_bundles",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceDirectories",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceDirectories",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_directories",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceImagePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceImagePermissions",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_image_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceImages",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceImages",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_images",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaceSnapshots",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaceSnapshots",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspace_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspacesConnectionStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspacesConnectionStatus",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspaces_connection_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspacesPoolSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspacesPoolSessions",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspaces_pool_sessions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeWorkspacesPools",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeWorkspacesPools",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "describe_workspaces_pools",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateConnectionAlias",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateConnectionAlias",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "disassociate_connection_alias",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateIpGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateIpGroups",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "disassociate_ip_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateWorkspaceApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateWorkspaceApplication",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "disassociate_workspace_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountLink",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccountLink",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "get_account_link",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportClientBranding",
+      "AuthorizedActions": [
+        {
+          "Name": "ImportClientBranding",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "import_client_branding",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportCustomWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "ImportCustomWorkspaceImage",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "import_custom_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ImportWorkspaceImage",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "ImportWorkspaceImage",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "import_workspace_image",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccountLinks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccountLinks",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "list_account_links",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAvailableManagementCidrRanges",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAvailableManagementCidrRanges",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "list_available_management_cidr_ranges",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "MigrateWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "MigrateWorkspace",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "migrate_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyAccount",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyCertificateBasedAuthProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyCertificateBasedAuthProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_certificate_based_auth_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyClientProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyClientProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_client_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyEndpointEncryptionMode",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyEndpointEncryptionMode",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_endpoint_encryption_mode",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifySamlProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifySamlProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_saml_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifySelfservicePermissions",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifySelfservicePermissions",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_selfservice_permissions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyStreamingProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyStreamingProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_streaming_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyWorkspaceAccessProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyWorkspaceAccessProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_workspace_access_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyWorkspaceCreationProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyWorkspaceCreationProperties",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "workspaces.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_workspace_creation_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyWorkspaceProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyWorkspaceProperties",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_workspace_properties",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ModifyWorkspaceState",
+      "AuthorizedActions": [
+        {
+          "Name": "ModifyWorkspaceState",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "modify_workspace_state",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "reboot_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebuildWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "RebuildWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "rebuild_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RegisterWorkspaceDirectory",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateTags",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "RegisterWorkspaceDirectory",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "register_workspace_directory",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectAccountLinkInvitation",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectAccountLinkInvitation",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "reject_account_link_invitation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreWorkspace",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreWorkspace",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "restore_workspace",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RevokeIpRules",
+      "AuthorizedActions": [
+        {
+          "Name": "RevokeIpRules",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "UpdateRulesOfIpGroup",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "revoke_ip_rules",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "StartWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "start_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartWorkspacesPool",
+      "AuthorizedActions": [
+        {
+          "Name": "StartWorkspacesPool",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "start_workspaces_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "StopWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "stop_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopWorkspacesPool",
+      "AuthorizedActions": [
+        {
+          "Name": "StopWorkspacesPool",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "stop_workspaces_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateWorkspaces",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateWorkspaces",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "terminate_workspaces",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateWorkspacesPool",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateWorkspacesPool",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "terminate_workspaces_pool",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TerminateWorkspacesPoolSession",
+      "AuthorizedActions": [
+        {
+          "Name": "TerminateWorkspacesPoolSession",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "terminate_workspaces_pool_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectClientAddIn",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectClientAddIn",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_connect_client_add_in",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateConnectionAliasPermission",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateConnectionAliasPermission",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_connection_alias_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRulesOfIpGroup",
+      "AuthorizedActions": [
+        {
+          "Name": "AuthorizeIpRules",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "RevokeIpRules",
+          "Service": "workspaces"
+        },
+        {
+          "Name": "UpdateRulesOfIpGroup",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_rules_of_ip_group",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceBundle",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceBundle",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_workspace_bundle",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspaceImagePermission",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspaceImagePermission",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_workspace_image_permission",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateWorkspacesPool",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateWorkspacesPool",
+          "Service": "workspaces"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "workspaces",
+          "Method": "update_workspaces_pool",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "certificateid",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspacecertificate/${CertificateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "connectionalias",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:connectionalias/${ConnectionAliasId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "directoryid",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:directory/${DirectoryId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspaceapplication",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspaceapplication/${WorkSpaceApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspacebundle",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspacebundle/${BundleId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspaceid",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspace/${WorkspaceId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspaceimage",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspaceimage/${ImageId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspaceipgroup",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspaceipgroup/${GroupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "workspacespool",
+      "ARNFormats": [
+        "arn:${Partition}:workspaces:${Region}:${Account}:workspacespool/${PoolId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

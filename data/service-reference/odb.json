@@ -1,0 +1,2814 @@
+{
+  "Name": "odb",
+  "Actions": [
+    {
+      "Name": "AcceptMarketplaceRegistration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AssociateIamRoleToResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutonomousDatabase",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutonomousDatabaseBackup",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAutonomousDatabaseWallet",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCloudAutonomousVmCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCloudExadataInfrastructure",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCloudVmCluster",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGrantShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOdbNetwork",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOdbPeeringConnection",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOutboundIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAutonomousDatabaseBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database-backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCloudAutonomousVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCloudExadataInfrastructure",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCloudVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGrantShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOdbNetwork",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOdbPeeringConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateIamRoleFromResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "FailoverAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutonomousDatabaseBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database-backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAutonomousDatabaseWalletDetails",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCloudAutonomousVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCloudExadataInfrastructure",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCloudExadataInfrastructureUnallocatedResources",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCloudVmCluster",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDbServer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOciOnboardingStatus",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOdbNetwork",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetOdbPeeringConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InitializeService",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabaseBackups",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabaseCharacterSets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabaseClones",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabasePeers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabaseVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousDatabases",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAutonomousVirtualMachines",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCloudAutonomousVmClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCloudExadataInfrastructures",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCloudVmClusters",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDbNodes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDbServers",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDbSystemShapes",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFlexComponents",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListGiVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOdbNetworks",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOdbPeeringConnections",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSystemVersions",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        },
+        {
+          "Name": "autonomous-database-backup"
+        },
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        },
+        {
+          "Name": "odb-network"
+        },
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutResourcePolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RebootAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RebootDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ShrinkAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StopDbNode",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SwitchoverAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        },
+        {
+          "Name": "autonomous-database-backup"
+        },
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        },
+        {
+          "Name": "odb-network"
+        },
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        },
+        {
+          "Name": "autonomous-database-backup"
+        },
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-exadata-infrastructure"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        },
+        {
+          "Name": "db-node"
+        },
+        {
+          "Name": "odb-network"
+        },
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutonomousDatabase",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAutonomousDatabaseBackup",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "autonomous-database-backup"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCloudExadataInfrastructure",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-exadata-infrastructure"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGrantShare",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOdbNetwork",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-network"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOdbPeeringConnection",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "odb-peering-connection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOutboundIntegration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cloud-autonomous-vm-cluster"
+        },
+        {
+          "Name": "cloud-vm-cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "AcceptMarketplaceRegistration",
+      "AuthorizedActions": [
+        {
+          "Name": "AcceptMarketplaceRegistration",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "accept_marketplace_registration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AssociateIamRoleToResource",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateIamRoleToResource",
+          "Service": "odb"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "odb.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "associate_iam_role_to_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutonomousDatabase",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutonomousDatabaseBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutonomousDatabaseBackup",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_autonomous_database_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAutonomousDatabaseWallet",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAutonomousDatabaseWallet",
+          "Service": "odb"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "odb.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_autonomous_database_wallet",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudAutonomousVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudAutonomousVmCluster",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_cloud_autonomous_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudExadataInfrastructure",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudExadataInfrastructure",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_cloud_exadata_infrastructure",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCloudVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCloudVmCluster",
+          "Service": "odb"
+        },
+        {
+          "Name": "CreateDbNode",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_cloud_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOdbNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOdbNetwork",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_odb_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateOdbPeeringConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateOdbPeeringConnection",
+          "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "create_odb_peering_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAutonomousDatabaseBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAutonomousDatabaseBackup",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_autonomous_database_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudAutonomousVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudAutonomousVmCluster",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_cloud_autonomous_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudExadataInfrastructure",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudExadataInfrastructure",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_cloud_exadata_infrastructure",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCloudVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCloudVmCluster",
+          "Service": "odb"
+        },
+        {
+          "Name": "DeleteDbNode",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_cloud_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOdbNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOdbNetwork",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_odb_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteOdbPeeringConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOdbPeeringConnection",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "delete_odb_peering_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociateIamRoleFromResource",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateIamRoleFromResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "disassociate_iam_role_from_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "FailoverAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "FailoverAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "failover_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutonomousDatabaseBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutonomousDatabaseBackup",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_autonomous_database_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAutonomousDatabaseWalletDetails",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAutonomousDatabaseWalletDetails",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_autonomous_database_wallet_details",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudAutonomousVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudAutonomousVmCluster",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_cloud_autonomous_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudExadataInfrastructure",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudExadataInfrastructure",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_cloud_exadata_infrastructure",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudExadataInfrastructureUnallocatedResources",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudExadataInfrastructureUnallocatedResources",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_cloud_exadata_infrastructure_unallocated_resources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCloudVmCluster",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCloudVmCluster",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_cloud_vm_cluster",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDbNode",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDbNode",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_db_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDbServer",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDbServer",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_db_server",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOciOnboardingStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOciOnboardingStatus",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_oci_onboarding_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOdbNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOdbNetwork",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_odb_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOdbPeeringConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOdbPeeringConnection",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "get_odb_peering_connection",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InitializeService",
+      "AuthorizedActions": [
+        {
+          "Name": "InitializeService",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "initialize_service",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabaseBackups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabaseBackups",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_backups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabaseCharacterSets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabaseCharacterSets",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_character_sets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabaseClones",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabaseClones",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_clones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabasePeers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabasePeers",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_peers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabaseVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabaseVersions",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousDatabases",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousDatabases",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_databases",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAutonomousVirtualMachines",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAutonomousVirtualMachines",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_virtual_machines",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudAutonomousVmClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudAutonomousVmClusters",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_cloud_autonomous_vm_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudExadataInfrastructures",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudExadataInfrastructures",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_cloud_exadata_infrastructures",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCloudVmClusters",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCloudVmClusters",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_cloud_vm_clusters",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDbNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDbNodes",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_db_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDbServers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDbServers",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_db_servers",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDbSystemShapes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDbSystemShapes",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_db_system_shapes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListGiVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGiVersions",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_gi_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOdbNetworks",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOdbNetworks",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_odb_networks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOdbPeeringConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOdbPeeringConnections",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_odb_peering_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListSystemVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSystemVersions",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_system_versions",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "reboot_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RebootDbNode",
+      "AuthorizedActions": [
+        {
+          "Name": "RebootDbNode",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "reboot_db_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "restore_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ShrinkAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "ShrinkAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "shrink_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "StartAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "start_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartDbNode",
+      "AuthorizedActions": [
+        {
+          "Name": "StartDbNode",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "start_db_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "StopAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "stop_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopDbNode",
+      "AuthorizedActions": [
+        {
+          "Name": "StopDbNode",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "stop_db_node",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SwitchoverAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "SwitchoverAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "switchover_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutonomousDatabase",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "odb.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateAutonomousDatabase",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAutonomousDatabaseBackup",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAutonomousDatabaseBackup",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_autonomous_database_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCloudExadataInfrastructure",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCloudExadataInfrastructure",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_cloud_exadata_infrastructure",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOdbNetwork",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOdbNetwork",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_odb_network",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateOdbPeeringConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOdbPeeringConnection",
+          "Service": "odb"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "update_odb_peering_connection",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "autonomous-database",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:autonomous-database/${AutonomousDatabaseId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "autonomous-database-backup",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:autonomous-database-backup/${AutonomousDatabaseBackupId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cloud-autonomous-vm-cluster",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:cloud-autonomous-vm-cluster/${CloudAutonomousVmClusterId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cloud-exadata-infrastructure",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:cloud-exadata-infrastructure/${CloudExadataInfrastructureId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "cloud-vm-cluster",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:cloud-vm-cluster/${CloudVmClusterId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "db-node",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "odb-network",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:odb-network/${OdbNetworkId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "odb-peering-connection",
+      "ARNFormats": [
+        "arn:${Partition}:odb:${Region}:${Account}:odb-peering-connection/${OdbPeeringConnectionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

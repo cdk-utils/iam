@@ -1,0 +1,368 @@
+{
+  "Name": "kendra-ranking",
+  "Actions": [
+    {
+      "Name": "CreateRescoreExecutionPlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteRescoreExecutionPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeRescoreExecutionPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListRescoreExecutionPlans",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "Rescore",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateRescoreExecutionPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "rescore-execution-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateRescoreExecutionPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateRescoreExecutionPlan",
+          "Service": "kendra-ranking"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "create_rescore_execution_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteRescoreExecutionPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRescoreExecutionPlan",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "delete_rescore_execution_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeRescoreExecutionPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeRescoreExecutionPlan",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "describe_rescore_execution_plan",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListRescoreExecutionPlans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListRescoreExecutionPlans",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "list_rescore_execution_plans",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "Rescore",
+      "AuthorizedActions": [
+        {
+          "Name": "Rescore",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "rescore",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateRescoreExecutionPlan",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateRescoreExecutionPlan",
+          "Service": "kendra-ranking"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kendra-ranking",
+          "Method": "update_rescore_execution_plan",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "rescore-execution-plan",
+      "ARNFormats": [
+        "arn:${Partition}:kendra-ranking:${Region}:${Account}:rescore-execution-plan/${RescoreExecutionPlanId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

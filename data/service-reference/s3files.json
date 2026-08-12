@@ -1,0 +1,922 @@
+{
+  "Name": "s3files",
+  "Actions": [
+    {
+      "Name": "ClientMount",
+      "ActionConditionKeys": [
+        "s3files:AccessPointArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ClientRootAccess",
+      "ActionConditionKeys": [
+        "s3files:AccessPointArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ClientWrite",
+      "ActionConditionKeys": [
+        "s3files:AccessPointArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAccessPoint",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateFileSystem",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateMountTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAccessPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFileSystem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteFileSystemPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteMountTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAccessPoint",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFileSystem",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFileSystemPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetMountTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetSynchronizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAccessPoints",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFileSystems",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListMountTargets",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListTagsForResource",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutFileSystemPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutSynchronizationConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "TagResource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "s3files:CreateAction"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UntagResource",
+      "ActionConditionKeys": [
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": true,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "access-point"
+        },
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMountTarget",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "file-system"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "s3files:AccessPointArn",
+      "Types": [
+        "ARN"
+      ]
+    },
+    {
+      "Name": "s3files:CreateAction",
+      "Types": [
+        "String"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAccessPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAccessPoint",
+          "Service": "s3files"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "create_access_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateFileSystem",
+          "Service": "s3files"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "elasticfilesystem.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "create_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateMountTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateMountTarget",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "create_mount_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccessPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAccessPoint",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "delete_access_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFileSystem",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "delete_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFileSystemPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteFileSystemPolicy",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "delete_file_system_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteMountTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteMountTarget",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "delete_mount_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccessPoint",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAccessPoint",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "get_access_point",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFileSystem",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFileSystem",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "get_file_system",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFileSystemPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFileSystemPolicy",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "get_file_system_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetMountTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "GetMountTarget",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "get_mount_target",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetSynchronizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSynchronizationConfiguration",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "get_synchronization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAccessPoints",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAccessPoints",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "list_access_points",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFileSystems",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFileSystems",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "list_file_systems",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListMountTargets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListMountTargets",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "list_mount_targets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListTagsForResource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListTagsForResource",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutFileSystemPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutFileSystemPolicy",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "put_file_system_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutSynchronizationConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutSynchronizationConfiguration",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "put_synchronization_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UntagResource",
+      "AuthorizedActions": [
+        {
+          "Name": "UntagResource",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMountTarget",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMountTarget",
+          "Service": "s3files"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "s3files",
+          "Method": "update_mount_target",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "access-point",
+      "ARNFormats": [
+        "arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}/access-point/${AccessPointId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "file-system",
+      "ARNFormats": [
+        "arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}

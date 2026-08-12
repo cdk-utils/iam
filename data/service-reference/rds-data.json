@@ -1,0 +1,274 @@
+{
+  "Name": "rds-data",
+  "Actions": [
+    {
+      "Name": "BatchExecuteStatement",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BeginTransaction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CommitTransaction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteSql",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ExecuteStatement",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RollbackTransaction",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "ConditionKeys": [
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchExecuteStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchExecuteStatement",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "batch_execute_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "BeginTransaction",
+      "AuthorizedActions": [
+        {
+          "Name": "BeginTransaction",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "begin_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CommitTransaction",
+      "AuthorizedActions": [
+        {
+          "Name": "CommitTransaction",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "commit_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteSql",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteSql",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "execute_sql",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ExecuteStatement",
+      "AuthorizedActions": [
+        {
+          "Name": "ExecuteStatement",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "execute_statement",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RollbackTransaction",
+      "AuthorizedActions": [
+        {
+          "Name": "RollbackTransaction",
+          "Service": "rds-data"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "rds-data",
+          "Method": "rollback_transaction",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "cluster",
+      "ARNFormats": [
+        "arn:${Partition}:rds:${Region}:${Account}:cluster:${DbClusterInstanceName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys"
+      ]
+    }
+  ],
+  "Version": "v1.4"
+}
