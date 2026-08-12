@@ -9,12 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      packages: read
     outputs:
       self_mutation_happened: ${{ steps.self_mutation.outputs.self_mutation_happened }}
     env:
       CI: "true"
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
